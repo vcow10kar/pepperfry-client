@@ -1,5 +1,7 @@
 import {ProductHeader, ProductDetails, ProductColorVariants, ProductQuantity} from "./ProductComponents";
 import { BankOffers, Delivery, EMIWarranty, ChristmasPromo } from "./ProductStaticComponents";
+import {FromPopularBrands} from './ExploreProducts';
+import { ProductOverview } from "../ProductOverview/ProductOverview";
 
 const SpecificProductPage = () => {
     const data = {
@@ -58,8 +60,10 @@ return (
 
        <ChristmasPromo/>
 
+       <FromPopularBrands/>
+
       
-        {/* <ProductOverview/> */}
+        <ProductOverview/>
     </div>
 )
 }

@@ -5,7 +5,7 @@ export const ProductOverview = () => {
 
     return (
         
-        <div className="cont">
+        <div className={styles.cont}>
             <div style={{ marginTop: "10px",display:'flex'}}>
             <div className={styles.first}>OVERVIEW</div>
             {
