@@ -54,6 +54,7 @@ export default function ProductsImageGallery({data}) {
         itemsToShow={1}
         showArrows={true}
         pagination={false}
+        style = {{marginBottom: '13px'}}
         onChange={(currentItem) => setActiveItemIndex(currentItem.index)}
       >
         {data.map((item, i) => (
