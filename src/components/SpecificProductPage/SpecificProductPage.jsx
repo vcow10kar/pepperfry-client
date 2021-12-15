@@ -2,6 +2,7 @@ import {ProductHeader, ProductDetails, ProductColorVariants, ProductQuantity} fr
 import { BankOffers, Delivery, EMIWarranty, ChristmasPromo } from "./ProductStaticComponents";
 import {ExploreOptions, SimilarProductsDiv, MoreProductsDiv} from './ExploreProducts';
 import { ProductOverview } from "../ProductOverview/ProductOverview";
+import ProductsImageGallery from "./ProductsImageGallery";
 
 const SpecificProductPage = () => {
     const data = {
@@ -45,6 +46,8 @@ const SpecificProductPage = () => {
     console.log(data);
 return (
     <div>
+
+        <ProductsImageGallery data = {data.imagesArray}/>
         <ProductHeader data = {data}/>
         <ProductDetails data = {data}/>
 

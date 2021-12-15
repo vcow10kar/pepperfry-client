@@ -58,7 +58,7 @@ const ProductColorVariants = ({ data }) => {
 
             <div className={styles.productColorsDiv}>
                 {data.colors.map(item => {
-                    return <img src={item.imgLink} />
+                    return <img src={item.imgLink}  alt = "colors"/>
                 })}
             </div>
         </div>
