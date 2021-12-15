@@ -3,6 +3,7 @@ import { BankOffers, Delivery, EMIWarranty, ChristmasPromo } from "./ProductStat
 import {ExploreOptions, SimilarProductsDiv, MoreProductsDiv} from './ExploreProducts';
 import { ProductOverview } from "../ProductOverview/ProductOverview";
 import ProductsImageGallery from "./ProductsImageGallery";
+import { useEffect } from "react";
 
 const SpecificProductPage = () => {
     const data = {
@@ -42,6 +43,12 @@ const SpecificProductPage = () => {
         ],
         discount_percentage: 55
         } ;
+
+        useEffect(() => {
+            document.title = `${data.name} | pepperfry`;
+        }, []);
+
+        
 
     console.log(data);
 return (

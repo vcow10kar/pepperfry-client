@@ -9,25 +9,30 @@ const useStyles = makeStyles({
     "& .rec.rec-arrow": {
       color: "#19686B",
       boxShadow: "none",
-      fontSize: "8.67px",
+      fontSize: "10px",
       border: "1px solid #E7E7E7",
 
       /* padding: 0; */
-      width: "30px",
-      height: "30px",
+      width: "24px",
+      height: "24px",
       minWidth: "24px",
-      lineHeight: "24px",
+      lineHeight: "22px",
       backgroundColor: "#EEEEEE",
       color: "#4A4A4A"
     },
     "& .rec.rec-arrow:hover": {
       color: "#4A4A4A",
-      transitions: "none",
       backgroundColor: "#EEEEEE"
     },
     "& .rec.rec-arrow:focus": {
       color: "#4A4A4A",
       backgroundColor: "#EEEEEE"
+    }
+  },
+
+  itemHover: {
+    '& :hover': {
+      border: '2px'
     }
   }
 });
@@ -55,6 +60,7 @@ export default function ProductsImageGallery({data}) {
         showArrows={true}
         pagination={false}
         style = {{marginBottom: '13px'}}
+        transitionMs={400}
         onChange={(currentItem) => setActiveItemIndex(currentItem.index)}
       >
         {data.map((item, i) => (
@@ -76,7 +82,7 @@ export default function ProductsImageGallery({data}) {
         //style={{ width: "532px", margin: "auto" }}
       >
         {data.map((item, i) => (
-          <div style={{ width: "162px", height: "74px" }}>
+          <div style={{ width: "162px", height: "74px" }} className={classes.itemHover}>
             <img
               style={{ width: "162px", height: "74px" }}
               src={item}
