@@ -1,4 +1,5 @@
 import {ProductHeader, ProductDetails, ProductColorVariants, ProductQuantity} from "./ProductComponents";
+import { BankOffers, Delivery, EMIWarranty } from "./ProductStaticComponents";
 
 const SpecificProductPage = () => {
     const data = {
@@ -47,8 +48,17 @@ return (
 
         <ProductColorVariants data = {data}/>
 
+        <BankOffers/>
+
+        <EMIWarranty/>
+
         <ProductQuantity/>
 
+        <Delivery/>
+
+       
+
+      
         {/* <ProductOverview/> */}
     </div>
 )

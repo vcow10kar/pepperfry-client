@@ -1,4 +1,4 @@
-import styles from './productHeader.module.css';
+import styles from './productComponents.module.css';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const ProductHeader = ({ data }) => {
@@ -9,9 +9,17 @@ const ProductHeader = ({ data }) => {
             <p className={styles.heading1}>{data.name}</p>
             <p className={styles.subheading1}>By {data.brand_id}</p>
 
-            <p className={styles.subheading2}><span className={styles.fontColorJoyOrange}>₹{price.toLocaleString('en-EN')}</span>  <span className={styles.textStrikeThrough}>₹{data.price.toLocaleString('en-EN')} MRP</span> (Inclusive of all taxes)</p>
+            <div className={styles.subheading2Div}>
+                <p className={styles.fontColorJoyOrange}>₹{price.toLocaleString('en-EN')}</p>
+                <p className={styles.textStrikeThrough}>₹{data.price.toLocaleString('en-EN')} MRP</p>
+                <p>(Inclusive of all taxes)</p>
+            </div>
 
-            <p className={styles.subheading1}>Total Savings <span className={styles.fontColorJoyOrange}> ₹{savings.toLocaleString('en-En')} ({data.discount_percentage}% off) </span> <ArrowForwardIosIcon sx={{ size: 'small', color: '#F57B2D', marginLeft: '23px' }} /> </p>
+            <div className={styles.subheading1Div}>
+                <p className={styles.subheading1}>Total Savings</p>
+                <span className={styles.fontColorJoyOrange}> ₹{savings.toLocaleString('en-En')} ({data.discount_percentage}% off) </span>
+                <ArrowForwardIosIcon sx={{ size: 'small', color: '#F57B2D', marginLeft: '23px' }} />
+            </div>
         </div>
     )
 }
@@ -48,9 +56,9 @@ const ProductColorVariants = ({ data }) => {
                 <p className={styles.subheading1}>Colour</p>
             </div>
 
-            <div className = {styles.productColorsDiv}>
+            <div className={styles.productColorsDiv}>
                 {data.colors.map(item => {
-                    return <img src = {item.imgLink}/>
+                    return <img src={item.imgLink} />
                 })}
             </div>
         </div>
@@ -64,24 +72,24 @@ const ProductQuantity = () => {
                 <p className={styles.subheading1}>Quantity</p>
             </div>
 
-            <div className= {styles.subheading1}>
-                <select className= {styles.selectOption}>
-                    <option value = {1}>1</option>
-                    <option value = {2}>2</option>
-                    <option value = {3}>3</option>
-                    <option value = {4}>4</option>
-                    <option value = {5}>5</option>
-                    <option value = {6}>6</option>
-                    <option value = {7}>7</option>
-                    <option value = {8}>8</option>
-                    <option value = {9}>9</option>
-                    <option value = {10}>10</option>
-                    <option value = {11}>11</option>
-                    <option value = {12}>12</option>
-                    <option value = {13}>13</option>
-                    <option value = {14}>14</option>
-                    <option value = {15}>15</option>
-                    <option value = {16}>16</option>
+            <div className={styles.subheading1}>
+                <select className={styles.selectOption}>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={4}>4</option>
+                    <option value={5}>5</option>
+                    <option value={6}>6</option>
+                    <option value={7}>7</option>
+                    <option value={8}>8</option>
+                    <option value={9}>9</option>
+                    <option value={10}>10</option>
+                    <option value={11}>11</option>
+                    <option value={12}>12</option>
+                    <option value={13}>13</option>
+                    <option value={14}>14</option>
+                    <option value={15}>15</option>
+                    <option value={16}>16</option>
                 </select>
             </div>
         </div>
