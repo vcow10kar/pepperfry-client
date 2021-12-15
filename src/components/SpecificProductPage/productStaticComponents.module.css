@@ -8,6 +8,7 @@
     padding: 21px 18px 12px 21px;
     border: 1px dashed #D0D0D0;
     width: 438px;
+    min-width: 333px;
 }
 
 .eachOffer {
@@ -106,6 +107,7 @@
 }
 
 .deliveryDetailsDiv {
+    min-width: 333px;
     width: 400px;
     display: flex;
     flex-direction: column;

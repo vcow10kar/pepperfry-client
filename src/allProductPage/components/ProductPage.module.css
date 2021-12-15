@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainDiv {
+  width: 406px;
+  height: 360px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  background: #ffffff;
+}
+
+.imageDiv {
+  width: 374px;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+.detailsDiv {
+  width: 374px;
+  height: 106px;
+  /* border: 1px solid black; */
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  width: 374px;
+  height: 200px;
+}
+.sofaname {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 10px 0px;
+}
+.brandandwishlistdiv {
+  width: 374px;
+  height: 24px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.brandname {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #707070;
+}
+.wishlist {
+  width: 16px;
+  height: 16px;
+}
+
+.price {
+  height: 18px;
+  width: 374px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.discountprice {
+  margin-left: 14px;
+  text-decoration: line-through;
+}
+
+.savingInfo {
+  height: 18px;
+  width: 374px;
+  /* border: 1px solid black; */
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+  letter-spacing: 0.06em;
+  padding: 2px 0px;
+}

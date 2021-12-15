@@ -81,25 +81,25 @@ const EMIWarranty = () => {
     return (
         <div className={styles.displayEMIWarrantyFlex}>
             <div className={styles.displayDivFlex}>
-                <img src="/icons/Calender.svg" className={styles.emiIcons} />
+                <img src="/icons/Calender.svg" className={styles.emiIcons} alt = "calender"/>
                 {/* <EventRepeatOutlinedIcon sx = {{margin: 'auto', marginRight: '10px'}}/> */}
                 <p style={{ color: '#14A9CC' }} className={styles.emiText}>EMI from 1,77 No Cost EMI</p>
             </div>
 
             <div className={styles.displayDivFlex}>
-                <img src="/icons/Warranty.svg" className={styles.emiIcons} />
+                <img src="/icons/Warranty.svg" className={styles.emiIcons} alt = "warranty"/>
                 {/* <GppGoodOutlinedIcon sx={{ margin: 'auto', marginRight: '10px' }} /> */}
                 <p className={styles.emiText}>12 Months' Warranty</p>
             </div>
 
             <div className={styles.displayDivFlex}>
-                <img src="/icons/Rs_symbol.svg" className={styles.emiIcons} />
+                <img src="/icons/Rs_symbol.svg" className={styles.emiIcons} alt = "rupee symbol"/>
                 {/* <CurrencyRupeeOutlinedIcon sx={{ margin: 'auto', marginRight: '10px' }} /> */}
                 <p className={styles.emiText}>Easy Returns</p>
             </div>
 
             <div className={styles.displayDivFlex}>
-                <img src="/icons/Truck_2_safety.svg" className={styles.emiIcons} />
+                <img src="/icons/Truck_2_safety.svg" className={styles.emiIcons} alt = "delivery truck"/>
                 {/* <LocalShippingOutlinedIcon sx={{ margin: 'auto', marginRight: '10px' }} /> */}
                 <p className={styles.emiText}>Safe Delivery</p>
             </div>
