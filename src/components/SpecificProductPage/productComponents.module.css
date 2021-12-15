@@ -1,0 +1,173 @@
+.heading1 {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 12.5px;
+}
+
+.subheading1Div {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #707070;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.subheading1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #707070;
+    padding: 0px;
+    margin: auto 0px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.subheading2Div {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.subheading2Div p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.subheading2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.fontColorJoyOrange {
+    font-weight: bold;
+    color: #F16521;
+}
+
+.textStrikeThrough {
+    text-decoration: line-through;
+}
+
+.displayFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.displayFlex p {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.detailsDiv {
+    width: 92px;
+}
+
+.detailsDescpription {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+}
+
+.detailsDescpription span {
+    font-weight: 400;
+    color: #707070;
+}
+
+.fontColorBearGrey {
+    color: #707070;
+}
+
+.fontColorBlueberryBlue {
+    color: #14A9CC;
+    font-weight: 400;
+}
+
+.fontColorBlueberryBlue:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.productColorsDiv {
+    display: flex;
+    gap: 16px;
+    width: 340px;
+    flex-wrap: wrap;
+}
+
+.productColorsDiv img {
+    width: 162px;
+    height: 74px;
+}
+
+.selectOption {
+    border: 1px dashed #D0D0D0;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 0px 11px 11px;
+    background-color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-right: 11px;
+    outline: none !important;
+}
+
+.selectOption:hover {
+    border: 1px dashed #F16521;
+}
+
+.selectOption option {
+    text-align: left;
+}
+
+.optionValue {
+    padding-right: 11px;
+}

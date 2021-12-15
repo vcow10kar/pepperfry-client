@@ -1,0 +1,257 @@
+.displayFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.offerDiv {
+    padding: 21px 18px 12px 21px;
+    border: 1px dashed #D0D0D0;
+    width: 438px;
+    min-width: 333px;
+}
+
+.eachOffer {
+    margin-bottom: 9.58px;
+}
+
+.eachOffer p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.subheading1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: left;
+    letter-spacing: 0.06em;
+    color: #707070;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.subheading2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: left;
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+    color: #F16521;
+}
+
+.detailsDiv {
+    width: 95px;
+}
+
+.bodyText {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    text-align: left;
+    letter-spacing: 0.06em;
+    color: #707070;
+}
+
+.bodyText1 {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: left;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.blueBerryBlue {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #14A9CC;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blueBerryBlue:hover {
+    cursor: pointer;
+}
+
+.displayDeliveryFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.deliveryDetailsDiv {
+    min-width: 333px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 20px 3px;
+    box-shadow: inset 0px -2px 0px #E7E7E7, inset 0px 2px 0px #E7E7E7;
+    /* border-top: 2px solid #E7E7E7; */
+}
+
+.subheading1Grey {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    text-align: left;
+    letter-spacing: 0.06em;
+    padding: 0px;
+    margin: 4px 0px;
+    flex-wrap: wrap;
+    color: #707070;
+}
+
+.subheading2Black {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    display: flex;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    color: #000000;
+}
+
+.pincodeInputDiv {
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed #9A9A9a;
+    padding: 10px 10px 10px 5px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.pincodeInputDiv p {
+    margin: 0px;
+    padding: 0px;
+    color: #F16521;
+}
+
+.pincodeInput {
+    width: 81px;
+    outline: none !important;
+    border: none;
+}
+
+.pincodeInput::-webkit-outer-spin-button,
+.pincodeInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pincodeInput[type=number] {
+    -moz-appearance: textfield;
+}
+
+.pincodeInputDiv:focus {
+    outline: none !important;
+}
+
+/* .pincodeInputDiv:hover {
+    border: 1px dashed #F16521;
+} */
+
+.deliveryPoints {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.displayEMIWarrantyFlex {
+    min-width: 333px;
+    max-width: 573px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    box-shadow: inset 0px -2px 0px #E7E7E7, inset 0px 2px 0px #E7E7E7;
+    padding: 12px, 0px, 12px, 0px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.displayDivFlex {
+    display: flex;
+    margin: 12px 0px;
+    /* flex-wrap: wrap; */
+}
+
+.displayDivFlex p {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.emiText {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    display: flex;
+    text-align: left;
+    padding: 0px;
+    margin: auto 0px;
+    color: #000000;
+}
+
+.emiIcons {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.christmasPromo {
+    max-width: 532px;
+    max-height: 108px;
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.christmasPromo > img {
+    width: 100%;
+    height: 100%;
+}
