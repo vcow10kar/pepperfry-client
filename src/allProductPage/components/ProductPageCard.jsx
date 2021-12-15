@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ProductPage.module.css";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 function ProductPageCard() {
   return (
@@ -18,11 +19,9 @@ function ProductPageCard() {
           </div>
           <div className={styles.brandandwishlistdiv}>
             <div className={styles.brandname}>By Febonics</div>
-            <img
-              className={styles.wishlist}
-              src="https://static.thenounproject.com/png/635650-200.png"
-              alt="wishlist"
-            />
+            <div className={styles.wishlist}>
+              <FavoriteBorderOutlinedIcon />
+            </div>
           </div>
           <div className={styles.price}>
             <div className={styles.ogprice}>₹ 35,852</div>
@@ -32,6 +31,9 @@ function ProductPageCard() {
             Save ₹ 13,147 <span style={{ color: "red" }}>(27%)</span>,limited
             time offer
           </div>
+        </div>
+        <div className={styles.addCartDiv}>
+          <button className={styles.cartbutton}>ADD TO CART</button>
         </div>
       </div>
     </>
