@@ -242,3 +242,16 @@
     margin: auto;
     margin-right: 10px;
 }
+
+.christmasPromo {
+    max-width: 532px;
+    max-height: 108px;
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.christmasPromo > img {
+    width: 100%;
+    height: 100%;
+}

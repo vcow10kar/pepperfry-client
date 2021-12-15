@@ -107,5 +107,13 @@ const EMIWarranty = () => {
     )
 }
 
+const ChristmasPromo = () => {
+    return (
+        <div className= {styles.christmasPromo}>
+            <img src = "/assets/christmas_promo_coupon.png" alt = "Christmas Promo"/>
+        </div>
+    )
+}
 
-export { BankOffers, Delivery, EMIWarranty };
+
+export { BankOffers, Delivery, EMIWarranty, ChristmasPromo };

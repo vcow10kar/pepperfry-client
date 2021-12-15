@@ -1,5 +1,5 @@
 import {ProductHeader, ProductDetails, ProductColorVariants, ProductQuantity} from "./ProductComponents";
-import { BankOffers, Delivery, EMIWarranty } from "./ProductStaticComponents";
+import { BankOffers, Delivery, EMIWarranty, ChristmasPromo } from "./ProductStaticComponents";
 
 const SpecificProductPage = () => {
     const data = {
@@ -56,7 +56,7 @@ return (
 
         <Delivery/>
 
-       
+       <ChristmasPromo/>
 
       
         {/* <ProductOverview/> */}
