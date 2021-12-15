@@ -29,14 +29,13 @@ text-align: start;
     font-style: normal;
     line-height: 16px;
     letter-spacing: 6%;
-
 }
 
-span{
+/* span{
     border-top: 1px solid gray;
  
 
-}
+} */
 .first{
     border-top: 0.5px solid gray;
     border-left:0.5px solid gray;
