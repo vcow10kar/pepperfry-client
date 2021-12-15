@@ -1,17 +1,17 @@
 import styles from './productOverview.module.css';
 
 export const ProductOverview = () => {
-    const box = ['ADDITIONAL INFO','CARE','MERCHANT INFO','MERCHANT INFO','WARRANTY & INSTALLATION','CUSTOMER REDRESSAL','CANCELLATIONS'];
+    const box = ['ADDITIONAL INFO', 'CARE', 'MERCHANT INFO', 'MERCHANT INFO', 'WARRANTY & INSTALLATION', 'CUSTOMER REDRESSAL', 'CANCELLATIONS'];
 
     return (
-        
+
         <div className={styles.cont}>
-            <div style={{ marginTop: "10px",display:'flex'}}>
-            <div className={styles.first}>OVERVIEW</div>
-            {
-                box.map((e) => (
-                    <div className={styles.rest}>{e}</div>
-                        ))
+            <div style={{ marginTop: "10px", display: 'flex' }}>
+                <div className={styles.first}>OVERVIEW</div>
+                {
+                    box.map((e) => (
+                        <div className={styles.rest}>{e}</div>
+                    ))
                 }
             </div>
             <div className={styles.big_cont}>
