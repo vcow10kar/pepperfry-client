@@ -11,7 +11,7 @@ const AppRoutes = () => {
             <Switch>
                 <Route path = '/' exact component={Home}/>
                 <Route path = '/allProducts' component={AllproductPage}/>
-                <Route path = '/allProducts/:id' component={SpecificProductPage}/>
+                <Route path = '/products/:id' component={SpecificProductPage}/>
                 <Route path = '/cart' component={Cart}/>
                 <Route path = '/address' component = {AddressCard}/>
             </Switch>

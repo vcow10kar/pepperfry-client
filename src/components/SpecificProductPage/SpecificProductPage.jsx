@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import styles from './specificProductPage.module.css';
 import { ButtonsDiv } from '../Buttons/Buttons';
 import axios from 'axios';
-import { Redirect } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 
 const product = {
     name: "Classic 3 Seater Sofa in Beige Colour",
@@ -52,18 +52,19 @@ const product = {
 
 
 const SpecificProductPage = () => {
+    const {id} = useParams();
     const [data, setData] = useState(product);
     const [quantity, setQuantity] = useState(0);
     const [cart, setCart] = useState(false);
 
-    const goToCart = () => {
+    const handleAddToCart = () => {
         setCart(!cart);
     }
 
-    const handleAddToCart = () => {
+    const goToCart = () => {
         console.log('Added Product to Cart!');
 
-        <Redirect to = '/cart'/>
+        return <Redirect to = '/address'/>
     }
 
     const handleBuyNow = () => {
@@ -79,11 +80,10 @@ const SpecificProductPage = () => {
 
     
     const getData = () => {
-        const id = '61b872017122aec730c23de9';
+        // const id = '61b872017122aec730c23de9';
         axios.get(`http://localhost:5000/products/${id}`)
         .then (res => {
-            console.log(res.data);
-            setData(res.data);
+            setData({...res.data});
         })
         .catch(err => {
             console.log('Error:', err);
@@ -113,7 +113,7 @@ const SpecificProductPage = () => {
                     <BankOffers />
                     <ProductQuantity handleChange = {handleQuantityChange} />
                     <div className= {styles.buttonFlex}>
-                        <ButtonsDiv text={cart ? 'Go to Cart' : 'Add to Cart'} handleClick={cart ? handleAddToCart : goToCart} icon = {cart ? <ArrowForwardIcon/> : null} />
+                        <ButtonsDiv text={cart ? 'Go to Cart' : 'Add to Cart'} handleClick={cart ? goToCart :  handleAddToCart} icon = {cart ? <ArrowForwardIcon sx = {{color : 'white'}}/> : null} />
                         <ButtonsDiv text= {'Buy Now'} handleClick = {handleBuyNow} icon = {null}/>
                     </div>
                     <Delivery />

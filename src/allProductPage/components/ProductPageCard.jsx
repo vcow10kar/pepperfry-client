@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ProductPageCard.module.css";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { Link } from "react-router-dom";
 
 function ProductPageCard({ productData }) {
   const { name, imagesArray, _id, price, brand_id } = productData;
@@ -14,7 +15,9 @@ function ProductPageCard({ productData }) {
           <img className={styles.image} src={imagesArray[0]} alt="sofapic" />
         </div>
         <div className={styles.detailsDiv}>
-          <div className={styles.sofaname}>{name}</div>
+          <Link to={`/products/${_id}`}>
+            <div className={styles.sofaname}>{name}</div>
+          </Link>
           <div className={styles.brandandwishlistdiv}>
             <div className={styles.brandname}>{`By: ${brand_id.name}`}</div>
             <div className={styles.wishlist}>
