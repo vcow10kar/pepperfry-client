@@ -4,7 +4,7 @@ import { AddressCard } from './components/deliveryAddressPage/addressCard';
 function App() {
   return (
     <div className="App">
-     <AddressCard/>
+     {/* <AddressCard/> */}
     </div>
   );
 }
