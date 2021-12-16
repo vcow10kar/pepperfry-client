@@ -1,0 +1,19 @@
+.fonts{
+    font:Fira Sans;
+    font-weight:400;
+    font-size:14px;
+    line-height: 18px;
+    
+}
+.min{
+    height: 46px;
+    background: #F9F9F9;
+    margin-left: 12.43%;
+    margin-right: 37.91%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    /* border: 1px solid black; */
+}

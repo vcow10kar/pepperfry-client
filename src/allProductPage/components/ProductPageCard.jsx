@@ -1,35 +1,36 @@
 import React from "react";
-import styles from "./ProductPage.module.css";
+import styles from "./ProductPageCard.module.css";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { Link } from "react-router-dom";
 
-function ProductPageCard() {
+function ProductPageCard({ productData }) {
+  const { name, imagesArray, _id, price, brand_id } = productData;
+  let discountPrice = Math.floor(price * (27 / 100));
+  let saving = price - discountPrice;
+
   return (
     <>
-      <div className={styles.mainDiv}>
+      <div className={styles.mainDiv} key={_id}>
         <div className={styles.imageDiv}>
-          <img
-            className={styles.image}
-            src="https://ii1.pepperfry.com/media/catalog/product/a/n/568x284/antalya-3-seater-sofa-in-blue-colour-by-urban-living-antalya-3-seater-sofa-in-blue-colour-by-urban-l-5yi5ky.jpg"
-            alt="sofapic"
-          />
+          <img className={styles.image} src={imagesArray[0]} alt="sofapic" />
         </div>
         <div className={styles.detailsDiv}>
-          <div className={styles.sofaname}>
-            Niki sofa set (3+2+1) in sea green
-          </div>
+          <Link to={`/products/${_id}`}>
+            <div className={styles.sofaname}>{name}</div>
+          </Link>
           <div className={styles.brandandwishlistdiv}>
-            <div className={styles.brandname}>By Febonics</div>
+            <div className={styles.brandname}>{`By: ${brand_id.name}`}</div>
             <div className={styles.wishlist}>
               <FavoriteBorderOutlinedIcon />
             </div>
           </div>
           <div className={styles.price}>
-            <div className={styles.ogprice}>₹ 35,852</div>
-            <div className={styles.discountprice}>₹ 4,899</div>
+            <div className={styles.ogprice}>₹ {discountPrice}</div>
+            <div className={styles.discountprice}>{`₹ ${price}`} </div>
           </div>
           <div className={styles.savingInfo}>
-            Save ₹ 13,147 <span style={{ color: "red" }}>(27%)</span>,limited
-            time offer
+            {`Save ₹ ${saving}`} <span style={{ color: "red" }}>(27%)</span>
+            ,limited time offer
           </div>
         </div>
         <div className={styles.addCartDiv}>
