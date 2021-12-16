@@ -1,0 +1,43 @@
+.form{
+    /* height: 765px; */
+    height: 800px;
+    border: 1px solid black;
+    margin-left: 12.43%;
+    margin-right: 37.91%;
+    padding-left: 24px;
+    text-align: left;
+
+    font:Fira Sans;
+    font-weight:400;
+    font-size:14px;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+
+
+input{
+    /* width: 477px; */
+    width: 70%;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 17px;
+    /* margin-left: 20.97%; */
+}
+input[type="checkbox"]{
+    height: 28px;
+    width: 28px;
+    margin-top: 0%;
+    
+    background: #F16521;
+    color: #F16521;
+}
+
+
+input[type="email"],input[id="city"],input[id="state"]{
+    /* width: 238px; */
+    width: 30%;
+}
+input[type="email"]{
+    margin-top: 0%;
+}

@@ -1,0 +1,46 @@
+.footer{
+    height: 320px;
+    background: #EFEFEF;
+    /* border: 1px solid black; */
+}
+
+.main_div{
+    margin-left: 12.43%;
+    margin-right: 12.43%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    
+}
+
+.sub_main{
+    width: 30%;
+    font:Fira Sans;
+    font-weight:400;
+    font-size:12px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 1px solid rgb(211, 27, 27); */
+    justify-items: flex-end;
+
+    margin-top: 60px;
+   
+}
+
+.display{
+    display: flex;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+
+    color: #707070;
+    align-items: center;
+    justify-content: center;
+}
