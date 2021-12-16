@@ -20,6 +20,7 @@
     margin-top: 40px;
 }
 .image{
+    object-fit: cover;
     width:100px;
     height: 188px;
     position: absolute;
@@ -68,6 +69,7 @@
     height: 18px;
     color:#707070;
     margin:0px;
+    margin-bottom: 12px;
 }
 .detail{
     line-height: 18px;
@@ -125,7 +127,7 @@
 .priceline{
     width: 58px;
     height: 18px;
-    margin-left: 1px;
+    margin-left: -11px;
     font-weight: 400;
     font-size: 14px;
     color: #707070;
@@ -135,6 +137,7 @@
 .curr{
     font-size: small;
     text-decoration: line-through;
+    margin-bottom: 4px;
 }
 .actualcurr{
     color:#F16521;
@@ -145,39 +148,43 @@
     font-size: 14px;
 }
 .dustbin{
-        display: flex;
+display: flex;
 }
-.dustbin_svg{
+.icon{
     width: 20px;
     height: 20px;
-    margin-top: 12px;
+    margin-top: 15px;
     margin-left: -25px;
 }
-.dustbin_svg:hover{
+.icon:hover{
     cursor: pointer;
+   fill:red;
 }
-.whishlist_svg:hover{
+.whishlist{
+width: 16px;
+height: 16px;
+margin-top: 12px;
+margin-left: 22px;
+}
+.whishlist:hover{
     cursor: pointer;
-}
-.whishlist_svg{
-    display: flex;
-    width: 20px;
-    margin-left: 18px;
-    height: 20px;
-    margin-top: 12px;
+   color: #f16521;
 }
 .arrow_svg:hover{
 cursor: pointer;
 }
 
 .login{
-    width: 349px;
-    height: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    text-align: start;
-    font-weight: 700;
+width: 329px;
+height: 18px;
+/* margin-top: 20px; */
+margin-left: 10px;
+font-size: 14px;
+text-align: start;
+font-weight: 700;
+line-height: 18px;
+margin-bottom: 8px;
+word-spacing: 00.06em;
 
 }
 
@@ -185,7 +192,7 @@ cursor: pointer;
     width:349px;
     height: 550px;
     margin-left: 45px;
-    margin-top:-80px ;
+    margin-top:-83px ;
     /* border:1px solid black; */
 }
 .lines{
@@ -200,10 +207,11 @@ cursor: pointer;
     letter-spacing: 00.06em;
 }
 .topBorder{
-    display: flex;
     width: 349px;
+    max-height: 82px;
     border: 0.5px solid gray;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    padding: 20px 10px;
 }
 .distIcons{
     width: 20px;
@@ -265,7 +273,14 @@ cursor: pointer;
 .topBorder_1{
     display: flex;
     width: 349px;
-    margin-TOP: 8px;
+    margin-top: 6px;
+}
+.topBorder_dist{
+    display: flex;
+    width: 349px;
+    margin-top: 8px;
+     border: 0.5px solid gray;
+    padding: 0px 11px;
 }
 .message{
     color:#707070;
@@ -277,37 +292,37 @@ cursor: pointer;
     line-height: 16px;
 }
 .total_outer{
+width: 371px;
+max-height: 46px;
 border-left: 1px solid #707070 ;
 border-right: 1px solid #707070 ;
-height: 46px;
 }
 .total{
     display: flex;
 }
 .curr_val_total{
-    width: 245px;
-    height: 18px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 0.06em;
-    margin: 0px;
-    margin-left:8px;
-    padding: 0px;
-    padding-top: 5px;
-    text-align: start;
+width: 132px;
+max-height: 18px;
+margin-left: 4px;
+margin-top: 4px;
+padding-left: 13px;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.06em;
+text-align: start;
 
 }
 .curr_prc_total{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 0.06em;
-    margin: 0px;
-    margin-left:8px;
-    padding: 0px;
-     padding-top: 5px;
-    text-align: end;
+width: 103px;
+max-height: 18px;
+margin-left: 118px;
+margin-top: 4px;
+font-size: 14px;
+font-weight: bold;
+line-height: 18px;
+letter-spacing: 00.06em;
 
 }
 .taxes{
@@ -316,7 +331,7 @@ height: 46px;
     color:gray;
     width: 136px;
     height: 16px;
-    margin-left: 220px;
+    margin-left: 227px;
     margin-top: 2px;
     font-weight: 500;
     font-size: 12px;
@@ -324,14 +339,21 @@ height: 46px;
 
 }
 .top{
+    width: 349px;
+    padding: 6px 11px;
+    margin-top: 8px;
     border: 1px solid gray;;
 }
 
 .emi_div{
-width: 348px;
-height: 74px;
-padding: 0px 0px;
+width: 363px;
+height: 64px;
+padding: 8px 4px;
 border: 1px solid gray;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 00.06em;
 
 }
 .emi_p{
@@ -340,7 +362,7 @@ color:#707070;
 margin-top:25px;
 font-weight: 500;
 text-align: start;
-font-size: 12px;
+font-size: 13px;
 line-height: 16px;
 letter-spacing: 00.06em;
 }
@@ -348,6 +370,10 @@ letter-spacing: 00.06em;
 margin:0px;
 color:#14A9CC;
 text-decoration: underline;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 00.06em;
 }
 
 .gst_starts{
@@ -402,7 +428,6 @@ text-decoration: underline;
 .btn_div{
     width: 349px;
     margin-top: 20px;
-    border: 1px solid black;
     margin-bottom: 15px;
 
 }

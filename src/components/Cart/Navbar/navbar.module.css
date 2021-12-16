@@ -1,12 +1,12 @@
 .nav{
     position: absolute;
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 72px;
     border-bottom: 3px solid rgba(195, 193, 193, 0.712);
 }
 .web_img{
-    width: 180px;
+    max-width: 180px;
     height: 38px;
     margin-top: 17px;
     display: flex;
