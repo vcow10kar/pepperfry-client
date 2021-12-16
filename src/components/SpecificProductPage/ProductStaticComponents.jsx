@@ -1,8 +1,4 @@
 import styles from './productStaticComponents.module.css';
-import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
-import EventRepeatOutlinedIcon from '@mui/icons-material/EventRepeatOutlined';
-import CurrencyRupeeOutlinedIcon from '@mui/icons-material/CurrencyRupeeOutlined';
-import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
 
 const offers = [
     {

@@ -7,7 +7,7 @@ const ProductHeader = ({ data }) => {
     return (
         <div>
             <p className={styles.heading1}>{data.name}</p>
-            <p className={styles.subheading1}>By {data.brand_id}</p>
+            <p className={styles.subheading1}>By {data.brand_id.name}</p>
 
             <div className={styles.subheading2Div}>
                 <p className={styles.fontColorJoyOrange}>₹{price.toLocaleString('en-EN')}</p>
@@ -58,14 +58,17 @@ const ProductColorVariants = ({ data }) => {
 
             <div className={styles.productColorsDiv}>
                 {data.colors.map(item => {
-                    return <img src={item.imgLink} />
+                    return <img src={item.imgLink}  alt = "colors"/>
                 })}
             </div>
         </div>
     )
 }
 
-const ProductQuantity = () => {
+const ProductQuantity = ({handleChange}) => {
+    const handleQuantityChange = (e) => {
+        handleChange(Number(e.target.value));
+    }
     return (
         <div className={styles.displayFlex}>
             <div className={styles.detailsDiv}>
@@ -73,7 +76,7 @@ const ProductQuantity = () => {
             </div>
 
             <div className={styles.subheading1}>
-                <select className={styles.selectOption}>
+                <select className={styles.selectOption} onChange = {handleQuantityChange}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>

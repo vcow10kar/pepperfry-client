@@ -6,13 +6,18 @@ export const ProductOverview = () => {
     return (
 
         <div className={styles.cont}>
+            <p className= {styles.subheading2}>More Product Information</p>
+            <p className= {styles.desc}>Niki sofa set (3+2+1) in sea green colour by Febonic</p>
             <div style={{ marginTop: "10px", display: 'flex' }}>
                 <div className={styles.first}>OVERVIEW</div>
-                {
-                    box.map((e) => (
-                        <div className={styles.rest}>{e}</div>
-                    ))
-                }
+                <div className= {styles.options}>
+                    {
+                        box.map((e) => (
+                            <div className={styles.rest}>{e}</div>
+                        ))
+                    }
+                </div>
+
             </div>
             <div className={styles.big_cont}>
                 <p className={styles.overview}>Overview:</p>

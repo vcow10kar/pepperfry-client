@@ -39,9 +39,14 @@
     letter-spacing: 0.06em;
     color: #707070;
     padding: 0px;
-    margin: auto 0px;
+    margin: 0px;
     flex-wrap: wrap;
     margin-bottom: 14px;
+}
+
+.subheading1Div p {
+    margin: 0px;
+    padding: 0px;
 }
 
 .subheading2Div {
@@ -114,6 +119,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.06em;
+    width: 441px;
 }
 
 .detailsDescpription span {
