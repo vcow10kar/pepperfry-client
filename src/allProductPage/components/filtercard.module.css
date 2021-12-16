@@ -1,8 +1,11 @@
+p {
+  margin-left: 5px;
+}
+
 .mainDiv {
   width: 236px;
   height: 440px;
   /* border: 1px solid black; */
-  margin-left: 50px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -51,7 +54,7 @@
 }
 .brandname {
   width: 50px;
-  font-family: Fira Sans;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -78,7 +81,7 @@
   height: 18px;
   /* border: 1px solid black; */
   align-items: center;
-  font-family: Fira Sans;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
