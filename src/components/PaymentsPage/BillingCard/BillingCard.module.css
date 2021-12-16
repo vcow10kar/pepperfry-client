@@ -1,0 +1,49 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 18px 13px;
+
+    position: absolute;
+    height: 192px;
+    left: 178px;
+    right: 546px;
+    top: 143px;
+
+    background: #F9F9F9;
+
+    border: 1px solid #F3F5F7;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 0px #FFFFFF;
+}
+
+
+.display{
+    display: flex;
+    justify-content: space-between;
+}
+
+.outsideCard{
+    text-align: start;
+}
+.insideCard{
+    position: static;
+    width: 321px;
+    height: 108px;
+    left: 8px;
+    top: 40px;
+
+    /* border: 1px solid black; */
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.06em;
+
+    color: #9A9A9A;
+    margin: 14px 0px;
+}

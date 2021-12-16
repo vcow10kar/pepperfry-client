@@ -1,0 +1,148 @@
+.font{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    padding-top: 10px;
+    letter-spacing: 0.06em;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    
+}
+.m{
+    position: absolute;
+    position: absolute;
+    left: 914px;
+    right: 178px;
+    top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 348px;
+    /* margin: auto; */
+    top: 95px;
+    box-sizing: border-box;
+}
+
+.cardDisplay{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    padding: 2px;
+
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px;
+
+    height: 164px;
+    width: inherit;
+    background: #FFFFFF;
+
+    box-shadow: -1px -1px 0px #E7E7E7, 1px 1px 0px #E7E7E7;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+
+    color: #707070;
+
+}
+.card1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    padding-left: 2px;
+
+    height: 46px;
+    width: inherit;
+
+    background: #FFFFFF;
+
+    box-shadow: -1px -1px 0px #E7E7E7, 1px 1px 0px #E7E7E7;
+
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+}
+
+.contribution{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.06em;
+
+    color: #707070;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    padding-left: 10px;
+    text-align: start;
+}
+
+.bank{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 16px;
+    padding: 18px;
+    height: 54px;
+    width: inherit;
+    background: #FFFFFF;
+  
+    border: 1px dashed #9A9A9A;
+    box-sizing: border-box;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.06em;
+
+
+    color: #9A9A9A;
+
+}
+
+.secureFont{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.06em;
+
+    color: #000000;
+}
