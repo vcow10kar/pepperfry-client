@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import styles from './specificProductPage.module.css';
 import { ButtonsDiv } from '../Buttons/Buttons';
 import axios from 'axios';
+import { Redirect } from "react-router-dom";
 
 const product = {
     name: "Classic 3 Seater Sofa in Beige Colour",
@@ -61,6 +62,8 @@ const SpecificProductPage = () => {
 
     const handleAddToCart = () => {
         console.log('Added Product to Cart!');
+
+        <Redirect to = '/cart'/>
     }
 
     const handleBuyNow = () => {

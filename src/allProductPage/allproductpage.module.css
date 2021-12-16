@@ -1,0 +1,85 @@
+.productMainDiv {
+  width: 100%;
+  background: #f1f1f1;
+}
+.sortingDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  border: 1px solid black;
+}
+.productCountDiv {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-left: 435px;
+  margin-top: 20px;
+}
+.sort {
+  width: 48px;
+  height: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-left: 524px;
+  margin-top: 20px;
+}
+
+.sortCard {
+  margin-left: 14px;
+  margin-top: 20px;
+}
+
+.filterandProductDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.FilterCardDiv {
+  margin-left: 178px;
+}
+
+.productCardDiv {
+  width: 830px;
+
+  /* border: 1px solid black; */
+  margin-left: 18px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 18px;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.paginationButton {
+  width: 348px;
+  height: 48px;
+  border-radius: 0px;
+  background: #f16521;
+  border-radius: 2px;
+  border: 1px solid #f16521;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 140px;
+}
+
+.footerDiv {
+  background: #f3f5f7;
+  margin-top: 46px;
+}

@@ -6,11 +6,11 @@
 .mainDiv {
   width: 406px;
   height: 360px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 50px;
+
   background: #ffffff;
   position: relative;
 }
@@ -40,7 +40,7 @@
   transform: scale(1.07);
 }
 .sofaname {
-  font-family: Fira Sans;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -63,7 +63,7 @@
   align-items: center;
 }
 .brandname {
-  font-family: Fira Sans;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -83,10 +83,9 @@
 .price {
   height: 18px;
   width: 374px;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
-  font-family: Fira Sans;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -106,7 +105,7 @@
   margin-top: 2px;
   display: flex;
   align-items: center;
-  font-family: Fira Sans;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -118,16 +117,16 @@
 .addCartDiv {
   width: 406px;
   height: 45px;
-  background-color: white;
-  opacity: 0.4;
+  background-color: #ffffffd0;
+  /* opacity: 0.4; */
   position: absolute;
   top: 195px;
   display: none;
 }
 
 .cartbutton {
-  width: 120px;
-  height: 40px;
+  width: 110px;
+  height: 30px;
   border-radius: 0px;
   border: 1px solid black;
   color: black;
