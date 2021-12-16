@@ -47,7 +47,7 @@ export default function ProductsImageGallery({data}) {
 //     }
 //   };
   return (
-    <div style={{ width: "532px"}}>
+    <div style={{ minWidth: "532px"}}>
       <Carousel
         ref={carouselRef}
         className={classes.root}

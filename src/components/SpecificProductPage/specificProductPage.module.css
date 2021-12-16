@@ -20,3 +20,11 @@
 .exploreDiv {
     justify-content: center;
 }
+
+.buttonFlex {
+    max-width: 533px;
+    display: flex;
+    gap: 9px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}

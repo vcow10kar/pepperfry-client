@@ -199,7 +199,7 @@ const MoreProductsDiv = () => {
                 <p className={styles.moreProductsHeader}>MORE PRODUCTS FROM BRAND</p>
 
                 <p className={styles.styleGuru}>Our Style Guru</p>
-                <p className={styles.styleGuruName}>Shruti Nair, Ctegory Manager, Home</p>
+                <p className={styles.styleGuruName}>Shruti Nair, Category Manager, Home</p>
                 <p className={styles.brandDescription}>Febonic Is A Word Which Is Formed By Two Of The Brand's Quality Favorite And Unique. Febonic Is A New Brand In The Industry Run By Qualified Furniture Experts And A
                     Highly Experienced Production & Design Team. Our Priority Is To Provide The Utmost Comfort, Value For Money And In Vogue Colours And Designs To Our Customer. Febonic Will
                     Be Versatile In The Use Of Materials And Develop Products With Smart Features That Would Enhance Usability.</p>
