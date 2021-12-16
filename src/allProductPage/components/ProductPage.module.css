@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainDiv {
+  width: 406px;
+  height: 360px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  background: #ffffff;
+  position: relative;
+}
+
+.imageDiv {
+  width: 374px;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+.detailsDiv {
+  width: 374px;
+  height: 106px;
+  /* border: 1px solid black; */
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  width: 374px;
+  height: 200px;
+  transition: 0.5s all ease-in-out;
+  margin-top: 16px;
+}
+.image:hover {
+  transform: scale(1.07);
+}
+.sofaname {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+.sofaname:hover {
+  color: #f16521;
+}
+.brandandwishlistdiv {
+  width: 374px;
+  height: 24px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.brandname {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #707070;
+  margin-bottom: 5px;
+}
+.wishlist {
+  width: 16px;
+  height: 16px;
+}
+.wishlist:hover {
+  color: #f16521;
+}
+
+.price {
+  height: 18px;
+  width: 374px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.discountprice {
+  margin-left: 14px;
+  text-decoration: line-through;
+}
+
+.savingInfo {
+  height: 18px;
+  width: 374px;
+  /* border: 1px solid black; */
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+  letter-spacing: 0.06em;
+  padding: 2px 0px;
+}
+.addCartDiv {
+  width: 406px;
+  height: 45px;
+  background-color: white;
+  opacity: 0.4;
+  position: absolute;
+  top: 195px;
+  display: none;
+}
+
+.cartbutton {
+  width: 120px;
+  height: 40px;
+  border-radius: 0px;
+  border: 1px solid black;
+  color: black;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.mainDiv:hover .addCartDiv {
+  display: block;
+}

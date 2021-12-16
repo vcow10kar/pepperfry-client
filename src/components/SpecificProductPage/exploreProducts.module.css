@@ -1,0 +1,356 @@
+.fromPopularBrands {
+    min-width: 238px;
+    height: 425px;
+    text-align: left;
+    padding: 21px 44px;
+    background-color: #FFFFFF;
+}
+
+.fromPopularBrands p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.fromPopularBrands > img {
+    width: 41px;
+    height: 41px;
+    margin-bottom: 18px;
+}
+
+.popularBrandHeader {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: left;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 36px;
+}
+
+.popularHeaders {
+    margin-top: 36px;
+}
+
+.popularHeaders > p {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.exploreOptionsDiv {
+    background-color: #F3F5F7;
+}
+
+.exploreMoreFromFurniture {
+    max-width: 787px;
+    text-align: left;
+    min-height: 425px;
+    margin: 0px;
+    padding: 0px;
+    padding: 21px 44px;
+    background-color: #FFFFFF;
+    /* margin: auto; */
+}
+
+.exploreMoreFromFurnitureFlex {
+    width: 100%;
+    min-width: 238px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 70px; */
+    justify-content: space-between;
+}
+
+.explorePopularHeaders {
+    min-width: 140px;   
+    margin-top: 0px;
+}
+
+.explorePopularHeaders > p {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.displayFlex {
+    /* width: 100%; */
+    max-width: 1085px;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: space-between;
+}
+
+.similarProductCard {
+    width: 256px;
+    padding: 12px 5px;
+    background-color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+}
+
+.similarProductsHeader {
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.imgLinkDiv {
+    display: inline-block;
+    width: 246px;
+    height: 262px;
+    overflow: hidden;
+}
+
+.similarImgLink {
+    display: block;
+    transition: transform .9s;   /* smoother zoom */
+    /* width: 100%;
+    height: 100%; */
+}
+
+.similarProductCard:hover .similarImgLink{
+    transform: scale(1.08);
+    transform-origin: 50% 50%;
+}
+
+.similarProductsCardName {
+    font-family:'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    color: #707070;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 6px;
+}
+
+.similarProductCardPricesFlex {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.similarProductCardPricesFlex > p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.current_price {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #000000; 
+}
+
+.original_price {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #707070;
+    text-decoration: line-through;
+}
+
+.similarProductsDiv {
+    min-width: 266px;  
+    width: 100%; 
+    background-color: #F3F5F7;
+    margin: auto;
+}
+
+.similarProductsDivContainer {
+    max-width: 1085px;
+    min-width: 256px;  
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.similarProductsDivContainerFlex {
+    min-width: 256px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    /* gap: 40px; */
+}
+
+.moreProductCard {
+    max-width: 346px;
+    padding: 5px 5px;
+    background-color: #FFFFFF;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.moreProductsHeader {
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.moreImgLinkDiv {
+    display: inline-block;
+    width: 338px;
+    height: 187px;
+    overflow: hidden;
+}
+
+.moreImgLink {
+    display: block;
+    transition: transform .9s;   /* smoother zoom */
+    /* width: 100%;
+    height: 100%; */
+}
+
+.moreProductCard:hover .moreImgLink{
+    transform: scale(1.08);
+    transform-origin: 50% 50%;
+}
+
+.moreProductsCardName {
+    font-family:'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    color: #707070;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 6px;
+}
+
+.moreProductCardPricesFlex {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.moreProductCardPricesFlex > p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.moreProductsDiv {
+    max-width: 1085px;
+    min-width: 256px;  
+    width: 100%; 
+    background-color: #F3F5F7;
+    margin: auto;
+}
+
+.moreProductsDivContainer {
+    max-width: 1085px;
+    min-width: 346px;  
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.moreProductsDivContainerFlex {
+    min-width: 256px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+.styleGuru {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #707070;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 6px;
+}
+
+.styleGuruName {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #707070;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 6px;
+}
+
+.brandDescription {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    text-align: left;
+    letter-spacing: 0.06em;
+    color: #707070;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 24px;
+}
