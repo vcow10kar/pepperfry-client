@@ -18,7 +18,7 @@ function Footer() {
             <p>Customers reviews</p>
           </div>
           <div className={styles.subdiv12}>
-            <h7>Partners</h7>
+            <h6>Partners</h6>
             <p>Become a franchise</p>
             <p>Design for us</p>
             <p>Pepperfry marketplace policies</p>
@@ -30,7 +30,7 @@ function Footer() {
             <p>Corporate enquiries</p>
           </div>
           <div className={styles.subdiv13}>
-            <h7>NEED HELP?</h7>
+            <h6>NEED HELP?</h6>
             <p>Contact us</p>
             <p>Return & refund</p>
             <p>Track your order</p>
