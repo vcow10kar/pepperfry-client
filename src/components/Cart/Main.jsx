@@ -9,7 +9,7 @@ export const Main = () => {
         <div className={styles.outer_most_div}>
             <NavbarCart />
             <div className={styles.inner_div}>
-            <CardHolder />
+                <CardHolder />
                 <ItemDetails />
             </div>
         </div>

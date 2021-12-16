@@ -1,9 +1,15 @@
-.nav{
-    position: absolute;
-    display: flex;
+.navParent {
     width: 100%;
+    box-shadow: 0px 4px 0px #E7E7E7;
+}
+
+.nav{
+    /* position: absolute; */
+    display: flex;
+    width: 1085px;
     height: 72px;
-    border-bottom: 3px solid rgba(195, 193, 193, 0.712);
+    justify-content: space-between;
+    margin: auto;
 }
 .web_img{
     max-width: 180px;
@@ -11,11 +17,15 @@
     margin-top: 17px;
     display: flex;
     flex-direction: row;
-    margin-left: 178px;
+    /* margin-left: 178px; */
+}
+
+.breadcrumbDiv {
+    display: flex;
 }
 .cart{
      margin-top: 26px;
-     margin-left: 178px;
+     /* margin-left: 178px; */
      font-weight: 400;
      font-size: 14px;
      letter-spacing: 0.06em;
@@ -37,10 +47,10 @@
 
 }
 .bell{
-    width: 16px;
-    height: 14px;
+    width: 24px;
+    height: 24px;
     margin-top: 27px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
 .bell_1{
     width: 4px;
