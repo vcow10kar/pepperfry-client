@@ -1,10 +1,9 @@
 import {createTheme} from '@mui/material';
 
 const theme = createTheme({
-    type: 'light',
     palette: {
         primary: {
-            main: '#f16521'
+            main: '#F16521'
         }
     },
 
@@ -19,7 +18,13 @@ const theme = createTheme({
                     lineHeight: '24px',
                     fontWeight: '500',
                     borderRadius: '2px',
+                    fontFamily: 'Fira Sans, sans-serif',
+
+                    '&:hover': {
+                        backgroundColor: '#FF7634'
+                    }
                 }
+
             }
         }
     }

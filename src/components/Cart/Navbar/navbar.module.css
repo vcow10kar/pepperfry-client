@@ -1,0 +1,50 @@
+.nav{
+    position: absolute;
+    display: flex;
+    width: 1440px;
+    height: 72px;
+    border-bottom: 3px solid rgba(195, 193, 193, 0.712);
+}
+.web_img{
+    width: 180px;
+    height: 38px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 178px;
+}
+.cart{
+     margin-top: 26px;
+     margin-left: 178px;
+     font-weight: 400;
+     font-size: 14px;
+     letter-spacing: 0.06em;
+     color: #F16521;
+}
+.del{
+    color: #707070;
+    margin-top: 27px;
+     font-weight: 400;
+     font-size: 14px;
+     letter-spacing: 0.06em;
+}
+.payment{
+    color: #707070;
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+
+}
+.bell{
+    width: 16px;
+    height: 14px;
+    margin-top: 27px;
+    margin-left: 300px;
+}
+.bell_1{
+    width: 4px;
+    margin-top: 16px;
+    margin-left: -10px;
+
+}

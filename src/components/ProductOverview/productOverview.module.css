@@ -1,0 +1,109 @@
+.big_cont{
+    border:2px solid #9A9A9A;
+    max-width: 1085px;
+    height:292px;
+    padding: 10px;
+    border-radius: 0px 6px 6px 6px;
+}
+
+.overview{
+    font-family: 'Fira Sans', sans-serif;
+    margin-top:114px;
+    text-align: start;
+    padding:0px 4px;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+.cont{
+    max-width: 1085px;
+    text-align: start;
+    margin: 20px auto;
+}
+
+.content{
+    max-width:1082px;
+    font-family: 'Fira Sans', sans-serif;
+    height:32px;
+    text-align: start;
+    padding:0px 4px;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 6%;
+}
+
+.first{
+    border-top: 2px solid #9A9A9A;
+    border-left: 2px solid #9A9A9A;
+    border-right: 2px solid #9A9A9A;
+    max-width: 71px;
+    height: 18px;
+    padding: 8px;
+    padding-bottom: 17px;
+    border-radius: 4px 4px 0px 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 6%;
+    margin-top: -7px;
+}
+
+.rest{
+    border-top: 0.5px solid #D3D2D2;
+    border-left:0.5px solid #D3D2D2;
+    border-right:0.5px solid #D3D2D2;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 3px 3px 0px 0px;
+    font-weight: 400;
+}
+.rest:hover{
+    cursor: pointer;
+}
+.first:hover{
+   cursor: pointer; 
+}
+
+.options {
+    display: flex;
+    gap: 0px;
+}
+
+.subheading2 {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 12.5px;
+}
+
+.desc {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .options {
+        display: none;
+    }
+}

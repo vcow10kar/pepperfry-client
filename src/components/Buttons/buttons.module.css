@@ -1,0 +1,22 @@
+.addToCart {
+    background-color: #F16521;
+    width: 262px;
+    outline: none !important;
+    border: 0px;
+    border-radius: 2px;
+    height: 48px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.addToCart:hover {
+    background-color: #FF7634;
+    cursor: pointer;
+}
