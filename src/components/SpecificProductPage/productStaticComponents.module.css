@@ -185,7 +185,7 @@
 } */
 
 .deliveryPoints {
-    margin-left: 20px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
