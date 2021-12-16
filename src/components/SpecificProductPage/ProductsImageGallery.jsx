@@ -1,23 +1,18 @@
 import { useState, useRef } from "react";
 import Carousel from "react-elastic-carousel";
-import styled from "styled-components";
-
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   root: {
     "& .rec.rec-arrow": {
-      color: "#19686B",
       boxShadow: "none",
       fontSize: "10px",
       border: "1px solid #E7E7E7",
-
-      /* padding: 0; */
       width: "24px",
       height: "24px",
       minWidth: "24px",
-      lineHeight: "22px",
-      backgroundColor: "#EEEEEE",
+      lineHeight: "24px",
+      backgroundColor: "white",
       color: "#4A4A4A"
     },
     "& .rec.rec-arrow:hover": {

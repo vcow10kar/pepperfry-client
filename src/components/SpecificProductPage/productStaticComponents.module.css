@@ -7,8 +7,8 @@
 .offerDiv {
     padding: 21px 18px 12px 21px;
     border: 1px dashed #D0D0D0;
-    width: 438px;
-    min-width: 333px;
+    /* width: 400px; */
+    min-width: 390px;
 }
 
 .eachOffer {
@@ -192,8 +192,8 @@
 }
 
 .displayEMIWarrantyFlex {
-    min-width: 333px;
-    max-width: 573px;
+    min-width: 441px;
+    max-width: 532px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -217,7 +217,7 @@
 }
 
 .displayDivFlex p {
-    width: 100px;
+    width: 90px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -249,6 +249,7 @@
     display: flex;
     align-items: left;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .christmasPromo > img {

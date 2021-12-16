@@ -1,8 +1,9 @@
 .fromPopularBrands {
-    width: 238px;
+    min-width: 238px;
     height: 425px;
     text-align: left;
     padding: 21px 44px;
+    background-color: #FFFFFF;
 }
 
 .fromPopularBrands p {
@@ -26,6 +27,8 @@
     align-items: left;
     letter-spacing: 0.06em;
     color: #000000;
+    padding: 0px;
+    margin: 0px;
     margin-bottom: 36px;
 }
 
@@ -46,15 +49,27 @@
     margin-bottom: 16px;
 }
 
+.exploreOptionsDiv {
+    background-color: #F3F5F7;
+}
+
 .exploreMoreFromFurniture {
+    max-width: 787px;
     text-align: left;
+    min-height: 425px;
+    margin: 0px;
+    padding: 0px;
     padding: 21px 44px;
+    background-color: #FFFFFF;
+    /* margin: auto; */
 }
 
 .exploreMoreFromFurnitureFlex {
-    max-width: 787px;
+    width: 100%;
+    min-width: 238px;
     display: flex;
     flex-wrap: wrap;
+    /* gap: 70px; */
     justify-content: space-between;
 }
 
@@ -73,11 +88,20 @@
     align-items: center;
     letter-spacing: 0.06em;
     color: #000000;
+    padding: 0px;
+    margin: 0px;
     margin-bottom: 16px;
 }
 
 .displayFlex {
+    /* width: 100%; */
+    max-width: 1085px;
+    margin: 0px auto;
+    padding: 0px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: space-between;
 }
 
 .similarProductCard {
@@ -155,7 +179,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    color: #000000;
+    color: #000000; 
 }
 
 .original_price {
@@ -179,7 +203,7 @@
 }
 
 .similarProductsDivContainer {
-    max-width: 1186px;
+    max-width: 1085px;
     min-width: 256px;  
     margin: auto;
     padding: 20px 0px;
@@ -188,17 +212,18 @@
 .similarProductsDivContainerFlex {
     min-width: 256px;  
     display: flex;
-    justify-content: space-evenly;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    margin: 0px auto;
+    /* gap: 40px; */
 }
 
 .moreProductCard {
-    width: 346px;
-    padding: 12px 5px;
+    max-width: 346px;
+    padding: 5px 5px;
     background-color: #FFFFFF;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
 }
 
@@ -250,7 +275,7 @@
 
 .moreProductCardPricesFlex {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     justify-content: center;
     margin-top: 4px;
 }
@@ -261,26 +286,28 @@
 }
 
 .moreProductsDiv {
-    min-width: 266px;  
+    max-width: 1085px;
+    min-width: 256px;  
     width: 100%; 
     background-color: #F3F5F7;
     margin: auto;
 }
 
 .moreProductsDivContainer {
-    max-width: 1186px;
-    min-width: 256px;  
+    max-width: 1085px;
+    min-width: 346px;  
     margin: auto;
     padding: 20px 0px;
+    align-items: center;
 }
 
 .moreProductsDivContainerFlex {
     min-width: 256px;  
     display: flex;
-    justify-content: space-evenly;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 56px;
+    margin: 0px auto;
 }
 
 .styleGuru {

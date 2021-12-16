@@ -1,9 +1,10 @@
-import {ProductHeader, ProductDetails, ProductColorVariants, ProductQuantity} from "./ProductComponents";
+import { ProductHeader, ProductDetails, ProductColorVariants, ProductQuantity } from "./ProductComponents";
 import { BankOffers, Delivery, EMIWarranty, ChristmasPromo } from "./ProductStaticComponents";
-import {ExploreOptions, SimilarProductsDiv, MoreProductsDiv} from './ExploreProducts';
+import { ExploreOptions, SimilarProductsDiv, MoreProductsDiv } from './ExploreProducts';
 import { ProductOverview } from "../ProductOverview/ProductOverview";
 import ProductsImageGallery from "./ProductsImageGallery";
 import { useEffect } from "react";
+import styles from './specificProductPage.module.css';
 
 const SpecificProductPage = () => {
     const data = {
@@ -42,44 +43,51 @@ const SpecificProductPage = () => {
             }
         ],
         discount_percentage: 55
-        } ;
+    };
 
-        useEffect(() => {
-            document.title = `${data.name} | pepperfry`;
-        }, []);
+    useEffect(() => {
+        document.title = `${data.name} | pepperfry`;
+    }, []);
 
-        
+
 
     console.log(data);
-return (
-    <div>
+    return (
+        <div className={styles.specificProductPage}>
 
-        <ProductsImageGallery data = {data.imagesArray}/>
-        <ProductHeader data = {data}/>
-        <ProductDetails data = {data}/>
+            <div className={styles.productsInformation}>
+                <div>
+                    <ProductsImageGallery data={data.imagesArray} />
 
-        <ProductColorVariants data = {data}/>
+                </div>
 
-        <BankOffers/>
+                <div className={styles.productsInformationText}>
+                    <ProductHeader data={data} />
 
-        <EMIWarranty/>
+                    <ChristmasPromo />
+                    <EMIWarranty />
+                    <ProductColorVariants data={data} />
+                    <BankOffers />
+                    <ProductQuantity />
+                    <Delivery />
+                    <ProductDetails data={data} />
+                </div>
+            </div>
 
-        <ProductQuantity/>
 
-        <Delivery/>
+            <SimilarProductsDiv />
 
-       <ChristmasPromo/>
+            <ProductOverview />
 
-        <ProductOverview/>
+            <div style = {{backgroundColor: '#F3F5F7'}}>
+                <MoreProductsDiv />
 
-        <ExploreOptions/>
+                <ExploreOptions />
+            </div>
 
-        <SimilarProductsDiv/>
 
-        <MoreProductsDiv/>
-        
-    </div>
-)
+        </div>
+    )
 }
 
 export default SpecificProductPage;

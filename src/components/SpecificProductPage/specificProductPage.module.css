@@ -1,0 +1,22 @@
+.specificProductPage {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.productsInformation {
+    margin: auto;
+    max-width: 1085px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productsInformationText {
+    max-width: 533px;
+}
+
+.exploreDiv {
+    justify-content: center;
+}
