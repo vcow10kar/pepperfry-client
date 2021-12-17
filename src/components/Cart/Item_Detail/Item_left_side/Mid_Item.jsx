@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './mid_item.module.css';
-import { updateCartItem } from '../../../../Redux/Cart/actions';
+import { updateCartItem, deleteItem } from '../../../../Redux/Cart/actions';
 import { useDispatch } from 'react-redux';
 
 export const Mid_item = ({data}) => {
@@ -16,12 +16,26 @@ export const Mid_item = ({data}) => {
     }
 
     const handleSub = () => {
-        if (count == 0) {
-            return;
-        }
+        
         setCount(count - 1);
         dispatch(updateCartItem(null, data.product, count - 1));
+
+        // if(count < 2) {
+        //     console.log('Count is zero...');
+        //     dispatch(deleteItem(null, data.product));
+        // }
     }
+
+    const checkCount = () => {
+        if(count < 1) {
+            dispatch(deleteItem(null, data.product));
+        }
+    }
+
+    useEffect(() => {
+        checkCount();
+    }, [count])
+
     return (
         <div className={styles.quantity}>
             <div className={styles.counter}>
@@ -36,7 +50,7 @@ export const Mid_item = ({data}) => {
             </div>
                 <div className={styles.price}>
                         <div className={styles.curr}>₹ {data.product.price * count}</div>
-                        <div className={styles.actualcurr}>₹ {currentPrice}</div>
+                        <div className={styles.actualcurr}>₹ {currentPrice * count}</div>
                 </div>
           
 

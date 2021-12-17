@@ -16,16 +16,9 @@
     
 }
 .m{
-<<<<<<< HEAD:src/components/DeliveryPage/CartCard/CartCard.module.css
-    position: absolute;
-    left: 914px;
-    right: 178px;
-    /* top: 95px; */
-=======
     left: 914px;
     right: 178px;
     margin-top: 8px;
->>>>>>> cc5d5e9eee5155af68438c369cb557a067bb2fcb:src/components/Cart/CartPrice/CartPrice.module.css
     display: flex;
     flex-direction: column;
     align-items: flex-start;

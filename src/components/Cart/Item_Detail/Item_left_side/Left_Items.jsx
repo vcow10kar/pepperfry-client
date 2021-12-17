@@ -1,7 +1,6 @@
 import styles from './left_items.module.css';
 
 export const Left_Items = ({data}) => {
-    console.log(data);
     return (
         <div className={styles.parent_div}>
             <img className={styles.image}
