@@ -38,7 +38,7 @@ function SearchNavbar() {
           src="https://ii1.pepperfry.com/images/svg/pf_logo_nov_2017.svg"
           alt="pepperfry logo"
         />
-        <div></div>
+
         <div className={styles.searchDiv}>
           <input
             className={styles.searchBox}
