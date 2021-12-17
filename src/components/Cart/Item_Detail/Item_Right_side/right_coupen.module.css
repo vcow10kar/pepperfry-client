@@ -1,0 +1,32 @@
+.topBorder_dist {
+  display: flex;
+  width: 349px;
+  margin-top: 8px;
+  border: 0.5px solid gray;
+  padding: 0px 11px;
+}
+.distIcons {
+  width: 20px;
+  height: 24px;
+  margin: 5px 0px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.coupen {
+  width: 280px;
+  height: 18px;
+  color: #707070;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+  align-items: flex-start;
+}
+
+
+
+.arrow_svg:hover {
+  cursor: pointer;
+}

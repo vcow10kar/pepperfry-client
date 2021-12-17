@@ -1,0 +1,23 @@
+.dustbin {
+  display: flex;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: -25px;
+}
+.icon:hover {
+  cursor: pointer;
+  fill: red;
+}
+.whishlist {
+  width: 16px;
+  height: 16px;
+  margin-top: 12px;
+  margin-left: 22px;
+}
+.whishlist:hover {
+  cursor: pointer;
+  color: #f16521;
+}

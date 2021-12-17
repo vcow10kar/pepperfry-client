@@ -1,0 +1,33 @@
+body{
+    margin-left:25%;
+    margin-top:5px;
+}
+
+.topBorder {
+  width: 349px;
+  max-height: 82px;
+  border: 0.5px solid gray;
+  margin-bottom: 8px;
+  padding: 20px 10px;
+}
+.login {
+  width: 329px;
+  height: 18px;
+  font-size: 14px;
+  text-align: start;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 6px;
+  word-spacing: 00.06em;
+}
+.lines {
+  text-align: start;
+  margin: 0px;
+  width: 329px;
+  height: 16px;
+  color: #707070;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 00.06em;
+}
