@@ -1,17 +1,45 @@
+import { useEffect, useState } from "react"
+import { useSelector } from "react-redux";
 import styles from "./CartPrice.module.css"
 
 
-export const CartPrice = ({ data }) => {
+export const CartPrice = ({data}) => {
+
+    // const [cart, setCart] = useState(data);
+    const [cartValue, setCartValue] = useState(0);
+    const [discount, setDiscount] = useState(0);
+    const [totalValue, setTotalValue] = useState(0);
+
+    const getPriceDetails = () => {
+        let totalPrice = 0;
+        let discountPrice = 0;
+        let totalVal = 0;
+
+        for(let i = 0; i < data.length; i++) {
+            const actualPrice = data[i].product.price * data[i].quantity;
+            totalPrice += actualPrice
+            discountPrice += (actualPrice - Math.floor(actualPrice * (data[i].product.discount_percentage / 100)));
+        }
+        totalVal = totalPrice - discountPrice + 99;
+
+        setCartValue(totalPrice);
+        setDiscount(discountPrice);
+        setTotalValue(totalVal);
+    }
+
+    useEffect(() => {
+        getPriceDetails();
+    }, data);
 
     return <div className={styles.m}>
         <div className={styles.card}>
             <div className={styles.cardDisplay}>
                 <div>Cart Value</div>
-                <div>₹{ data.product.price * data.quantity}</div>
+                <div>₹ {cartValue}</div>
             </div>
             <div className={styles.cardDisplay}>
                 <div style={{color:"green"}}>Retail Value</div>
-                <div>(-)₹{Math.floor((data.product.price * data.quantity) - (Math.floor((data.product.price) * (data.product.discount_percentage / 100))) * data.quantity)}</div>
+                <div>(-)₹ {discount}</div>
             </div>
 
             <div className={styles.cardDisplay}>
@@ -25,7 +53,7 @@ export const CartPrice = ({ data }) => {
         <div className={styles.card1} >
             <div>Total</div>
             <div>
-                <div className={styles.totalPrice}>₹{(Math.floor((data.product.price) * (data.product.discount_percentage / 100))) * data.quantity }</div>
+                <div className={styles.totalPrice}>₹{totalValue}</div>
                 <div style={{ color: "#707070" }}>(Inclusive of all taxes)</div>
             </div>
         </div>
