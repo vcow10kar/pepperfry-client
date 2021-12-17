@@ -1,0 +1,57 @@
+.quantity {
+  width: 276.5px;
+  height: 139px;
+  position: static;
+  margin-top: 40px;
+  padding: 10px 8px 10px 0px;
+  border: 1px solid black;
+}
+
+.counter {
+display: flex;
+  width: 90px;
+  /* border: 1px solid black; */
+  height: 40px;
+  padding: 0px 16px 0px 16px;
+  align-items: center;
+}
+.sub {
+    margin: 0px;
+  margin-top: 5px;
+  border: none;
+  background: white;
+}
+.count_box {
+  width: 45px;
+  border: 0.05px solid gray;
+  height: 16px;
+  margin-top: 2px;
+  margin-left: 17px;
+  padding: 12px 14px;
+  border: 1px solid black;
+}
+.add {
+  margin-left: 11px;
+  margin-top: 5px;
+  background: white;
+  border: none;
+}
+.price {
+  width: 60px;
+  height: 40px;
+  margin-left: 35px;
+  margin-top: 29px;
+}
+.curr {
+  font-size: small;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+.actualcurr {
+  color: #f16521;
+  width: 58px;
+  height: 18px;
+  margin-left: 1px;
+  font-weight: 400;
+  font-size: 14px;
+}

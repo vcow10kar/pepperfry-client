@@ -1,9 +1,10 @@
 .fromPopularBrands {
     min-width: 238px;
-    height: 425px;
+    /* height: 425px; */
     text-align: left;
     padding: 21px 44px;
     background-color: #FFFFFF;
+    box-shadow: -2px 0px 0px #E7E7E7;
 }
 
 .fromPopularBrands p {
@@ -30,6 +31,7 @@
     padding: 0px;
     margin: 0px;
     margin-bottom: 36px;
+    margin-top: 16px;
 }
 
 .popularHeaders {
@@ -56,7 +58,7 @@
 .exploreMoreFromFurniture {
     max-width: 787px;
     text-align: left;
-    min-height: 425px;
+    /* min-height: 425px; */
     margin: 0px;
     padding: 0px;
     padding: 21px 44px;
@@ -69,12 +71,12 @@
     min-width: 238px;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 70px; */
+    gap: 45px;
     justify-content: space-between;
 }
 
 .explorePopularHeaders {
-    min-width: 140px;   
+    min-width: 104px;   
     margin-top: 0px;
 }
 
@@ -100,6 +102,7 @@
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #FFFFFF;
     gap: 70px;
     justify-content: space-between;
 }

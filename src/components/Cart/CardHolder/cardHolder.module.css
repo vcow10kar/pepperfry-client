@@ -70,5 +70,8 @@ border-radius: 0px;
     color: white;
     margin-left: 0px;
     margin-top: 0px;
-    
+    border: none;
+}
+.btn:hover{
+cursor: pointer;
 }
