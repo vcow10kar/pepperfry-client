@@ -8,8 +8,9 @@ import { PaymentsPage } from './components/PaymentsPage/Main';
 function App() {
   return (
     <div className="App">
-      <SearchNavbar/>
-      <AppRoutes/>
+      {/* <SearchNavbar/>
+      <AppRoutes/> */}
+      <PaymentsPage/>
     </div>
   );
 }

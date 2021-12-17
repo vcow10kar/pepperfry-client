@@ -8,7 +8,7 @@ import visaCard from "../../deliveryAddressPage/footerAssets/visa.svg"
 import rupay from "../../deliveryAddressPage/footerAssets/rupay.svg"
 import masteroRed from "../../deliveryAddressPage/footerAssets/redYellow.svg"
 import masteroBlue from "../../deliveryAddressPage/footerAssets/blueRed.svg"
-import { ButtonsDiv } from "../../Buttons/Buttons"
+import { DebitCardPayments } from "./DebitCard"
 
 
 export const PaymentsCard = () => {
@@ -58,31 +58,8 @@ export const PaymentsCard = () => {
                     <div>INTERNATIONAL CARDS</div>
                 </button>
             </div>
-            <div className={styles.displayFlexColumn}>
 
-                <div className={styles.font}>CHOOSE YOUR DEBIT CARD TYPE</div>
-
-                <div >
-                    <div className={styles.displayFlexRow}>
-                        <div style={{marginRight:'40px'}}> <Box card={masteroRed} /></div>
-                        <div> <Box card={rupay} /></div>
-                   
-                    </div>
-                    <div className={styles.displayFlexRow}>
-                        <div style={{marginRight:'40px'}}> <Box card={visaCard} /></div>
-                        <div> <Box card={masteroBlue} /></div>
-                    </div>
-                    
-                    
-                </div>
-
-                <div>
-                    <button className={styles.button}>PROCEED TO PAY ₹48,999 </button>
-                </div>
-
-                <div className={styles.light}>Note : You will be asked to enter your card details  on
-                    proceeding with the selected payment options.</div>
-            </div>
+            <DebitCardPayments/>
 
         </div>
     </div>

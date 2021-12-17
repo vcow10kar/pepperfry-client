@@ -3,7 +3,7 @@ import pci from "../../deliveryAddressPage/footerAssets/pci.svg"
 import verified from "../../deliveryAddressPage/footerAssets/verified.svg"
 
 export const CartCard = () => {
-    return <div className={styles.m}>
+    return <div className={styles.mainDiv}>
         <div className={styles.card}>
             <div className={styles.cardDisplay}>
                 <div>Cart Value</div>

@@ -164,7 +164,7 @@
 }
 
 .s3boxes{
-    height: 48px;
+    height: 36px;
     width: 434px;
     /* border: 1px solid black; */
     margin-bottom: 16px;
@@ -187,7 +187,7 @@
 }
 
 .s2boxes{
-    height: 48px;
+    height: 36px;
     width: 598px;
     /* border: 1px solid black; */
     display: flex;
@@ -220,5 +220,5 @@ input[type="checkbox"]{
 
 input[name="email"]{
     width: 238px;
-    height: 48px;
+    height: 36px;
 }
