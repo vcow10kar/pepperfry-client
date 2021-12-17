@@ -1,13 +1,13 @@
 
 .topBorder {
-  width: 349px;
+  max-width: 300px;
   max-height: 82px;
-   border: 1px solid #E5E5E5;;
+  border: 1px solid #E5E5E5;;
   margin-bottom: 8px;
   padding: 20px 10px;
 }
 .login {
-  width: 329px;
+  max-width: 300px;
   height: 18px;
   font-size: 14px;
   text-align: start;
@@ -19,7 +19,7 @@
 .lines {
   text-align: start;
   margin: 0px;
-  width: 329px;
+  width: 300px;
   height: 16px;
   color: #707070;
   font-weight: 500;
