@@ -16,7 +16,6 @@ export const Main = () => {
             <div className={styles.contents}>
             <div className={styles.inner_div}>
                 <CardHolder />
-                {/* <ItemDetails /> */}
 
                 <div>
                     {cart.length > 0 ?
@@ -31,8 +30,19 @@ export const Main = () => {
 
                     </div>
                 </div>
-                <RightParent />
+                <div>
+                    {cart.length > 0 ?
 
+                        cart.map(item => {
+                            return <RightParent data={item} />
+                        })
+                        :
+
+                        <h2>Cart is empty!</h2>
+                    }
+
+                </div>
+                    
                 
             </div>
             

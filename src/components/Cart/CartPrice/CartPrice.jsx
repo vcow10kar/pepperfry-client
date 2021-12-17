@@ -1,15 +1,17 @@
 import styles from "./CartPrice.module.css"
 
-export const CartPrice = () => {
+
+export const CartPrice = ({ data }) => {
+
     return <div className={styles.m}>
         <div className={styles.card}>
             <div className={styles.cardDisplay}>
                 <div>Cart Value</div>
-                <div>₹48,999</div>
+                <div>₹{ data.product.price * data.quantity}</div>
             </div>
             <div className={styles.cardDisplay}>
                 <div style={{color:"green"}}>Retail Value</div>
-                <div>(-)₹2,300</div>
+                <div>(-)₹{Math.floor((data.product.price * data.quantity) - (Math.floor((data.product.price) * (data.product.discount_percentage / 100))) * data.quantity)}</div>
             </div>
 
             <div className={styles.cardDisplay}>
@@ -23,7 +25,7 @@ export const CartPrice = () => {
         <div className={styles.card1} >
             <div>Total</div>
             <div>
-                <div className={styles.totalPrice}>₹48,999</div>
+                <div className={styles.totalPrice}>₹{(Math.floor((data.product.price) * (data.product.discount_percentage / 100))) * data.quantity }</div>
                 <div style={{ color: "#707070" }}>(Inclusive of all taxes)</div>
             </div>
         </div>

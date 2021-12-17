@@ -1,6 +1,6 @@
 import { Footer } from "../deliveryAddressPage/footer.jsx"
 import { BillingCard } from "./Billing/BillingCard.jsx"
-import { CartCard } from "./CartCard/CartCard.jsx"
+import { CartCard } from "../PaymentsPage/CartCard/CartCard";
 import { Form } from "./Form/Form.jsx"
 import {NavBar} from "./Nav/Nav.jsx"
 import { OrderSummeryCard } from "./OrderSummeryCard/OrderSummeryCard.jsx"
