@@ -11,9 +11,9 @@ export const NavBar = () => {
         </div>
 
         <div>
-            <span>Cart------></span>
-            <span>Delivery & Billing Address------></span>
-            <span style = {{color: 'black'}}>Payment------></span>
+            <span>Cart------</span>
+            <span>Delivery & Billing Address------</span>
+            <span style = {{color: 'black'}}>Payment------</span>
         </div>
         <div className={styles.display}>
             {user ?

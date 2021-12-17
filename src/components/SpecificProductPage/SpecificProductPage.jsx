@@ -11,6 +11,7 @@ import axios from 'axios';
 import { useParams, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from "../../Redux/Cart/actions";
+import SearchNavbar from "../Navbar/SearchNavbar";
 
 const product = {
     name: "Classic 3 Seater Sofa in Beige Colour",
@@ -104,7 +105,7 @@ const SpecificProductPage = () => {
 
     return (
         <div className={styles.specificProductPage}>
-
+            <SearchNavbar/>
             <div className={styles.productsInformation}>
                 <div>
                     <ProductsImageGallery data={data.imagesArray} />
