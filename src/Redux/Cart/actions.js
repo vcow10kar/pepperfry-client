@@ -32,7 +32,6 @@ const getCartItems = (id, user) => (dispatch) => {
 
 const addToCart = (user, product, quantity) => dispatch => {
 
-    console.log(user, product, quantity);
     if (user === null) {
         return dispatch({
             type: ADD_TO_CART,
@@ -64,15 +63,24 @@ const addToCart = (user, product, quantity) => dispatch => {
 
 const updateCartItem = (user, product, quantity) => dispatch => {
     if(user === null) {
-        return {
+        return dispatch({
             type: UPDATE_CART,
             payload: {
                 product: product,
                 quantity: quantity
 
             }
-        }
+        });
     } 
 } 
 
-export { addToCart, getCartItems };
+const deleteItem = (user, product) => dispatch => {
+    if(user === null) {
+        return dispatch({
+            type: DELETE_FROM_CART,
+            payload: product._id
+        })
+    }
+}
+
+export { addToCart, getCartItems, updateCartItem, deleteItem };

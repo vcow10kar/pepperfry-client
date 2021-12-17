@@ -1,20 +1,26 @@
 import { useState } from 'react';
 import styles from './mid_item.module.css';
+import { updateCartItem } from '../../../../Redux/Cart/actions';
+import { useDispatch } from 'react-redux';
 
-export const Mid_item = () => {
-    const [count, setCount] = useState(1);
+export const Mid_item = ({data}) => {
+    const [count, setCount] = useState(data.quantity);
+    const [currentPrice, setCurrentPrice] = useState((Math.floor((data.product.price) * (data.product.discount_percentage / 100))) * count)
+    const savings = data.product.price - currentPrice;
+
+    let dispatch = useDispatch();
 
     const handleAdd = () => {
-        const newCount = count + 1;
-        setCount(newCount)
+        setCount(count + 1);
+        dispatch(updateCartItem(null, data.product, count + 1));
     }
 
     const handleSub = () => {
         if (count == 0) {
             return;
         }
-        const newCount = count - 1;
-        setCount(newCount)
+        setCount(count - 1);
+        dispatch(updateCartItem(null, data.product, count - 1));
     }
     return (
         <div className={styles.quantity}>
@@ -29,8 +35,8 @@ export const Mid_item = () => {
                 <button onClick={handleAdd} className={styles.add}>+</button>
             </div>
                 <div className={styles.price}>
-                        <div className={styles.curr}>₹ 48,999</div>
-                        <div className={styles.actualcurr}>₹ 46,699</div>
+                        <div className={styles.curr}>₹ {data.product.price * count}</div>
+                        <div className={styles.actualcurr}>₹ {currentPrice * count}</div>
                 </div>
           
 
