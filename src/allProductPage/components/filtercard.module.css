@@ -77,8 +77,8 @@ p {
 }
 .inputdiv {
   display: flex;
-  width: 169px;
-  height: 18px;
+  width: 140px;
+  height: 10px;
   /* border: 1px solid black; */
   align-items: center;
   font-family: "Fira Sans", sans-serif;
@@ -88,5 +88,21 @@ p {
   line-height: 18px;
   letter-spacing: 0.06em;
   color: #000000;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  height: 18px;
+  width: 24px;
+  color: #f16521;
+}
+
+input[type="checkbox"]::after {
+  color: #f16521;
+}
+
+.inputdiv p {
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 18px;
 }
