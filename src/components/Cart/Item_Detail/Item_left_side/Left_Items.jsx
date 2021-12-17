@@ -1,13 +1,13 @@
 import styles from './left_items.module.css';
 
-export const Left_Items = () => {
+export const Left_Items = ({data}) => {
+    console.log(data);
     return (
         <div className={styles.parent_div}>
             <img className={styles.image}
-                src='https://ii1.pepperfry.com/media/catalog/product/r/o/568x284/rome-3-seater-in-green-colour-by-arra-rome-3-seater-in-green-colour-by-arra-ktywsr.jpg' alt='' />
+                src= {data.product.imagesArray[0]} alt='product' />
             <div className={styles.content}>
-                <h3 className={styles.title}>Niki sofa set (3+2+1) in sea green colour by
-                    Febonic</h3>
+                <h3 className={styles.title}>{data.product.name}</h3>
                 <h4 className={styles.warrenty}>12 Months warranty, 100% Genuine</h4>
                 <div className={styles.delivery}>
                     <img className={styles.calender}

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {GET_CART, ADD_TO_CART, DELETE_FROM_CART, CART_LOADING} from './actionTypes'; 
+import { GET_CART, ADD_TO_CART, DELETE_FROM_CART, CART_LOADING, UPDATE_CART } from './actionTypes';
 
 const setCartLoading = () => {
     return {
@@ -7,26 +7,32 @@ const setCartLoading = () => {
     }
 }
 
-const getCartItems = (id) => (dispatch) => {
+const getCartItems = (id, user) => (dispatch) => {
 
     dispatch(setCartLoading());
 
-    axios.get(`http:localhost:5000/cartDetails/${id}`)
-    .then(res => {
+    if (user === null) {
         return {
             type: GET_CART,
-            payload: res.data
-        };
-    })
-    .catch(err => {
-        console.log('Error:', err);
-    })
+            payload: []
+        }
+    } else {
+        axios.get(`http:localhost:5000/cartDetails/${id}`)
+            .then(res => {
+                return {
+                    type: GET_CART,
+                    payload: res.data
+                };
+            })
+            .catch(err => {
+                console.log('Error:', err);
+            })
+    }
 }
 
 const addToCart = (user, product, quantity) => dispatch => {
 
-    console.log(user, product, quantity);
-    if(user === null) {
+    if (user === null) {
         return dispatch({
             type: ADD_TO_CART,
             payload: {
@@ -43,17 +49,38 @@ const addToCart = (user, product, quantity) => dispatch => {
                 quantity: quantity
             }
         })
-        .then(res => {
-            return {
-                type: ADD_TO_CART,
-                payload: res.data
-            }
-        })
-        .catch(err => {
-            console.log('Error:', err);
-        })
+            .then(res => {
+                return {
+                    type: ADD_TO_CART,
+                    payload: res.data
+                }
+            })
+            .catch(err => {
+                console.log('Error:', err);
+            })
     }
-    
 }
 
-export {addToCart, getCartItems};
+const updateCartItem = (user, product, quantity) => dispatch => {
+    if(user === null) {
+        return dispatch({
+            type: UPDATE_CART,
+            payload: {
+                product: product,
+                quantity: quantity
+
+            }
+        });
+    } 
+} 
+
+const deleteItem = (user, product) => dispatch => {
+    if(user === null) {
+        return dispatch({
+            type: DELETE_FROM_CART,
+            payload: product._id
+        })
+    }
+}
+
+export { addToCart, getCartItems, updateCartItem, deleteItem };

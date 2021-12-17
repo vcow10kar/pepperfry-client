@@ -70,8 +70,6 @@ const SpecificProductPage = () => {
     }
 
     const goToCart = () => {
-        console.log('Added Product to Cart!');
-
         history.push('/cart');
     }
 

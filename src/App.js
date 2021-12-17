@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <AppRoutes/>
-      <DeliveryCard/>
+      {/* <DeliveryCard/> */}
     </div>
   );
 }
