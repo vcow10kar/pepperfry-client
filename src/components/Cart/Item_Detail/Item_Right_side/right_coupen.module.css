@@ -1,9 +1,9 @@
 .topBorder_dist {
   display: flex;
-  width: 349px;
+  max-width: 300px;
   margin-top: 8px;
   border: 1px solid #E5E5E5;;
-  padding: 0px 11px;
+  padding: 10px 10px;
 }
 .distIcons {
   width: 20px;

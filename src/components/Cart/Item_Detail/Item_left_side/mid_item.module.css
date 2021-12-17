@@ -1,13 +1,13 @@
 .quantity {
-  width: 166.5px;
+  width: 93px;
   height: 139px;
-  position: static;
   padding: 10px 8px 10px 0px;
+  margin-left: 48px;
 }
 
 .counter {
 display: flex;
-  width: 90px;
+  width: 93px;
   /* border: 1px solid black; */
   height: 40px;
   padding: 0px 16px 0px 16px;
@@ -35,21 +35,21 @@ display: flex;
   border: none;
 }
 .price {
-  width: 60px;
+  width: 93px;
   height: 40px;
-  margin-left: 35px;
   margin-top: 29px;
+  margin-left: 19px;
+  text-align: center;
 }
 .curr {
   font-size: small;
   text-decoration: line-through;
   margin-bottom: 4px;
+  text-align: center;
 }
 .actualcurr {
   color: #f16521;
-  width: 58px;
   height: 18px;
-  margin-left: 1px;
   font-weight: 400;
   font-size: 14px;
 }

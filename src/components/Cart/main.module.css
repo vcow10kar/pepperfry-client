@@ -1,5 +1,12 @@
 .contents{
+    max-width: 1085px;
     display: flex;
     gap:20px;
+    margin: auto;
+}
+
+.outer_most_div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
