@@ -4,6 +4,7 @@ import { Form } from "./form"
 
 export const AddressCard = () => {
     return <div className={styles.font}>
+    
         <div className={styles.min}>
             <span>ORDER SUMMARY</span>
             <span>(1 items)<span> +</span></span>
