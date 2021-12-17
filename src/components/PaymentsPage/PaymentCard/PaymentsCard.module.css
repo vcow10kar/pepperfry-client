@@ -57,6 +57,8 @@
 
     border: 1px solid #D0D0D0;
     box-sizing: border-box;
+    display: flex;
+
 }
 
 
@@ -93,5 +95,76 @@
     text-transform: uppercase;
 
     color: #707070;
+
+}
+
+
+.displayFlexColumn{
+    height: 358px;
+    width: 424px ;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 33px;
+}
+.displayFlexRow{
+    display: flex;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.font{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.light{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    color: #9A9A9A;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 26px;
+
+}
+
+.button{
+    width: 296px;
+    height: 48px;
+    display: flex;
+    border: none;
+    background: rgba(241, 101, 33, 1);
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 
 }
