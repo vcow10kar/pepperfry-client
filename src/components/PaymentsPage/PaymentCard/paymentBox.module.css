@@ -17,3 +17,10 @@ input[type="radio"]{
     height: 70px;
     width: 70px;
 }
+
+.checked{
+
+    /* border: rgba(241, 101, 33, 1); */
+    background: rgba(241, 101, 33, 1);
+
+}

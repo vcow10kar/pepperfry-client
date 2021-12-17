@@ -16,22 +16,32 @@ export const DebitCardPayments = () =>{
     const [box4C,setB4C] = useState(false);
 
     const handleOnChange1 = ()=>{
-        setB1C(!box1C)
+        setB1C(true)
+        setB2C(false)
+        setB3C(false)
+        setB4C(false)
 
     }
 
     const handleOnChange2 = ()=>{
-        console.log(box2C);
-        setB2C(!box2C)
-        console.log(box2C);
+        setB1C(false)
+        setB2C(true)
+        setB3C(false)
+        setB4C(false)
 
     }
     const handleOnChange3 = ()=>{
-        setB3C(!box3C)
+        setB1C(false)
+        setB2C(false)
+        setB3C(true)
+        setB4C(false)
 
     }
     const handleOnChange4 = ()=>{
-        setB4C(!box4C)
+        setB1C(false)
+        setB2C(false)
+        setB3C(false)
+        setB4C(true)
 
     }
 
