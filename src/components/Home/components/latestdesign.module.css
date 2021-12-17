@@ -1,0 +1,176 @@
+* {
+  /* margin: 0px;
+  padding: 0px;
+  background-color: gray; */
+}
+
+.maindiv {
+  max-width: 1084px;
+  height: 700px;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+.bannerDiv {
+  width: 408px;
+  height: 24px;
+  text-align: left;
+  font-family: "HammersmithOne" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  margin-top: 24px;
+}
+.banner1 {
+  width: 260px;
+  height: 18px;
+  font-family: "Fira Sans" sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* identical to box height, or 129% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  /* Extended/Bear Grey */
+  color: #707070;
+  margin-top: 14px;
+}
+
+.productCard {
+  max-width: 1084px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: -8px;
+}
+
+.individualCard {
+  max-width: 348px;
+  height: 402px;
+  /* margin: 1px solid black; */
+  /* border: 1px solid black; */
+  text-align: left;
+}
+.imagediv {
+  width: 214px;
+  height: 42px;
+  margin-left: 12px;
+  margin-top: 7px;
+}
+.trait,
+.price {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+}
+
+.trait1 {
+  width: 43px;
+  height: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+.trait2 {
+  width: 279px;
+  height: 16px;
+  font-family: "Fira Sans" sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.price {
+  margin-top: 8px;
+}
+.price1 {
+  width: 145px;
+  height: 16px;
+  font-family: " Fira Sans" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+  justify-content: space-between;
+}
+.price2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.productimage {
+  width: 324px;
+  height: 218px;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.banner2 {
+  width: 324px;
+  height: 32px;
+  margin-top: 8px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+  color: #000000;
+}
+
+.popular {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+  margin-top: 8px;
+  margin-bottom: 7px;
+}
+.popular1 {
+  width: 75px;
+  height: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.popular2 {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #14a9cc;
+}
