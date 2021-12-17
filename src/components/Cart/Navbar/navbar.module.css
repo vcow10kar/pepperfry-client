@@ -5,7 +5,7 @@
 
 .nav{
     display: flex;
-    width: 1085px;
+    max-width: 1085px;
     height: 72px;
     justify-content: space-between;
     margin: auto;
@@ -56,4 +56,14 @@
     margin-top: 16px;
     margin-left: -10px;
 
+}
+
+.userName {
+    margin-top: 27px;
+}
+
+.leftDiv {
+    min-width: 180px;
+    display: flex;
+    gap: 20px;
 }

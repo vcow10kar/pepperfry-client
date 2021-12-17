@@ -65,8 +65,9 @@ const SpecificProductPage = () => {
     let dispatch = useDispatch();
 
     const handleAddToCart = () => {
+        console.log('Adding to cart - step 1');
         setCartStatus(!cartStatus);
-        dispatch(addToCart(user, data, quantity));
+        dispatch(addToCart(null, data, quantity));
     }
 
     const goToCart = () => {
@@ -99,7 +100,7 @@ const SpecificProductPage = () => {
     useEffect(() => {
         document.title = `${data.name} | pepperfry`;
         getData();
-    }, []);
+    }, [data]);
 
     return (
         <div className={styles.specificProductPage}>

@@ -1,9 +1,18 @@
 import {USER_LOADING, USER_LOGIN_SUCCESS, USER_LOGIN_ERROR} from './actionTypes';
 
+let userDetails = JSON.parse(localStorage.getItem('userDetails'));
+
+if(userDetails === null) {
+    localStorage.setItem('userDetails', JSON.stringify(null));
+    userDetails = null;
+} else {
+    userDetails = userDetails.data;
+}
+
 const initState = {
     isAuthenticated: null,
     isLoading: false,
-    user: null
+    user: userDetails
 }
 
 const reducer = (state = initState, {type, payload}) => {
@@ -20,7 +29,7 @@ const reducer = (state = initState, {type, payload}) => {
                 ...state,
                 isAuthenticated: true,
                 isLoading: false,
-                user: payload.user
+                user: JSON.parse(localStorage.getItem('userDetails'))
             }
         }
 

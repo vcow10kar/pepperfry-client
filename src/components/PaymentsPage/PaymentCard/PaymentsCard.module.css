@@ -66,9 +66,8 @@
 .payButtons{
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding-left: 8px;
-
+    justify-content: left;
     /* position: static; */
     width: 239px;
     height: 40px;
@@ -92,6 +91,11 @@
     color: rgba(241, 101, 33, 1);
     
 
+}
+
+.payButtons > img {
+    width: 16px;
+    height: 16px;
 }
 
 .dark{

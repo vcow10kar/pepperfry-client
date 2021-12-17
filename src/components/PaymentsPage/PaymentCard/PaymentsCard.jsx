@@ -15,7 +15,7 @@ import { DebitCardPayments } from "./DebitCard"
 import { useState } from "react"
 
 
-export const PaymentsCard = () => {
+export const PaymentsCard = ({data}) => {
 
     const [buttonState, setButtonState] = useState ([0,0,0,0,0,0,0,0,0])
 
@@ -32,13 +32,13 @@ export const PaymentsCard = () => {
 
     return <div className={styles.card}>
 
-        <div className={styles.card1}>
+        {/* <div className={styles.card1}>
             <div>PAYMENT</div>
             <div>
                 <div>How would you like to pay <img src={minus} alt="plus" /></div>
 
             </div>
-        </div>
+        </div> */}
 
         <div className={styles.box}>
             <div>SELECT PAYMENT METHOD</div>
@@ -49,7 +49,7 @@ export const PaymentsCard = () => {
         <div className={styles.card2}>
             <div>
                 <button className={styles.payButtons} onClick={()=>{handleOnClick(0)}}>
-                    <img src={debit} />
+                    <img src={debit} alt = "pay"/>
                     <div style={{marginLeft:"16px"}}>ATM/DEBIT CARD</div>
                 </button>
 
@@ -59,7 +59,7 @@ export const PaymentsCard = () => {
                 </button>
 
                 <button className={styles.payButtons} onClick={()=>{handleOnClick(2)}}>
-                    <img src={credit} />
+                    <img src={credit} alt = "pay" />
                     <div style={{marginLeft:"16px"}}>CREDIT card</div>
                 </button>
 
@@ -95,7 +95,7 @@ export const PaymentsCard = () => {
             </div>
 
             
-            <DebitCardPayments />
+            <DebitCardPayments data = {data} />
             
 
         </div>

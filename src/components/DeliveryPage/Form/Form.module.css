@@ -128,7 +128,6 @@
 
 .section2{
     height: 300px;
-    border: 1px solid black;
     margin-left: 24px;
     margin-right: 89px;
 
@@ -150,7 +149,6 @@
 }
 .section3{
     height: 300px;
-    border: 1px solid black;
     margin-left: 166px;
     margin-right: 111px;
     display: flex;
