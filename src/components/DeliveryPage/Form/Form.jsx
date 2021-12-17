@@ -42,6 +42,7 @@ export const Form = () => {
         country:"India"
     })
 
+
     const handleChange = (e) =>{
            const {name,value} = e.target;
         
@@ -100,23 +101,25 @@ export const Form = () => {
 
             <div className={styles.s2boxes}>
                 <div>Name</div>
-                <input type="text" name="name"  placeholder="Eg:Madhu Venkat" onChange={handleChange}/>
+                <input  class="inText" type="text" name="name"  placeholder="Eg:Madhu Venkat" onChange={handleChange}/>
+                
             </div>
-
+            <p>enter a valid Name</p>
             <div className={styles.s2boxes}>
                 <div>Mobile Number</div>
                 <input type="text" name="phoneNo" placeholder="Eg:9999888898" onChange={handleChange} />
             </div>
-
+            <p>enter a valid Number</p>
             <div className={styles.s2boxes}>
                 <div>Pincode</div>
                 <input type="text" name="pincode" placeholder="Eg:454343" onChange={handleChange}/>
             </div>
-
+            <p>enter a valid pincode</p>
             <div className={styles.s2boxes}>
                 <div>Address</div>
                 <input type="text" name="address"  placeholder="House no, building name, society, area, road, landmark" onChange={handleChange}/>
             </div>
+            <p>enter a valid Address</p>
 
         </div>
 
@@ -124,8 +127,15 @@ export const Form = () => {
 
         <div className={styles.section3}>
             <div className={styles.s3boxes}>
+                <div >
                 <input type="text" name="city" placeholder=" city"  onChange={handleChange}/>
+                <p>enter a valid city</p>
+                </div>
+                <div>
                 <input type="text" name="state" placeholder=" state"  onChange={handleChange}/>
+                <p>enter a valid state</p>
+                </div>
+                
             </div>
             <div className={styles.s3boxes}>
                 <input type="text" name="India" value=" India" disabled />
@@ -139,8 +149,7 @@ export const Form = () => {
                 <div>I want to sign up</div>
             </div>
             <div>
-                <button onClick={handleSubmit}>Save</button>
-                {/* <ButtonsDiv onClick={handleSubmit}>SAVE AND CONTINUE</ButtonsDiv> */}
+                <button className={styles.button} onClick={handleSubmit}>Save and continue</button>
             </div>
         </div>
     </div>

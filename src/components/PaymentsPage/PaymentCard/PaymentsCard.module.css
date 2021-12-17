@@ -1,9 +1,10 @@
 .card{
-    position: absolute;
+    /* position: absolute; */
     height: 489px;
-    left: 177px;
+    width: 716px;
+    /* left: 177px;
     right: 546px;
-    top: 337px;
+    top: 337px; */
 
     background: #FFFFFF;
 
@@ -11,10 +12,10 @@
     box-sizing: border-box;
 }
 .box{
-    position: absolute;
+    /* position: absolute; */
     height: 18px;
-    top: 70px;
-    left: 18px;
+    /* top: 70px;
+    left: 18px; */
     font-family: Fira Sans;
     font-style: normal;
     font-weight: bold;
@@ -24,18 +25,17 @@
     letter-spacing: 0.06em;
 
     color: #000000;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 18px;
 }
 .card1{
-    position: absolute;
+    /* position: absolute; */
     height: 46px;
-    left: 0px;
+    /* left: 0px;
     right: 1px;
-    top: 0px;
+    top: 0px; */
 
     background: #F9F9F9;
     box-shadow: inset 0px 2px 0px #FFFFFF;
@@ -47,17 +47,18 @@
 }
 
 .card2{
-    position: absolute;
+    /* position: absolute; */
     height: 358px;
-    left: 27px;
+    /* left: 27px;
     right: 28px;
-    top: 107px;
+    top: 107px; */
 
     background: #FFFFFF;
 
     border: 1px solid #D0D0D0;
     box-sizing: border-box;
     display: flex;
+    margin-left: 18px;
 
 }
 
@@ -106,7 +107,7 @@
 .displayFlexColumn{
     height: 358px;
     width: 424px ;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     padding-left: 33px;

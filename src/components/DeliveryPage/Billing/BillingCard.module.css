@@ -1,10 +1,10 @@
 .card{
-    position: absolute;
+    /* position: absolute; */
     height: 46px;
-    /* width: 716px; */
-    left: 178px;
+    width: 716px;
+    /* left: 178px;
     right: 546px;
-    top: 143px;
+    top: 143px; */
     background: #F9F9F9;
     border: 1px solid #F3F5F7;
     box-sizing: border-box;
@@ -14,4 +14,5 @@
     padding-right: 13px;
     justify-content: space-between;
     align-items: center;
+    
 }

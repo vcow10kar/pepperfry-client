@@ -17,10 +17,17 @@ import { useState } from "react"
 
 export const PaymentsCard = () => {
 
-    const [buttonState, setButtonState] = useState ([0,0,0,0,0,0,0,0,1])
+    const [buttonState, setButtonState] = useState ([0,0,0,0,0,0,0,0,0])
 
     const handleOnClick = (index)=>{
-        console.log(index);
+      
+        for(let i=0;i<9;i++){
+            buttonState[i] = 0;
+        }
+        buttonState[index] = 1;
+        setButtonState([...buttonState])
+
+        console.log(index,buttonState);
     }
 
     return <div className={styles.card}>
@@ -87,7 +94,9 @@ export const PaymentsCard = () => {
                 </button>
             </div>
 
+            
             <DebitCardPayments />
+            
 
         </div>
     </div>
