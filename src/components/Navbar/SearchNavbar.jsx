@@ -7,16 +7,29 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+import { useHistory } from "react-router-dom";
 
 function SearchNavbar() {
   const [search, setSearch] = useState([]);
 
   async function handleChange(event) {
     const { value } = event.target;
+    // let { data } = await axios.get(
+    //   `https://demo.dataverse.org/api/search?q=${value}`
+    // );
+
     let { data } = await axios.get(
-      `https://demo.dataverse.org/api/search?q=${value}`
+      `http://localhost:5000/category`
     );
-    setSearch(data.data.items);
+
+    console.log(data);
+    setSearch(data);
+  }
+
+  let history = useHistory();
+
+  const handleNavigation = (id) => {
+    history.push(`/allProducts/${id}`);
   }
 
   return (
@@ -62,7 +75,7 @@ function SearchNavbar() {
         <div className={styles.autocomplete}>
           {search?.map((el, i) => {
             return (
-              <div key={i} className={styles.autocompleteItems}>
+              <div key={i} className={styles.autocompleteItems} onClick={() => handleNavigation(el._id)}>
                 <p>{el.name}</p>
               </div>
             );
