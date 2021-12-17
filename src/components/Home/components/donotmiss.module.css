@@ -1,0 +1,104 @@
+.mainDiv {
+  max-width: 1084px;
+  height: 800px;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+.donotmissBaner1 {
+  width: 291px;
+  height: 24px;
+  font-family: "HammersmithOne" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-top: 50px;
+  color: #000000;
+}
+.offerDonotmiss {
+  width: 205px;
+  height: 18px;
+  margin-top: 14px;
+  font-family: "Fira Sans" sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* identical to box height, or 129% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  /* Extended/Bear Grey */
+  color: #707070;
+}
+
+.DmissProductDiv {
+  max-width: 1084px;
+  height: 400px;
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.indiProductCard {
+  width: 348px;
+  height: 370px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indiProductCard > img {
+  width: 348px;
+  height: 320px;
+  transition: all 0.3s ease-in-out;
+}
+
+.indiProductCard > img:hover {
+  transform: scale(1.05);
+}
+
+.prname {
+  width: 57px;
+  height: 24px;
+  font-family: "HammersmithOne", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-top: 4px;
+  margin: auto;
+}
+.prname:hover {
+  color: #f16521;
+}
+.donotmissInfo {
+  width: 111px;
+  height: 18px;
+  font-family: "Fira Sans" sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #707070;
+  margin: auto;
+  margin-left: 132px;
+  margin-top: 2px;
+}
