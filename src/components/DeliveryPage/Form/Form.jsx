@@ -2,8 +2,35 @@ import { ButtonsDiv } from "../../Buttons/Buttons"
 import styles from "./Form.module.css"
 import google from "../../deliveryAddressPage/footerAssets/google.svg"
 import facebook from "../../deliveryAddressPage/footerAssets/f.svg"
-import {useState} from "react"
+import axios from 'axios';
+import {useState} from "react";
+
 export const Form = () => {
+    const fetchUser = () => {
+        axios
+        .get("http://localhost:5000/auth/getuser", {withCredentials: true})
+        .then(res => {
+            localStorage.setItem('userDetails', JSON.stringify(res));
+        })
+        .catch(err => {
+            console.log("Not properly authenticated!");
+            console.log("Error", err);
+        })
+
+    }
+
+    const handleGoogleOAuth = () => {
+        localStorage.setItem('googleLogin', true);
+
+        const googleLoginURL = 'http://localhost:5000/auth';
+        const newWindow = window.open(
+            googleLoginURL,
+            '_self',
+            'width = 411'
+        );
+
+        fetchUser();
+    }
 
     const [formData, setFormData ] = useState({
         name:'',
@@ -14,6 +41,7 @@ export const Form = () => {
         state:"",
         country:"India"
     })
+
 
     const handleChange = (e) =>{
            const {name,value} = e.target;
@@ -42,7 +70,7 @@ export const Form = () => {
 
                 <div className={styles.dispalyS1Box3}>
 
-                    <button className={styles.s1Button}>
+                    <button className={styles.s1Button} onClick = {handleGoogleOAuth}>
                         <img src={google} alt="google" />
                         <div>SIGN IN</div>
                     </button>
@@ -73,23 +101,25 @@ export const Form = () => {
 
             <div className={styles.s2boxes}>
                 <div>Name</div>
-                <input type="text" name="name"  placeholder="Eg:Madhu Venkat" onChange={handleChange}/>
+                <input  class="inText" type="text" name="name"  placeholder="Eg:Madhu Venkat" onChange={handleChange}/>
+                
             </div>
-
+            <p>enter a valid Name</p>
             <div className={styles.s2boxes}>
                 <div>Mobile Number</div>
                 <input type="text" name="phoneNo" placeholder="Eg:9999888898" onChange={handleChange} />
             </div>
-
+            <p>enter a valid Number</p>
             <div className={styles.s2boxes}>
                 <div>Pincode</div>
                 <input type="text" name="pincode" placeholder="Eg:454343" onChange={handleChange}/>
             </div>
-
+            <p>enter a valid pincode</p>
             <div className={styles.s2boxes}>
                 <div>Address</div>
                 <input type="text" name="address"  placeholder="House no, building name, society, area, road, landmark" onChange={handleChange}/>
             </div>
+            <p>enter a valid Address</p>
 
         </div>
 
@@ -97,8 +127,15 @@ export const Form = () => {
 
         <div className={styles.section3}>
             <div className={styles.s3boxes}>
+                <div >
                 <input type="text" name="city" placeholder=" city"  onChange={handleChange}/>
+                <p>enter a valid city</p>
+                </div>
+                <div>
                 <input type="text" name="state" placeholder=" state"  onChange={handleChange}/>
+                <p>enter a valid state</p>
+                </div>
+                
             </div>
             <div className={styles.s3boxes}>
                 <input type="text" name="India" value=" India" disabled />
@@ -112,8 +149,7 @@ export const Form = () => {
                 <div>I want to sign up</div>
             </div>
             <div>
-                <button onClick={handleSubmit}>Save</button>
-                {/* <ButtonsDiv onClick={handleSubmit}>SAVE AND CONTINUE</ButtonsDiv> */}
+                <button className={styles.button} onClick={handleSubmit}>Save and continue</button>
             </div>
         </div>
     </div>

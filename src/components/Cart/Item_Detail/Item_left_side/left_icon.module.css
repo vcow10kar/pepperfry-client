@@ -1,5 +1,8 @@
 .dustbin {
   display: flex;
+  margin: 0px;
+  padding:0px;
+  margin-right: 10px;
 }
 .icon {
   width: 16px;

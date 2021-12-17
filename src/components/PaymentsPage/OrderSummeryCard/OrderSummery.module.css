@@ -1,10 +1,10 @@
 .card{
-    position: absolute;
+    /* position: absolute; */
     height: 46px;
-    /* width: 716px; */
-    left: 178px;
-    right: 546px;
-    top: 95px;
+    width: 716px;
+    /* left: 12.36%; */
+    /* right: 546px; */
+    /* top: 95px; */
     background: #F9F9F9;
     border: 1px solid #F3F5F7;
     box-sizing: border-box;

@@ -3,7 +3,7 @@
 }
 
 .btn_div {
-  width: 349px;
+  max-width: 329px;
   margin-top: 22px;
   /* border: 1px solid black; */
   margin-bottom: 15px;

@@ -5,14 +5,15 @@
 .parent_div{
     display: flex;
     gap:14px;
+    width: 276px;
 }
 .image {
   object-fit: cover;
- Width:115px;
-Height:188px;
+  Width:115px;
+  Height:188px;
 }
 .content {
-  width: 276.5px;
+  max-width : 276.5px;
   height: 188px;
   /* margin-top: 40px; */
 }
