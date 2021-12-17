@@ -1,0 +1,8 @@
+.leftParent{
+    display: flex;
+    margin-left: 178px;
+    border: 1px solid #E5E5E5;;
+    width: 716px;
+    gap:18px;
+    Padding :40px 0px 40px 20px
+}

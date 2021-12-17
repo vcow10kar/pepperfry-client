@@ -1,12 +1,8 @@
-body{
-    margin-left:25%;
-    margin-top:5px;
-}
 
 .topBorder {
   width: 349px;
   max-height: 82px;
-  border: 0.5px solid gray;
+   border: 1px solid #E5E5E5;;
   margin-bottom: 8px;
   padding: 20px 10px;
 }

@@ -36,7 +36,7 @@ export const Mid_item = ({data}) => {
             </div>
                 <div className={styles.price}>
                         <div className={styles.curr}>₹ {data.product.price * count}</div>
-                        <div className={styles.actualcurr}>₹ {currentPrice * count}</div>
+                        <div className={styles.actualcurr}>₹ {currentPrice}</div>
                 </div>
           
 
