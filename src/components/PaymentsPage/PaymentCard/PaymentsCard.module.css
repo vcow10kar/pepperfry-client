@@ -1,0 +1,97 @@
+.card{
+    position: absolute;
+    height: 489px;
+    left: 177px;
+    right: 546px;
+    top: 337px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #F3F5F7;
+    box-sizing: border-box;
+}
+.box{
+    position: absolute;
+    height: 18px;
+    top: 70px;
+    left: 18px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.card1{
+    position: absolute;
+    height: 46px;
+    left: 0px;
+    right: 1px;
+    top: 0px;
+
+    background: #F9F9F9;
+    box-shadow: inset 0px 2px 0px #FFFFFF;
+    display: flex;
+    padding-left: 18px;
+    padding-right: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card2{
+    position: absolute;
+    height: 358px;
+    left: 27px;
+    right: 28px;
+    top: 107px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+}
+
+
+.payButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    position: static;
+    width: 239px;
+    height: 40px;
+    left: 0px;
+    top: 80px;
+
+    background: #D0D0D0;
+    box-shadow: inset 0px -2px 0px #F1F1F1;
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    border: none;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #707070;
+
+}

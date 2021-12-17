@@ -1,7 +1,11 @@
 .footer{
+    position: absolute;
+    width: 100%;
     height: 320px;
+    left: 0px;
+    top: 1028px;
+
     background: #EFEFEF;
-    /* border: 1px solid black; */
 }
 
 .main_div{
