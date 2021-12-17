@@ -1,11 +1,10 @@
 .cardHolder{
     display: flex;
-    position: absolute;
     background-color: #F9F9F9;
-    width:692px;
-    border-top:0.3px solid #707070;
-    border-left:0.3px solid #707070;
-    border-right:0.3px solid #707070;
+    width:736px;
+    border-top:0.3px solid #E5E5E5;
+    border-left:0.3px solid #E5E5E5;
+    border-right:0.3px solid #E5E5E5;
     height:42px;
     margin-top: 118px;
     margin-left: 178px;
@@ -42,14 +41,14 @@ border-radius: 0px;
     gap:5px;
     flex-direction: row;
     align-items: center;
-    width: 147px;
+    width: 189px;
     height: 40px;
     margin-left: 545px;
     padding: 0px 0px 0px 0px;
 
 }
 .pincode{
-    width: 72px;
+    width: 113px;
     height: 18px;
     margin-left: 8px;
     margin-top: 2px;

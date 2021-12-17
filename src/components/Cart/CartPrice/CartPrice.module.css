@@ -4,7 +4,6 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    /* identical to box height, or 133% */
     padding-top: 10px;
     letter-spacing: 0.06em;
 }
@@ -17,16 +16,13 @@
     
 }
 .m{
-    position: absolute;
-    position: absolute;
     left: 914px;
     right: 178px;
-    top: 95px;
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 348px;
-    /* margin: auto; */
     top: 95px;
     box-sizing: border-box;
 }
@@ -44,11 +40,10 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 2px;
-
     height: 116px;
-    width: inherit;
+    width: 349px;
     background: #FFFFFF;
-
+      padding: 0px 11px;
     box-shadow: -1px -1px 0px #E7E7E7, 1px 1px 0px #E7E7E7;
     font-family: Fira Sans;
     font-style: normal;
@@ -56,7 +51,6 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.06em;
-
     color: #707070;
 
 }
@@ -65,26 +59,17 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0px;
-    padding-left: 2px;
-
+     padding: 0px 11px;
     height: 46px;
-    width: inherit;
-
+    width: 349px;
     background: #FFFFFF;
-
     box-shadow: -1px -1px 0px #E7E7E7, 1px 1px 0px #E7E7E7;
-
-
     font-family: Fira Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
     letter-spacing: 0.06em;
-
     color: #000000;
 
 }
@@ -146,3 +131,82 @@
 
     color: #000000;
 }
+.totalPrice{
+    text-align: end;
+}
+.emi_div {
+  width: 363px;
+  height: 64px;
+  padding: 8px 4px;
+   border: 1px solid #E5E5E5;;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 00.06em;
+}
+.emi_p {
+  margin: 0px;
+  color: #707070;
+  margin-top: 25px;
+  font-weight: 500;
+  text-align: start;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 00.06em;
+}
+.emi_span {
+  margin: 0px;
+  color: #14a9cc;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 00.06em;
+}
+
+.gst_starts {
+  /* border:1px solid black; */
+  margin-top: 30px;
+  height: 80px;
+  width: 348px;
+}
+.gst_inner_starts {
+  display: flex;
+  margin-top: 15px;
+  /* border:1px solid black; */
+}
+.chk {
+  margin: 0px;
+  margin-top: 5px;
+}
+.gst_content {
+  width: 330px;
+  height: 16px;
+  margin-top: 3px;
+  color: #707070;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+}
+.gst_content1 {
+  width: 330px;
+  height: 16px;
+  color: #707070;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+}
+.gst_h1 {
+  width: 330px;
+  height: 16px;
+  margin: 0px;
+  margin-left: 0px;
+  margin-top: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+}
+
