@@ -23,17 +23,22 @@ const getCartItems = (id) => (dispatch) => {
     })
 }
 
-const addToCart = (id, product, quantity) => dispatch => {
-    if(id === null) {
-        return {
+const addToCart = (user, product, quantity) => dispatch => {
+
+    console.log(user, product, quantity);
+    if(user === null) {
+        return dispatch({
             type: ADD_TO_CART,
-            payload: product
-        }
+            payload: {
+                product: product,
+                quantity: quantity
+            }
+        })
     } else {
         axios.post({
             url: `http:localhost:5000/cartDetails`,
             data: {
-                cart_id: id,
+                cart_id: user._id,
                 product_id: product.product_id,
                 quantity: quantity
             }
@@ -50,3 +55,5 @@ const addToCart = (id, product, quantity) => dispatch => {
     }
     
 }
+
+export {addToCart, getCartItems};
