@@ -2,8 +2,36 @@ import { ButtonsDiv } from "../../Buttons/Buttons"
 import styles from "./Form.module.css"
 import google from "../../deliveryAddressPage/footerAssets/google.svg"
 import facebook from "../../deliveryAddressPage/footerAssets/f.svg"
+import axios from 'axios';
 
 export const Form = () => {
+    const fetchUser = () => {
+        axios
+        .get("http://localhost:5000/auth/getuser", {withCredentials: true})
+        .then(res => {
+            localStorage.setItem('userDetails', JSON.stringify(res));
+        })
+        .catch(err => {
+            console.log("Not properly authenticated!");
+            console.log("Error", err);
+        })
+
+    }
+
+    const handleGoogleOAuth = () => {
+        localStorage.setItem('googleLogin', true);
+
+        const googleLoginURL = 'http://localhost:5000/auth';
+        const newWindow = window.open(
+            googleLoginURL,
+            '_self',
+            'width = 411'
+        );
+
+        fetchUser();
+    }
+
+    
     return <div className={styles.formCard}>
 
         <div className={styles.section1}>
@@ -18,7 +46,7 @@ export const Form = () => {
 
                 <div className={styles.dispalyS1Box3}>
 
-                    <button className={styles.s1Button}>
+                    <button className={styles.s1Button} onClick = {handleGoogleOAuth}>
                         <img src={google} alt="google" />
                         <div>SIGN IN</div>
                     </button>
