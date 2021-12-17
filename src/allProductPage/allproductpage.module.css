@@ -83,3 +83,7 @@
   background: #f3f5f7;
   margin-top: 46px;
 }
+
+a {
+  text-decoration: none;
+}
