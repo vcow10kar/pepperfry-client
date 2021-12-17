@@ -3,6 +3,7 @@ import styles from "./Form.module.css"
 import google from "../../deliveryAddressPage/footerAssets/google.svg"
 import facebook from "../../deliveryAddressPage/footerAssets/f.svg"
 import axios from 'axios';
+import {useState} from "react";
 
 export const Form = () => {
     const fetchUser = () => {
@@ -31,7 +32,29 @@ export const Form = () => {
         fetchUser();
     }
 
+    const [formData, setFormData ] = useState({
+        name:'',
+        phoneNo:"",
+        pincode:"",
+        address:"",
+        city:"",
+        state:"",
+        country:"India"
+    })
+
+    const handleChange = (e) =>{
+           const {name,value} = e.target;
+        
+           setFormData({...formData,[name]:value})
+
+    }
+
+    const handleSubmit = () =>{
+        console.log("submit");
+        console.log(formData);
+    }
     
+
     return <div className={styles.formCard}>
 
         <div className={styles.section1}>
@@ -39,7 +62,7 @@ export const Form = () => {
             <div className={styles.s1box}>
                 <div className={styles.dispalyS1Box1}>
                     <div style={{ marginRight: '69px' }}>Email</div>
-                    <input type="text" name="email" placeholder="Email" />
+                    <input type="text" name="email" placeholder="Email" onChange={handleChange}/>
                 </div>
 
                 <div className={styles.dispalyS1Box2} >or</div>
@@ -77,22 +100,22 @@ export const Form = () => {
 
             <div className={styles.s2boxes}>
                 <div>Name</div>
-                <input type="text" name="" id="" placeholder="Eg:Madhu Venkat" />
+                <input type="text" name="name"  placeholder="Eg:Madhu Venkat" onChange={handleChange}/>
             </div>
 
             <div className={styles.s2boxes}>
                 <div>Mobile Number</div>
-                <input type="text" name="" id="" placeholder="Eg:9999888898" />
+                <input type="text" name="phoneNo" placeholder="Eg:9999888898" onChange={handleChange} />
             </div>
 
             <div className={styles.s2boxes}>
                 <div>Pincode</div>
-                <input type="text" name="" id="" placeholder="Eg:454343" />
+                <input type="text" name="pincode" placeholder="Eg:454343" onChange={handleChange}/>
             </div>
 
             <div className={styles.s2boxes}>
                 <div>Address</div>
-                <input type="text" name="" id="" placeholder="House no, building name, society, area, road, landmark" />
+                <input type="text" name="address"  placeholder="House no, building name, society, area, road, landmark" onChange={handleChange}/>
             </div>
 
         </div>
@@ -101,8 +124,8 @@ export const Form = () => {
 
         <div className={styles.section3}>
             <div className={styles.s3boxes}>
-                <input type="text" name="city" placeholder=" city" />
-                <input type="text" name="state" placeholder=" state" />
+                <input type="text" name="city" placeholder=" city"  onChange={handleChange}/>
+                <input type="text" name="state" placeholder=" state"  onChange={handleChange}/>
             </div>
             <div className={styles.s3boxes}>
                 <input type="text" name="India" value=" India" disabled />
@@ -116,7 +139,8 @@ export const Form = () => {
                 <div>I want to sign up</div>
             </div>
             <div>
-                <ButtonsDiv>SAVE AND CONTINUE</ButtonsDiv>
+                <button onClick={handleSubmit}>Save</button>
+                {/* <ButtonsDiv onClick={handleSubmit}>SAVE AND CONTINUE</ButtonsDiv> */}
             </div>
         </div>
     </div>

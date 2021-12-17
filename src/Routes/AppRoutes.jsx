@@ -3,7 +3,7 @@ import SpecificProductPage  from '../components/SpecificProductPage/SpecificProd
 import {Main as Cart} from '../components/Cart/Main';
 import Home from '../components/Home/Home';
 import AllproductPage from '../allProductPage/AllproductPage';
-import { DeliveryCard } from '../components/DeliveryPage/main';
+import { DeliveryCard } from '../components/DeliveryPage/Main';
 import { PaymentsPage } from '../components/PaymentsPage/Main';
 
 const AppRoutes = () => {

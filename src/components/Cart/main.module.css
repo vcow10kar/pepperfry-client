@@ -1,5 +1,5 @@
-.inner_div{
-    width:100%;
-    margin-top:5px;
-    
+.contents{
+    display: flex;
+    gap:20px;
 }
+

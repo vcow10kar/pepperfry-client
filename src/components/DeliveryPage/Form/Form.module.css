@@ -201,7 +201,7 @@ input{
     height: inherit;
     margin-top: 0px;
     border: none;
-    filter: drop-shadow(-1px -1px 0px #E7E7E7) drop-shadow(1px 1px 0px #E7E7E7);
+    /* filter: drop-shadow(-1px -1px 0px #E7E7E7)  drop-shadow(1px 1px 0px #E7E7E7); */
     width: 477px;
 }
 

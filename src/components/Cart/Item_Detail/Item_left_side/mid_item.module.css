@@ -1,10 +1,8 @@
 .quantity {
-  width: 276.5px;
+  width: 166.5px;
   height: 139px;
   position: static;
-  margin-top: 40px;
   padding: 10px 8px 10px 0px;
-  border: 1px solid black;
 }
 
 .counter {

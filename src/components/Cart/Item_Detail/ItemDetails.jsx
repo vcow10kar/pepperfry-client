@@ -114,9 +114,9 @@ const data = [{
 
 
                     <div className={styles.topBorder_dist}>
-                     <img src="/icons/apply_discount.svg" className={styles.distIcons} />
+                     <img src="/icons/apply_discount.svg" className={styles.distIcons} alt='discount'/>
                      <p className={styles.coupen}>Apply Coupens</p>
-                     <img className={styles.arrow_svg} src='/icons/arrow.svg'/>   
+                     <img className={styles.arrow_svg} src='/icons/arrow.svg' alt='arrow'/>   
                     </div>
 
 
