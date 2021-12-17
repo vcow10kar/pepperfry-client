@@ -8,7 +8,9 @@ import { useState, useEffect } from "react";
 import styles from './specificProductPage.module.css';
 import { ButtonsDiv } from '../Buttons/Buttons';
 import axios from 'axios';
-import {  useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from "../../Redux/Cart/actions";
 
 const product = {
     name: "Classic 3 Seater Sofa in Beige Colour",
@@ -52,20 +54,22 @@ const product = {
 
 
 const SpecificProductPage = () => {
-    const {id} = useParams();
+    const { user } = useSelector(state => state.login)
+    const { id } = useParams();
     const [data, setData] = useState(product);
-    const [quantity, setQuantity] = useState(0);
-    const [cart, setCart] = useState(false);
-
+    const [quantity, setQuantity] = useState(1);
+    const [cartStatus, setCartStatus] = useState(false);
+    const [cart, setCart] = useState([]);
     let history = useHistory();
 
+    let dispatch = useDispatch();
+
     const handleAddToCart = () => {
-        setCart(!cart);
+        setCartStatus(!cartStatus);
+        dispatch(addToCart(user, data, quantity));
     }
 
     const goToCart = () => {
-        console.log('Added Product to Cart!');
-
         history.push('/cart');
     }
 
@@ -80,16 +84,16 @@ const SpecificProductPage = () => {
 
     //const data = [];
 
-    
+
     const getData = () => {
         // const id = '61b872017122aec730c23de9';
         axios.get(`http://localhost:5000/products/${id}`)
-        .then (res => {
-            setData({...res.data});
-        })
-        .catch(err => {
-            console.log('Error:', err);
-        })
+            .then(res => {
+                setData({ ...res.data });
+            })
+            .catch(err => {
+                console.log('Error:', err);
+            })
     }
 
     useEffect(() => {
@@ -113,10 +117,10 @@ const SpecificProductPage = () => {
                     <EMIWarranty />
                     <ProductColorVariants data={data} />
                     <BankOffers />
-                    <ProductQuantity handleChange = {handleQuantityChange} />
-                    <div className= {styles.buttonFlex}>
-                        <ButtonsDiv text={cart ? 'Go to Cart' : 'Add to Cart'} handleClick={cart ? goToCart :  handleAddToCart} icon = {cart ? <ArrowForwardIcon sx = {{color : 'white'}}/> : null} />
-                        <ButtonsDiv text= {'Buy Now'} handleClick = {handleBuyNow} icon = {null}/>
+                    <ProductQuantity handleChange={handleQuantityChange} />
+                    <div className={styles.buttonFlex}>
+                        <ButtonsDiv text={cartStatus ? 'Go to Cart' : 'Add to Cart'} handleClick={cartStatus ? goToCart : handleAddToCart} icon={cartStatus ? <ArrowForwardIcon sx={{ color: 'white' }} /> : null} />
+                        <ButtonsDiv text={'Buy Now'} handleClick={handleBuyNow} icon={null} />
                     </div>
                     <Delivery />
                     <ProductDetails data={data} />

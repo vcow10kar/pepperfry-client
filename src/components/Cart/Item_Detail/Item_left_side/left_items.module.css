@@ -1,0 +1,65 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+  
+}
+.parent_div{
+    display: flex;
+    gap:14px;
+}
+.image {
+  object-fit: cover;
+ Width:115px;
+Height:188px;
+}
+.content {
+  width: 276.5px;
+  height: 188px;
+  /* margin-top: 40px; */
+}
+.title {
+  width: 276.5px;
+  text-align: start;
+  margin: 0px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
+.warrenty {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #f16521;
+  margin: 0px;
+  padding: 0px;
+  text-align: start;
+   margin-bottom: 16px;
+}
+.delivery {
+  display: flex;
+  width: 276.5px;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.calender {
+  width: 24px;
+  height: 24px;
+}
+.del {
+  width: 100px;
+  color: #707070;
+  margin: 0px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+.detail {
+    width: 275px;
+    border: 1px solid black;
+  line-height: 18px;
+  letter-spacing: 00.06em;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: start;
+  margin-left: 35px;
+}

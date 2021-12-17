@@ -7,17 +7,19 @@ import SortCard from "./components/SortCard";
 import FilterCard from "./components/FilterCard";
 import ProductPageCard from "./components/ProductPageCard";
 import Footer from "../components/footer/Footer";
+import { useParams } from "react-router-dom";
 
 function AllproductPage() {
   const [productData, setProductData] = useState([]);
   // console.log(productData);
-
+  const {id} = useParams();
   useEffect(() => {
     getData();
   }, []);
 
   async function getData() {
-    let { data } = await axios.get(`http://localhost:5000/products`);
+    let { data } = await axios.get(`http://localhost:5000/products/category/${id}`);
+    console.log(data);
     setProductData(data);
   }
 
