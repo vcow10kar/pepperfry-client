@@ -18,9 +18,7 @@ function SearchNavbar() {
     //   `https://demo.dataverse.org/api/search?q=${value}`
     // );
 
-    let { data } = await axios.get(
-      `http://localhost:5000/category`
-    );
+    let { data } = await axios.get(`http://localhost:5000/category`);
 
     console.log(data);
     setSearch(data);
@@ -30,7 +28,7 @@ function SearchNavbar() {
 
   const handleNavigation = (id) => {
     history.push(`/allProducts/${id}`);
-  }
+  };
 
   return (
     <>
@@ -75,7 +73,11 @@ function SearchNavbar() {
         <div className={styles.autocomplete}>
           {search?.map((el, i) => {
             return (
-              <div key={i} className={styles.autocompleteItems} onClick={() => handleNavigation(el._id)}>
+              <div
+                key={i}
+                className={styles.autocompleteItems}
+                onClick={() => handleNavigation(el._id)}
+              >
                 <p>{el.name}</p>
               </div>
             );
