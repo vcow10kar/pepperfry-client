@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer";
 import SearchNavbar from "../Navbar/SearchNavbar";
 import {BestOfBlackFryDay, ForgettingSomething} from "./BestOfBlackFryDay/BestOfBlackFryDay";
 import Bankoffer from "./components/Bankoffer";
@@ -37,7 +38,8 @@ const Home = () => {
             <BestOfBlackFryDay/>
             <ShopAllDay />
             <ForgettingSomething/>
-           
+
+            <Footer/>
         </div>
 
     )

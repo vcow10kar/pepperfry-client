@@ -11,8 +11,9 @@
 .sortingDiv {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  align-items: center;
+  width: 1085px;
+  margin: auto;
+  justify-content: space-between;
   /* border: 1px solid black; */
 }
 .productCountDiv {
@@ -23,8 +24,8 @@
   line-height: 16px;
   letter-spacing: 0.06em;
   color: #000000;
-  margin-left: 435px;
-  margin-top: 20px;
+  margin-left: 257px;
+  margin-top: 24px;
 }
 .sort {
   width: 48px;
@@ -36,8 +37,7 @@
   line-height: 16px;
   letter-spacing: 0.06em;
   color: #000000;
-  margin-left: 524px;
-  margin-top: 20px;
+  margin-top: 34px;
 }
 
 .sortCard {
@@ -55,9 +55,9 @@
   margin-top: 44px;
 }
 
-.FilterCardDiv {
-  /* margin-left: 178px; */
-}
+/* .FilterCardDiv {
+  margin-left: 178px;
+} */
 
 .productCardDiv {
   width: 830px;
@@ -72,22 +72,12 @@
 }
 
 .paginationButton {
-  width: 348px;
-  height: 48px;
-  border-radius: 0px;
-  background: #f16521;
-  border-radius: 2px;
-  border: 1px solid #f16521;
-  color: white;
-  margin-bottom: 30px;
-  font-family: "Fira Sans", sans-serif;
+  /* font-family: "Fira Sans", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500; */
   font-size: 20px;
   line-height: 24px;
-  /* margin: auto; */
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 .footerDiv {

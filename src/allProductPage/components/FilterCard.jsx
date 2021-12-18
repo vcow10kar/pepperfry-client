@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./filtercard.module.css";
+import Checkbox from '@mui/material/Checkbox';
 
 function FilterCard({
   productData,
@@ -63,19 +64,20 @@ function FilterCard({
         </div>
         <div className={styles.formDiv}>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="ARRA" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="ARRA" onChange={handleChange} />{" "}
             <p>ARRA</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Mintwud" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Mintwud" onChange={handleChange} />{" "}
             <p>Mintwud</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Home Centre" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Home Centre" onChange={handleChange} />{" "}
             <p>Home Centre</p>
           </div>
           <div className={styles.inputdiv}>
-            <input
+            <Checkbox
+              size="large"
               type="checkbox"
               name="Urban Living"
               onChange={handleChange}
@@ -83,19 +85,20 @@ function FilterCard({
             <p>Urban Living</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Furny" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Furny" onChange={handleChange} />{" "}
             <p>Furny</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="FurniTech" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="FurniTech" onChange={handleChange} />{" "}
             <p>FurniTech</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Solace" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Solace" onChange={handleChange} />{" "}
             <p>Solace</p>
           </div>
           <div className={styles.inputdiv}>
-            <input
+            <Checkbox
+              size="large"
               type="checkbox"
               name="Urban Living"
               onChange={handleChange}
@@ -103,7 +106,7 @@ function FilterCard({
             <p>Urban Living</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Durina" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Durina" onChange={handleChange} />{" "}
             <p>Durina</p>
           </div>
         </div>

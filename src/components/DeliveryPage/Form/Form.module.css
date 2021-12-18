@@ -428,7 +428,7 @@ input[name="email"] {
   height: 36px;
 }
 
-button {
+/* button {
   width: 296px;
   height: 48px;
   display: flex;
@@ -443,12 +443,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 5px; */
+  margin-top: 5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: #ffffff;
-}
+} */
 
 input[type="text"] {
   box-sizing: border-box;

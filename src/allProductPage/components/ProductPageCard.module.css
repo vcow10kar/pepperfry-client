@@ -18,6 +18,8 @@
 .imageDiv {
   width: 374px;
   height: 200px;
+  overflow: hidden;
+  display: inline-block;
   /* border: 1px solid black; */
 }
 .detailsDiv {
@@ -31,6 +33,7 @@
 }
 
 .image {
+  display: block;
   width: 374px;
   height: 200px;
   transition: 0.5s all ease-in-out;

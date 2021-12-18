@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import styles from './sortcard.module.css';
 
 function SortCard({ productData, setSorting }) {
   let updatedData;
@@ -13,22 +14,22 @@ function SortCard({ productData, setSorting }) {
     }
   }
   return (
-    <div>
+    <div className= {styles.sortCard}>
       <select
         onChange={handleChage}
         style={{
           width: "140px",
-          height: "36px",
+          height: "46px",
           borderRadius: "0px",
           border: "1px solid white",
           backgroundColor: "white",
         }}
       >
-        <option value="Relevence">Relevence</option>
-        <option value="lowtohigh">Price low to high</option>
-        <option value="hightolow">Price high to low</option>
-        <option value="newestfirst">Newest First</option>
-        <option value="lowtohigh">fastest shipping</option>
+        <option className= {styles.options} value="Relevence">Relevence</option>
+        <option className= {styles.options} value="lowtohigh">Price Low to High</option>
+        <option className= {styles.options} value="hightolow">Price High to Low</option>
+        <option className= {styles.options} value="newestfirst">Newest First</option>
+        <option className= {styles.options} value="lowtohigh">Fastest Shipping</option>
       </select>
     </div>
   );
