@@ -13,32 +13,32 @@ import { useParams } from "react-router-dom";
 import { cleanup } from "@testing-library/react";
 
 function AllproductPage() {
+  const [allData, setAllData] = useState([]);
   const [productData, setProductData] = useState([]);
-  const [filterBrand, setFilterBrand] = useState([]);
+  const [filterBrand, setFilterBrand] = useState({values: [], count: 0});
   const [filteredData, setFilteredData] = useState([]);
   const [countFilter, setFilterCount] = useState(0);
-  console.log("filterBrand", filterBrand);
+
+  console.log(filterBrand);
+  
   // console.log(productData);
   //functiion to filter data
   const filterProductData = function () {
-    if (filterBrand.length > 0) {
+
+    if (filterBrand.values.length > 0) {
       let temp = [];
-      for (let i = 0; i < filterBrand.length; i++) {
+      for (let i = 0; i < filterBrand.values.length; i++) {
         for (let j = 0; j < productData.length; i++) {
-          if (filterBrand[i] === productData[j].brand_id.name) {
+          if (filterBrand.values[i] === productData[j].brand_id.name) {
             temp.push(productData[j]);
           }
         }
       }
-      setFilteredData(temp);
+      // setFilteredData(temp);
 
       console.log("temp", temp);
     }
   };
-
-  // useEffect(() => {
-  //   filterProductData();
-  // }, [countFilter]);
 
   const { id } = useParams();
   useEffect(() => {
@@ -51,6 +51,7 @@ function AllproductPage() {
     );
     console.log(data);
     setProductData(data);
+    setAllData(data);
   }
 
   //sorting
@@ -89,6 +90,7 @@ function AllproductPage() {
               productData={productData}
               setFilterCount={setFilterCount}
               filterProductData={filterProductData}
+              allData = {allData}
             />
           </div>
           <div className={styles.productCardDiv}>

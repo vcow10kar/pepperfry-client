@@ -8,18 +8,45 @@ function FilterCard({
   setFilterBrand,
   setFilterCount,
   filterProductData,
+  allData
 }) {
   const handleChange = (e) => {
+    let temp;
     if (e.target.checked) {
-      setFilterBrand([...filterBrand, e.target.name]);
+      temp = [...filterBrand.values, e.target.name];
+      let prod = allData.filter(item => temp.includes(item.brand_id.name) ? true : false);
+      setProductData(prod);
+      setFilterBrand({
+        values: temp,
+        count: filterBrand.count + 1
+      });
+
+
     } else {
-      let temp = filterBrand.filter((item) =>
+      temp = filterBrand.values.filter((item) =>
         item === e.target.name ? false : true
       );
-      setFilterBrand(temp);
-      setFilterCount(temp.length);
-      // filterProductData();
+      if (temp.length === 0) {
+        setProductData(allData);
+      } else {
+        let prod = productData.filter(item => temp.includes(item.brand_id.name) ? true : false);
+        setProductData(prod);
+        const count = temp.length;
+        setFilterBrand({
+          values: temp,
+          count: count
+        });
+        setFilterCount(temp.length);
+      }
+
     }
+
+    console.log('Updated filter')
+
+    // if(temp.length > 0) {
+    //   console.log('Filtering...')
+    //   filterProductData();
+    // }
   };
   return (
     <>
