@@ -1,0 +1,39 @@
+.homeHeroComponent {
+    max-width: 1085px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pepperFryCarousel {
+    width: 716px;
+    height: auto;
+}
+
+
+.offerColumn {
+    max-width: 348px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.imgLink {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.bankBanner {
+    max-width: 1085px;
+    
+}
+
+.bankBannerImg {
+    width: 100%;
+    height: auto;
+}
