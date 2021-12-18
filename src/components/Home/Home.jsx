@@ -1,3 +1,10 @@
+
+
+
+const Home = () => {
+  return <h1>HOME PAGE</h1>;
+};
+
 import SearchNavbar from "../Navbar/SearchNavbar";
 import {BestOfBlackFryDay, ForgettingSomething} from "./BestOfBlackFryDay/BestOfBlackFryDay";
 import ShopAllDay from "./ShopAllDay/ShopAllDay";
@@ -25,13 +32,16 @@ window.addEventListener("scroll", reveal);
 const Home = () => {
     return (
         <div>
+       <h1>Home Page</h1>
             <SearchNavbar />
             <BestOfBlackFryDay/>
             <ShopAllDay />
             <ForgettingSomething/>
+           
         </div>
 
     )
 }
+
 
 export default Home;
