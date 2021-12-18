@@ -1,5 +1,12 @@
 import axios from 'axios';
-import { GET_CART, ADD_TO_CART, DELETE_FROM_CART, CART_LOADING, UPDATE_CART } from './actionTypes';
+import { GET_CART, ADD_TO_CART, DELETE_FROM_CART, CART_LOADING, UPDATE_CART, UPDATE_ADDRESS } from './actionTypes';
+
+const updateAddress = (payload) => {
+    return {
+        type: UPDATE_ADDRESS,
+        payload: payload
+    }
+}
 
 const setCartLoading = () => {
     return {

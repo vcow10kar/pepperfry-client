@@ -4,11 +4,30 @@ import visaCard from "../../deliveryAddressPage/footerAssets/visa.svg"
 import rupay from "../../deliveryAddressPage/footerAssets/rupay.svg"
 import masteroRed from "../../deliveryAddressPage/footerAssets/redYellow.svg"
 import masteroBlue from "../../deliveryAddressPage/footerAssets/blueRed.svg"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 // import { DebitCardPayments } from "./DebitCard"
 
 
-export const DebitCardPayments = () =>{
+export const DebitCardPayments = ({data}) =>{
+    const [totalValue, setTotalValue] = useState(0);
+
+    const getPriceDetails = () => {
+        let totalPrice = 0;
+        let discountPrice = 0;
+        let totalVal = 0;
+
+        for (let i = 0; i < data.length; i++) {
+            const actualPrice = data[i].product.price * data[i].quantity;
+            totalPrice += actualPrice
+            discountPrice += (actualPrice - Math.floor(actualPrice * (data[i].product.discount_percentage / 100)));
+        }
+        totalVal = totalPrice - discountPrice + 99;
+        setTotalValue(totalVal);
+    }
+
+    useEffect(() => {
+        getPriceDetails();
+    }, data);
     
     const [box1C,setB1C] = useState(false);
     const [box2C,setB2C] = useState(false);
@@ -64,7 +83,7 @@ export const DebitCardPayments = () =>{
                 </div>
 
                 <div>
-                    <button className={styles.button}>PROCEED TO PAY ₹48,999 </button>
+                    <button className={styles.button}>PROCEED TO PAY ₹{totalValue.toLocaleString('en-IN')} </button>
                 </div>
 
                 <div className={styles.light}>Note : You will be asked to enter your card details  on

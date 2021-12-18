@@ -18,6 +18,7 @@ display: flex;
   margin-top: 5px;
   border: none;
   background: white;
+  color: black;
 }
 .count_box {
   width: 45px;
@@ -33,6 +34,7 @@ display: flex;
   margin-top: 5px;
   background: white;
   border: none;
+  color: black;
 }
 .price {
   width: 93px;

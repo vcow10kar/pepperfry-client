@@ -1,14 +1,22 @@
+
 import "./App.css";
 import AppRoutes from "./Routes/AppRoutes";
 
-import { PaymentsPage } from "./components/PaymentsPage/Main";
-import { DeliveryCard } from "./components/DeliveryPage/Main";
+
+
+import './App.css';
+import AppRoutes from './Routes/AppRoutes';
+
 
 function App() {
   return (
     <div className="App">
+<
       <AppRoutes />
-      {/* <PaymentsPage/> */}
+    
+
+    
+
     </div>
   );
 }

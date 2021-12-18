@@ -11,6 +11,7 @@ import axios from 'axios';
 import { useParams, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from "../../Redux/Cart/actions";
+import SearchNavbar from "../Navbar/SearchNavbar";
 
 const product = {
     name: "Classic 3 Seater Sofa in Beige Colour",
@@ -65,8 +66,9 @@ const SpecificProductPage = () => {
     let dispatch = useDispatch();
 
     const handleAddToCart = () => {
+        console.log('Adding to cart - step 1');
         setCartStatus(!cartStatus);
-        dispatch(addToCart(user, data, quantity));
+        dispatch(addToCart(null, data, quantity));
     }
 
     const goToCart = () => {
@@ -99,11 +101,11 @@ const SpecificProductPage = () => {
     useEffect(() => {
         document.title = `${data.name} | pepperfry`;
         getData();
-    }, []);
+    }, [data]);
 
     return (
         <div className={styles.specificProductPage}>
-
+            <SearchNavbar/>
             <div className={styles.productsInformation}>
                 <div>
                     <ProductsImageGallery data={data.imagesArray} />
