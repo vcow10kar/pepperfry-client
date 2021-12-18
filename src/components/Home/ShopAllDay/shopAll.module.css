@@ -1,0 +1,92 @@
+.shopAll {
+    max-width: 1085px;
+    margin: auto;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.shopAllComponents {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shopAllComponentDiv {
+    max-width: 256px;
+}
+
+.imgLinkDiv {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.imgLink {
+    display: block;
+    transition: transform 0.9s;
+}
+
+.shopAllComponentDiv:hover .imgLink{
+    transform: translateX(-15px);
+    transform-origin: 50% 50%;
+}
+
+.header1 {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.header2 {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #707070;
+}
+
+
+.type {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-top: 4px;
+}
+
+.details {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    color: #707070;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}

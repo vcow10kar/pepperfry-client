@@ -1,4 +1,4 @@
-p {
+.mainDiv p {
   margin-left: 5px;
 }
 
@@ -31,7 +31,6 @@ p {
   width: 196px;
   border-bottom: 2px solid #000000;
   font-family: "Hammersmith One", sans-serif;
-
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -40,6 +39,7 @@ p {
   color: #000000;
   margin-left: 24px;
   padding-left: 1px;
+  margin-top: 10px;
 }
 .brand {
   display: flex;
@@ -73,12 +73,12 @@ p {
   height: 280px;
   /* border: 1px solid black; */
   margin-top: 10px;
-  margin-left: 24px;
+  margin-left: 12px;
 }
 .inputdiv {
   display: flex;
-  width: 140px;
-  height: 10px;
+  /* width: 140px; */
+  height: 15px;
   /* border: 1px solid black; */
   align-items: center;
   font-family: "Fira Sans", sans-serif;

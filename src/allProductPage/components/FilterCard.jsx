@@ -1,9 +1,53 @@
 import React from "react";
 import styles from "./filtercard.module.css";
+import Checkbox from '@mui/material/Checkbox';
 
-function FilterCard() {
+function FilterCard({
+  productData,
+  setProductData,
+  filterBrand,
+  setFilterBrand,
+  setFilterCount,
+  filterProductData,
+  allData
+}) {
   const handleChange = (e) => {
-    console.log(e.target.name);
+    let temp;
+    if (e.target.checked) {
+      temp = [...filterBrand.values, e.target.name];
+      let prod = allData.filter(item => temp.includes(item.brand_id.name) ? true : false);
+      setProductData(prod);
+      setFilterBrand({
+        values: temp,
+        count: filterBrand.count + 1
+      });
+
+
+    } else {
+      temp = filterBrand.values.filter((item) =>
+        item === e.target.name ? false : true
+      );
+      if (temp.length === 0) {
+        setProductData(allData);
+      } else {
+        let prod = productData.filter(item => temp.includes(item.brand_id.name) ? true : false);
+        setProductData(prod);
+        const count = temp.length;
+        setFilterBrand({
+          values: temp,
+          count: count
+        });
+        setFilterCount(temp.length);
+      }
+
+    }
+
+    console.log('Updated filter')
+
+    // if(temp.length > 0) {
+    //   console.log('Filtering...')
+    //   filterProductData();
+    // }
   };
   return (
     <>
@@ -20,19 +64,20 @@ function FilterCard() {
         </div>
         <div className={styles.formDiv}>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="ARRA" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="ARRA" onChange={handleChange} />{" "}
             <p>ARRA</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Mintwud" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Mintwud" onChange={handleChange} />{" "}
             <p>Mintwud</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Home Centre" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Home Centre" onChange={handleChange} />{" "}
             <p>Home Centre</p>
           </div>
           <div className={styles.inputdiv}>
-            <input
+            <Checkbox
+              size="large"
               type="checkbox"
               name="Urban Living"
               onChange={handleChange}
@@ -40,19 +85,20 @@ function FilterCard() {
             <p>Urban Living</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Furny" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Furny" onChange={handleChange} />{" "}
             <p>Furny</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="FurniTech" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="FurniTech" onChange={handleChange} />{" "}
             <p>FurniTech</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Solace" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Solace" onChange={handleChange} />{" "}
             <p>Solace</p>
           </div>
           <div className={styles.inputdiv}>
-            <input
+            <Checkbox
+              size="large"
               type="checkbox"
               name="Urban Living"
               onChange={handleChange}
@@ -60,7 +106,7 @@ function FilterCard() {
             <p>Urban Living</p>
           </div>
           <div className={styles.inputdiv}>
-            <input type="checkbox" name="Durina" onChange={handleChange} />{" "}
+            <Checkbox size="large" type="checkbox" name="Durina" onChange={handleChange} />{" "}
             <p>Durina</p>
           </div>
         </div>

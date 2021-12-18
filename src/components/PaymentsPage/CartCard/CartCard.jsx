@@ -4,7 +4,7 @@ import verified from "../../deliveryAddressPage/footerAssets/verified.svg"
 
 export const CartCard = () => {
     return <div className={styles.mainDiv}>
-        <div className={styles.card}>
+        {/* <div className={styles.card}>
             <div className={styles.cardDisplay}>
                 <div>Cart Value</div>
                 <div>₹48,999</div>
@@ -49,7 +49,7 @@ export const CartCard = () => {
                 <div>Contribute Rs99 For COVID Relief Through</div>
                 <div>GiveIndia</div>
             </div>
-        </div>
+        </div> */}
 
         <div className={styles.bank}>
             <div >BANK OFFERS</div>

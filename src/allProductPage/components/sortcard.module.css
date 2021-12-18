@@ -1,0 +1,9 @@
+.sortCard select {
+    padding: 10px 6px;
+    height: 46px;
+    outline: none !important;
+}
+
+.options {
+    margin: 10px 0px;
+}
