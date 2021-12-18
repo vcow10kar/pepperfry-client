@@ -1,15 +1,19 @@
+.doNotMissParent {
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+}
+
 .mainDiv {
   max-width: 1084px;
-  height: 800px;
+  /* height: 800px; */
   /* border: 1px solid black; */
   margin: auto;
 }
 .donotmissBaner1 {
-  width: 291px;
-  height: 24px;
-  font-family: "HammersmithOne" sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   display: flex;
@@ -23,9 +27,9 @@
   width: 205px;
   height: 18px;
   margin-top: 14px;
-  font-family: "Fira Sans" sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 
@@ -58,20 +62,20 @@
   align-items: center;
 }
 
-.indiProductCard > img {
+.indiProductCard .imgLink {
   width: 348px;
   height: 320px;
   transition: all 0.3s ease-in-out;
+  display: block;
+  transition: transform 0.9s;
 }
 
-.indiProductCard > img:hover {
+.indiProductCard:hover  .imgLink {
   transform: scale(1.05);
 }
 
 .prname {
-  width: 57px;
-  height: 24px;
-  font-family: "HammersmithOne", sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -81,15 +85,12 @@
   letter-spacing: 0.06em;
   color: #000000;
   margin-top: 4px;
-  margin: auto;
 }
 .prname:hover {
   color: #f16521;
 }
 .donotmissInfo {
-  width: 111px;
-  height: 18px;
-  font-family: "Fira Sans" sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -98,7 +99,13 @@
   align-items: center;
   letter-spacing: 0.06em;
   color: #707070;
-  margin: auto;
-  margin-left: 132px;
+  text-align: center;
   margin-top: 2px;
+}
+
+.imgDiv {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }

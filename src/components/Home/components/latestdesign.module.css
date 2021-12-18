@@ -1,22 +1,20 @@
-* {
-  /* margin: 0px;
-  padding: 0px;
-  background-color: gray; */
+.parent {
+  width: 100%;
+  background-color: #F1F1F1;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .maindiv {
-  max-width: 1084px;
-  height: 700px;
-  /* border: 1px solid black; */
+  max-width: 1085px;
   margin: auto;
+  margin-top: 24px;
 }
 .bannerDiv {
-  width: 408px;
-  height: 24px;
   text-align: left;
-  font-family: "HammersmithOne" sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.06em;
@@ -25,9 +23,9 @@
 .banner1 {
   width: 260px;
   height: 18px;
-  font-family: "Fira Sans" sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 
@@ -43,13 +41,12 @@
 }
 
 .productCard {
-  max-width: 1084px;
-  height: 600px;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
-  margin-left: -8px;
 }
 
 .individualCard {
@@ -58,24 +55,26 @@
   /* margin: 1px solid black; */
   /* border: 1px solid black; */
   text-align: left;
+  background-color: white;
+  padding: 7px 12px;
 }
 .imagediv {
-  width: 214px;
-  height: 42px;
-  margin-left: 12px;
+  max-width: 324px;
+  height: auto;
+  max-height: 42px;
   margin-top: 7px;
+  margin-bottom: 8px;
 }
 .trait,
 .price {
   display: flex;
   flex-direction: row;
-  margin-left: 12px;
 }
 
 .trait1 {
   width: 43px;
   height: 16px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -87,7 +86,7 @@
 .trait2 {
   width: 279px;
   height: 16px;
-  font-family: "Fira Sans" sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -104,7 +103,7 @@
 .price1 {
   width: 145px;
   height: 16px;
-  font-family: " Fira Sans" sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -124,12 +123,10 @@
   width: 324px;
   height: 218px;
   margin-top: 12px;
-  margin-left: 12px;
 }
 
 .banner2 {
   width: 324px;
-  height: 32px;
   margin-top: 8px;
   font-family: Fira Sans;
   font-style: normal;
@@ -139,21 +136,19 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
-  margin-left: 12px;
   color: #000000;
 }
 
 .popular {
   display: flex;
   flex-direction: row;
-  margin-left: 12px;
   margin-top: 8px;
   margin-bottom: 7px;
 }
 .popular1 {
   width: 75px;
   height: 16px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -164,13 +159,13 @@
   color: #000000;
 }
 .popular2 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   display: flex;
-  align-items: center;
   letter-spacing: 0.06em;
   color: #14a9cc;
+  padding-left: 2px;
 }

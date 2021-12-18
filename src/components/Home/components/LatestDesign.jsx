@@ -30,7 +30,7 @@ function LatestDesign() {
         "https://ii3.pepperfry.com/media/wysiwyg/banners/Bs_web_23112021_3.jpg",
       banner2Info:
         "A wide range of Traditional Furniture inspired from our Indian Heritage.",
-      popularForData: "Coffee Tables, Cabinets, Dining sets & More",
+      popularForData: "Coffee Tables, Cabinets, Dining sets",
       id: 3,
     },
     {
@@ -50,7 +50,7 @@ function LatestDesign() {
         "https://ii1.pepperfry.com/media/wysiwyg/banners/Bs_web_23112021_5.jpg",
       banner2Info:
         "A range of Hand-crafted Colonial Furniture inspired by Mid-Century Designs.",
-      popularForData: "Study Tables, Chest of Drawers, Chairs & More",
+      popularForData: "Study Tables, Chest of Drawers, Chairs",
       id: 5,
     },
 
@@ -61,55 +61,60 @@ function LatestDesign() {
         "https://ii3.pepperfry.com/media/wysiwyg/banners/Bs_web_23112021_6.jpg",
       banner2Info:
         "Eclectic Furniture inspired by the Spirit of Freedom and Adventure.",
-      popularForData: " End Tables, Seating stools, Bar stools & More",
+      popularForData: " End Tables, Seating stools, Bar stools",
       id: 6,
     },
   ];
 
   return (
-    <>
-      <div className={styles.maindiv}>
-        <div className={styles.bannerDiv}>LATEST DESIGNS, LOWEST PRICES.</div>
-        <div className={styles.banner1}>
-          Choose from our best selling brands
-        </div>
-        <div className={styles.productCard}>
-          {data.map((el) => {
-            return (
-              <div className={styles.individualCard} key={el.id}>
-                <img className={styles.imagediv} src={el.logo} alt="logo" />
-                <div className={styles.trait}>
-                  <div className={styles.trait1}>Traits:</div>
-                  <div className={styles.trait2}>{el.traits}</div>
-                </div>
-                <div className={styles.price}>
-                  <div className={styles.price1}>
-                    Price
-                    <img src="/icons/rupee.svg" alt="rupeeicon" />
-                    <img src="/icons/rupee.svg" alt="rupeeicon" />
-                    <img src="/icons/rupee.svg" alt="rupeeicon" />
-                    <img src="/icons/rupeeWhite.svg" alt="rupeeicon" />
-                    <img src="/icons/rupeeWhite.svg" alt="rupeeicon" />
+    <div className="reveal">
+      <div className = {styles.parent}>
+        <div className={styles.maindiv}>
+          <div className={styles.bannerDiv}>LATEST DESIGNS, LOWEST PRICES.</div>
+          <div className={styles.banner1}>
+            Choose from our best selling brands
+          </div>
+          <div className={styles.productCard}>
+            {data.map((el) => {
+              return (
+                <div className={styles.individualCard} key={el.id}>
+                  <img className={styles.imagediv} src={el.logo} alt="logo" />
+                  <div className={styles.trait}>
+                    <div className={styles.trait1}>Traits:</div>
+                    <div className={styles.trait2}>{el.traits}</div>
+                  </div>
+                  <div className={styles.price}>
+                    <div className={styles.price1}>
+                      Price
+                      <img src="/icons/rupee.svg" alt="rupeeicon" />
+                      <img src="/icons/rupee.svg" alt="rupeeicon" />
+                      <img src="/icons/rupee.svg" alt="rupeeicon" />
+                      <img src="/icons/rupeeWhite.svg" alt="rupeeicon" />
+                      <img src="/icons/rupeeWhite.svg" alt="rupeeicon" />
+                    </div>
+                  </div>
+                  <img
+                    className={styles.productimage}
+                    src={el.image}
+                    alt="table"
+                  />
+                  <div className={styles.banner2}>{el.banner2Info}</div>
+                  <div className={styles.popular}>
+                    <div className={styles.popular1}>Popular For:</div>
+                    <div className={styles.popular2}>
+                      {el.popularForData}
+                    </div>
                   </div>
                 </div>
-                <img
-                  className={styles.productimage}
-                  src={el.image}
-                  alt="table"
-                />
-                <div className={styles.banner2}>{el.popularForData}</div>
-                <div className={styles.popular}>
-                  <div className={styles.popular1}>Popular For</div>
-                  <div className={styles.popular2}>
-                    Dinings Bed, Study tables & Morez
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
-    </>
+
+    </div>
+
+
   );
 }
 

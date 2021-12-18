@@ -1,12 +1,7 @@
-
-
-
-const Home = () => {
-  return <h1>HOME PAGE</h1>;
-};
-
 import SearchNavbar from "../Navbar/SearchNavbar";
 import {BestOfBlackFryDay, ForgettingSomething} from "./BestOfBlackFryDay/BestOfBlackFryDay";
+import DonotMiss from "./components/DonotMiss";
+import LatestDesign from "./components/LatestDesign";
 import ShopAllDay from "./ShopAllDay/ShopAllDay";
 
 function reveal() {
@@ -32,8 +27,9 @@ window.addEventListener("scroll", reveal);
 const Home = () => {
     return (
         <div>
-       <h1>Home Page</h1>
             <SearchNavbar />
+            <LatestDesign/>
+            <DonotMiss/>
             <BestOfBlackFryDay/>
             <ShopAllDay />
             <ForgettingSomething/>
