@@ -1,13 +1,23 @@
+body {
+  background-color: #e5e5e5;
+}
+
 .productMainDiv {
   width: 100%;
   background: #f1f1f1;
+}
+
+.tabbarDiv {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: white;
 }
 .sortingDiv {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .productCountDiv {
   font-family: "Fira Sans", sans-serif;
@@ -42,12 +52,15 @@
 .filterandProductDiv {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 1084px;
   margin-top: 30px;
+  margin: auto;
+  margin-top: 44px;
 }
 
 .FilterCardDiv {
-  margin-left: 178px;
+  /* margin-left: 178px; */
 }
 
 .productCardDiv {
@@ -76,7 +89,9 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 140px;
+  /* margin: auto; */
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .footerDiv {
