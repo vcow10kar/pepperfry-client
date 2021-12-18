@@ -1,0 +1,35 @@
+.mainDiv {
+  max-width: 1084px;
+  border: 1px solid black;
+  margin: auto;
+  background-color: #ffffff;
+}
+.bankoffer {
+  font-family: "HammersmithOne" sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #000000;
+}
+.imageDiv {
+  display: flex;
+  /* flex-direction: row; */
+  margin-top: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.individualImage {
+  width: 164px;
+  height: 236px;
+}
+.individualImage img {
+  width: 100%;
+  height: 100%;
+}
