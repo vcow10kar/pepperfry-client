@@ -1,9 +1,25 @@
 import React from "react";
 import styles from "./filtercard.module.css";
 
-function FilterCard() {
+function FilterCard({
+  productData,
+  setProductData,
+  filterBrand,
+  setFilterBrand,
+  setFilterCount,
+  filterProductData,
+}) {
   const handleChange = (e) => {
-    console.log(e.target.name);
+    if (e.target.checked) {
+      setFilterBrand([...filterBrand, e.target.name]);
+    } else {
+      let temp = filterBrand.filter((item) =>
+        item === e.target.name ? false : true
+      );
+      setFilterBrand(temp);
+      setFilterCount(temp.length);
+      // filterProductData();
+    }
   };
   return (
     <>
