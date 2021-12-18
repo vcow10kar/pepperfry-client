@@ -6,6 +6,8 @@ import DonotMiss from "./components/DonotMiss";
 import LatestDesign from "./components/LatestDesign";
 import HomeHeroComponent from "./HomeHeroComponent/HomeHeroComponent";
 import ShopAllDay from "./ShopAllDay/ShopAllDay";
+import StylecheatSheet from "./components/StylecheatSheet";
+import BotherUs from "./components/BotherUs";
 
 function reveal() {
     var reveals = document.querySelectorAll('.reveal');
@@ -38,7 +40,8 @@ const Home = () => {
             <BestOfBlackFryDay/>
             <ShopAllDay />
             <ForgettingSomething/>
-
+            <StylecheatSheet/>
+            <BotherUs/>
             <Footer/>
         </div>
 

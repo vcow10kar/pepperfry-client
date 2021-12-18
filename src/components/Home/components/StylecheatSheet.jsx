@@ -25,7 +25,7 @@ function StylecheatSheet() {
     },
   ];
   return (
-    <div>
+    <div className="reveal">
       <div className={styles.wrapperDiv}>
         <div className={styles.containerDiv}>
           <div className={styles.namediv}>

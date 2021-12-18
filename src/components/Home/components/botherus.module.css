@@ -1,21 +1,19 @@
 .wrapperBotherUs {
   width: 100%;
+  background-color: #F1F1F1;
+  margin-bottom: 26px;
 }
 .containerDiv {
   width: 1084px;
   margin: auto;
-  margin-top: 20px;
   text-align: left;
+  padding: 24px 0px;
 }
 .banner1botherus {
-  width: 332px;
-  height: 24px;
   display: flex;
-  align-items: center;
-  text-align: center;
 }
 .headerbotherus {
-  font-family: "HammersmithOne" sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -27,7 +25,7 @@
 .heade2botherus {
   font-family: "Fira Sans", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.06em;
@@ -45,6 +43,7 @@
 .indiCardbotherus {
   width: 348px;
   height: 242px;
+  background-color: white;
 }
 .imagebotheus {
   width: 100%;
@@ -52,9 +51,9 @@
   margin-top: 7px;
 }
 .baneer3botherus {
-  font-family: "HammersmithOne" sans-serif;
+  font-family: "Hammersmith One" sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   display: flex;
@@ -62,12 +61,13 @@
   letter-spacing: 0.06em;
   color: #000000;
   text-align: center;
+  margin-top: 4px;
 }
 
 .baneer4botherus {
-  font-family: Fira Sans;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.06em;
