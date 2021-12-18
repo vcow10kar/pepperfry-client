@@ -7,6 +7,8 @@ import SortCard from "./components/SortCard";
 import FilterCard from "./components/FilterCard";
 import ProductPageCard from "./components/ProductPageCard";
 import Footer from "../components/footer/Footer";
+import Tabbar from "../components/Navbar/Tabbar";
+import SearchNavbar from "../components/Navbar/SearchNavbar";
 import { useParams } from "react-router-dom";
 import { cleanup } from "@testing-library/react";
 
@@ -59,7 +61,14 @@ function AllproductPage() {
 
   return (
     <>
-      <div>
+      <div style={{ backgroundColor: "white" }}>
+        <SearchNavbar />
+      </div>
+
+      <div className={styles.tabbarDiv}>
+        <Tabbar />
+      </div>
+      <div style={{ backgroundColor: "white" }}>
         <SearchResult />
       </div>
       <div className={styles.productMainDiv}>
@@ -70,6 +79,7 @@ function AllproductPage() {
             <SortCard productData={productData} setSorting={setSorting} />
           </div>
         </div>
+
         <div className={styles.filterandProductDiv}>
           <div className={styles.FilterCardDiv}>
             <FilterCard
@@ -85,10 +95,15 @@ function AllproductPage() {
             {productData.map((ele) => {
               return <ProductPageCard productData={ele} key={ele._id} />;
             })}
-            ;
           </div>
         </div>
-        <div>
+        <div
+          style={{
+            marginBottom: "24px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <button className={styles.paginationButton}>SHOW MORE OPTIONS</button>
         </div>
       </div>

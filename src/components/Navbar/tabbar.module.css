@@ -1,5 +1,5 @@
 .mainDiv {
-  max-width: 1086px;
+  max-width: 1084px;
   height: 37px;
   /* border: 1px solid black; */
   margin: auto;
@@ -7,6 +7,8 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  background-color: #ffffff;
+  /* margin-left: 17px; */
 }
 .category p {
   height: 18px;
@@ -33,7 +35,7 @@
 .subCategory {
   max-width: 1086px;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 400px;
   margin-top: 15px;
   display: flex;
@@ -55,7 +57,7 @@
 .uldiv p {
   margin: 0px;
   /* padding: 10px; */
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   font-weight: 600;
 }
 
@@ -65,7 +67,7 @@
 
 .uldiv ul li {
   list-style: none;
-  margin-left: -40px;
+  /* margin-left: -40px; */
   margin-top: 5px;
 }
 
