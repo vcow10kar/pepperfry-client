@@ -1,0 +1,31 @@
+.shopAll {
+    max-width: 1085px;
+    margin: auto;
+}
+
+.shopAllComponents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopAllComponentDiv {
+    max-width: 256px;
+}
+
+.imgLinkDiv {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.imgLink {
+    display: block;
+    transition: transform 0.9s;
+}
+
+.shopAllComponentDiv:hover .imgLink{
+    transform: translateX(-20px);
+    transform-origin: 50% 50%;
+}
