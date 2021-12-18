@@ -1,0 +1,75 @@
+.wrapperBotherUs {
+  width: 100%;
+}
+.containerDiv {
+  width: 1084px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+}
+.banner1botherus {
+  width: 332px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.headerbotherus {
+  font-family: "HammersmithOne" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 4px 0px;
+  letter-spacing: 0.06em;
+}
+
+.heade2botherus {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #707070;
+  margin-top: 14px;
+}
+.allcardbotherus {
+  width: 1084px;
+  margin-top: 27px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.indiCardbotherus {
+  width: 348px;
+  height: 242px;
+}
+.imagebotheus {
+  width: 100%;
+  height: 172px;
+  margin-top: 7px;
+}
+.baneer3botherus {
+  font-family: "HammersmithOne" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+  text-align: center;
+}
+
+.baneer4botherus {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #707070;
+}
