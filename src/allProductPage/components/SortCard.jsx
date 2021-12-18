@@ -17,7 +17,7 @@ function SortCard({ productData, setSorting }) {
       <select
         onChange={handleChage}
         style={{
-          width: "105px",
+          width: "140px",
           height: "36px",
           borderRadius: "0px",
           border: "1px solid white",
