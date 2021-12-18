@@ -7,7 +7,7 @@ const ShopAllDayComponent = ({ data }) => {
                 <img className={styles.imgLink} src={data.imgLink} alt="product" />
             </div>
             <p className = {styles.type}>{data.type}</p>
-            <div ><p>{data.detail1} | {data.detail2}</p></div>
+            <div className= {styles.details} ><p>{data.detail1} | {data.detail2}</p></div>
         </div>
     )
 }

@@ -61,57 +61,57 @@ const data1 = [
 
 const data2 = [
     {
-        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_1.jpg",
-        type: "Statement Wing Chairs",
+        imgLink: "https://ii3.pepperfry.com/media/wysiwyg/banners/td_web_08122021_1.jpg",
+        type: "Metal Wall Art",
         detail1: "140+ Products",
         detail2: "Starting ₹12,583"
     },
 
     {
-        imgLink: "https://ii2.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_2.jpg",
-        type: "Compact Coffee Tables",
+        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/td_web_08122021_2.jpg",
+        type: "Fine Dinnerware",
         detail1: "600+ Products",
         detail2: "Starting ₹900"
     },
 
     {
-        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_3.jpg",
-        type: "Minimalist Shoe Racks",
+        imgLink: "https://ii2.pepperfry.com/media/wysiwyg/banners/td_web_08122021_3.jpg",
+        type: "Artistic Table Lamps",
         detail1: "270+ Products",
         detail2: "Starting ₹445"
     },
 
     {
-        imgLink: "https://ii2.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_4.jpg",
-        type: "Awe-Inspiring Sofas",
+        imgLink: "https://ii3.pepperfry.com/media/wysiwyg/banners/td_web_08122021_4.jpg",
+        type: "Striking Mirrors",
         detail1: "2000+ Products",
         detail2: "Starting ₹6,189"
     },
 
     {
-        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_5.jpg",
-        type: "Sleek End Tables",
+        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/td_web_08122021_5.jpg",
+        type: "Plush Carpets",
         detail1: "500+ Products",
         detail2: "Starting ₹932"
     },
 
     {
-        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_6.jpg",
-        type: "Luxe Bar Furniture",
+        imgLink: "https://ii2.pepperfry.com/media/wysiwyg/banners/td_web_08122021_6.jpg",
+        type: "Chic Pots & Planters",
         detail1: "60+ Products",
         detail2: "Starting ₹19,994"
     },
 
     {
-        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_7.jpg",
-        type: "Cozy Beds",
+        imgLink: "https://ii3.pepperfry.com/media/wysiwyg/banners/td_web_08122021_7.jpg",
+        type: "Whimsical Wall Plates",
         detail1: "450+ Products",
         detail2: "Starting ₹9,239"
     },
 
     {
-        imgLink: "https://ii2.pepperfry.com/media/wysiwyg/banners/tf_web_08122021_8.jpg",
-        type: "Elegant Entertainment Units",
+        imgLink: "https://ii1.pepperfry.com/media/wysiwyg/banners/td_web_08122021_8.jpg",
+        type: "Snuggly Comforters",
         detail1: "200+ Products",
         detail2: "Starting ₹2,231"
     }

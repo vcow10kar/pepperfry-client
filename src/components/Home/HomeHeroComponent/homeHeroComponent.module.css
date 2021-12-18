@@ -29,11 +29,32 @@
 }
 
 .bankBanner {
-    max-width: 1085px;
+    max-width: 1076px;
+    margin: auto;
     
 }
 
 .bankBannerImg {
     width: 100%;
     height: auto;
+    padding-left: 4px;
+}
+
+.bannerText {
+    text-align: right;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.textColor {
+    color: #F16521;
 }

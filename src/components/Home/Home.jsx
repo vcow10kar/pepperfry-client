@@ -1,5 +1,6 @@
 import SearchNavbar from "../Navbar/SearchNavbar";
 import {BestOfBlackFryDay, ForgettingSomething} from "./BestOfBlackFryDay/BestOfBlackFryDay";
+import Bankoffer from "./components/Bankoffer";
 import DonotMiss from "./components/DonotMiss";
 import LatestDesign from "./components/LatestDesign";
 import HomeHeroComponent from "./HomeHeroComponent/HomeHeroComponent";
@@ -30,6 +31,7 @@ const Home = () => {
         <div>
             <SearchNavbar />
             <HomeHeroComponent/>
+            <Bankoffer/>
             <LatestDesign/>
             <DonotMiss/>
             <BestOfBlackFryDay/>

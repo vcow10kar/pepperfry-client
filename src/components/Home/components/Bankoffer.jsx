@@ -5,12 +5,12 @@ function Bankoffer() {
   const data = [
     {
       image:
-        "https://ii2.pepperfry.com/media/wysiwyg/banners/Web_Bank_IDFC16421_2x.png",
+        "https://ii1.pepperfry.com/media/wysiwyg/banners/Web_No_Cost_EMI16421_2x.png",
       id: "1",
     },
     {
       image:
-        "https://ii1.pepperfry.com/media/wysiwyg/banners/Web_No_Cost_EMI16421_2x.png",
+        "https://ii2.pepperfry.com/media/wysiwyg/banners/Web_Bank_IDFC16421_2x.png",
       id: "2",
     },
     {
@@ -35,7 +35,7 @@ function Bankoffer() {
     },
   ];
   return (
-    <div>
+    <div className= {styles.bankOfferParent}>
       <div className={styles.mainDiv}>
         <div className={styles.bankoffer}>
           <p>BANK OFFERS</p>

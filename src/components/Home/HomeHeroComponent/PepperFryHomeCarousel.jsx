@@ -4,7 +4,7 @@ import styled from "styled-components";
 import styles from './homeHeroComponent.module.css';
 
 const Button = styled.button`
-  margin: 20px 5px;
+  margin: 10px 5px;
   height: 12px;
   width: 12px;
   border-radius: 50%;
