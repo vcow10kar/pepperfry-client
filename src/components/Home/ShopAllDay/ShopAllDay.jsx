@@ -33,18 +33,21 @@ const data = [
 
 const ShopAllDay = () => {
     return (
-        <div className={styles.shopAll}>
-            <h2>SHOP ALL DAY. SLEEP ALL NIGHT.</h2>
+        <div className="reveal">
+            <div className={styles.shopAll}>
+                <p className={styles.header1}>SHOP ALL DAY. SLEEP ALL NIGHT.</p>
 
-            <h3>Upgrade Your Mattress</h3>
+                <p className={styles.header2}>Upgrade Your Mattress</p>
 
-            <div className={styles.shopAllComponents}>
-                {data.map(item => {
-                    return <ShopAllDayComponent data={item} />
-                })}
+                <div className={styles.shopAllComponents}>
+                    {data.map(item => {
+                        return <ShopAllDayComponent data={item} />
+                    })}
+                </div>
+
             </div>
-
         </div>
+
     )
 }
 

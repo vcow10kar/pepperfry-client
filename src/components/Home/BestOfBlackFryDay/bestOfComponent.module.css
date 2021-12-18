@@ -1,20 +1,30 @@
-.shopAll {
-    max-width: 1085px;
-    margin: auto;
+.bestOfParent {
+    width: 100%;
+    background-color: #F1F1F1;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
-.shopAllComponents {
+.bestOf {
+    max-width: 1085px;
+    margin: auto;
+    background-color: #F1F1F1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.bestOfAllComponents {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
-.shopAllComponentDiv {
-    max-width: 256px;
+.bestOfComponentDiv {
+    max-width: 246px;
+    padding: 4px;
+    background-color: white;
 }
 
 .imgLinkDiv {
@@ -29,8 +39,8 @@
     transition: transform 0.9s;
 }
 
-.shopAllComponentDiv:hover .imgLink{
-    transform: translateX(-15px);
+.bestOfComponentDiv:hover .imgLink{
+    transform: scale(1.08);
     transform-origin: 50% 50%;
 }
 
@@ -66,7 +76,6 @@
     letter-spacing: 0.06em;
     color: #707070;
 }
-
 
 .type {
     font-family: 'Fira Sans', sans-serif;
