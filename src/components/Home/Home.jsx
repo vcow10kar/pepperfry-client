@@ -1,7 +1,9 @@
 import SearchNavbar from "../Navbar/SearchNavbar";
 import {BestOfBlackFryDay, ForgettingSomething} from "./BestOfBlackFryDay/BestOfBlackFryDay";
+import Bankoffer from "./components/Bankoffer";
 import DonotMiss from "./components/DonotMiss";
 import LatestDesign from "./components/LatestDesign";
+import HomeHeroComponent from "./HomeHeroComponent/HomeHeroComponent";
 import ShopAllDay from "./ShopAllDay/ShopAllDay";
 
 function reveal() {
@@ -28,6 +30,8 @@ const Home = () => {
     return (
         <div>
             <SearchNavbar />
+            <HomeHeroComponent/>
+            <Bankoffer/>
             <LatestDesign/>
             <DonotMiss/>
             <BestOfBlackFryDay/>
