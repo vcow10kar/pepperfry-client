@@ -1,15 +1,21 @@
-import { GET_CART, ADD_TO_CART, DELETE_FROM_CART, CART_LOADING, UPDATE_CART } from './actionTypes';
+import { GET_CART, ADD_TO_CART, DELETE_FROM_CART, CART_LOADING, UPDATE_CART, UPDATE_ADDRESS } from './actionTypes';
 
 let cartItems = localStorage.getItem('cart');
+let address = localStorage.getItem('address');
 
 if (cartItems === null) {
     localStorage.setItem('cart', JSON.stringify([]));
     cartItems = [];
 }
 
+if (address === null) {
+    localStorage.setItem('address', JSON.stringify(null));
+}
+
 const initState = {
     cart: JSON.parse(cartItems),
-    loading: false
+    loading: false,
+    address: address
 }
 
 const reducer = (state = initState, { type, payload }) => {
@@ -88,6 +94,14 @@ const reducer = (state = initState, { type, payload }) => {
             return {
                 ...state,
                 loading: true
+            }
+        }
+
+        case UPDATE_ADDRESS: {
+            localStorage.setItem('address', JSON.stringify(payload));
+            return {
+                ...state,
+                address: payload
             }
         }
 

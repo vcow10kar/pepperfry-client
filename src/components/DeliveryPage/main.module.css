@@ -1,0 +1,8 @@
+.paymentsMainDiv {
+    max-width: 1085px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 23px;
+    gap: 20px;
+}

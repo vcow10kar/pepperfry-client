@@ -1,11 +1,9 @@
 .footer{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 320px;
-    left: 0px;
-    top: 1028px;
-
     background: #EFEFEF;
+    margin-top: 30px;
 }
 
 .main_div{
