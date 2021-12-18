@@ -1,0 +1,66 @@
+.wrapperDiv {
+  width: 100%;
+  /* border: 1px solid black; */
+  background-color: #ffffff;
+}
+.namediv {
+  width: 236px;
+  height: 24px;
+  font-family: "HammersmithOne", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* letter-spacing: 0.06em; */
+  color: #000000;
+  padding-top: 50px;
+}
+
+.containerDiv {
+  width: 1084px;
+  margin: auto;
+}
+
+.name2Div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-top: 12px;
+}
+.namePtag {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #707070;
+}
+
+.cardDiv {
+  width: 1084px;
+  margin-top: 20px;
+  display: flex;
+  gap: 2px;
+}
+
+.indicardDiv {
+  width: 269px;
+  height: 302px;
+  margin-bottom: 46px;
+}
+
+.indicardDiv img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  transition: transform 0.9s;
+}
+
+.indicardDiv img:hover {
+  transform: scale(1.05);
+}
