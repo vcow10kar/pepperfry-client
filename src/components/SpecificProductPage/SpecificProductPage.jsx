@@ -12,6 +12,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from "../../Redux/Cart/actions";
 import SearchNavbar from "../Navbar/SearchNavbar";
+import Footer from "../footer/Footer";
 
 const product = {
     name: "Classic 3 Seater Sofa in Beige Colour",
@@ -105,7 +106,7 @@ const SpecificProductPage = () => {
 
     return (
         <div className={styles.specificProductPage}>
-            <SearchNavbar/>
+            <SearchNavbar />
             <div className={styles.productsInformation}>
                 <div>
                     <ProductsImageGallery data={data.imagesArray} />
@@ -134,13 +135,15 @@ const SpecificProductPage = () => {
 
             <ProductOverview />
 
-            <div style={{ backgroundColor: '#F3F5F7' }}>
+            <div style={{ backgroundColor: '#F3F5F7', paddingBottom: '20px' }}>
                 <MoreProductsDiv />
 
                 <ExploreOptions />
             </div>
 
-
+            <div className = {styles.footerDiv}>
+                <Footer />
+            </div>
         </div>
     )
 }
