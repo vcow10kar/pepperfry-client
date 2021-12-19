@@ -6,6 +6,7 @@ import AllproductPage from '../allProductPage/AllproductPage';
 import { DeliveryCard } from '../components/DeliveryPage/Main';
 import { PaymentsPage } from '../components/PaymentsPage/Main';
 import PaymentGateway from '../components/PaymentsPage/PaymentGateway/PaymentGateway';
+import PaymentProcessingPage from '../components/PaymentsPage/PaymentGateway/PaymentProcessingPage';
 
 const AppRoutes = () => {
     return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
                 <Route path = '/delivery' component = {DeliveryCard}/>
                 <Route path = '/payment' component = {PaymentsPage}/>
                 <Route path = '/paymentgateway' component = {PaymentGateway}/>
+                <Route path = '/paymentprocessing' component = {PaymentProcessingPage}/>
             </Switch>
         </div>
     )

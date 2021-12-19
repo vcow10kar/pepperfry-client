@@ -1,9 +1,24 @@
 .wrapperDiv {
-  max-width: 940px;
-  height: 752px;
-  margin-top: 137px;
-  background: #f3f5f7;
-  /* margin-top: 137px; */
+  width: 100%;
+  height: 100%;
+}
+
+
+.wrapperDiv {
+  max-width: 960px;
+  height: 600px;
+  margin: auto;
+  box-shadow: 6px 6px 7px 2px rgba(0, 0, 0, 0.25);
+  /* display: flex;
+  flex-direction: row; */
+  margin-top: 150px;
+  background-color: #F3F5F7;
+  text-align: center;
+}
+
+.animationDiv {
+  width: 200px;
+  padding-top: 30px;
   margin: auto;
 }
 
@@ -13,20 +28,21 @@
   margin: auto;
 }
 .procesingP {
-  font-family: "Hammersmith One" sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.06em;
   color: #000000;
   margin-top: 90px;
+  text-align: center;
 }
 .transectionId {
   max-width: 368px;
   height: 18px;
   margin: auto;
-  text-align: left;
+  text-align: center;
   margin-bottom: 127px;
 }
 .paymentP {
@@ -52,6 +68,7 @@
   line-height: 18px;
   letter-spacing: 0.06em;
   color: #707070;
+  text-align: center;
 }
 .donotClose {
   max-width: 202px;

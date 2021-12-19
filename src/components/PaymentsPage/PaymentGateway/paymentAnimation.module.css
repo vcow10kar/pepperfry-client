@@ -1,0 +1,100 @@
+section {
+    display: flex;
+    gap: 16px;
+    margin-top: 100px;
+}
+
+/* .box {
+    width: 30px;
+    height: 30px;
+    background: slateblue;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+} */
+
+.one {
+    width: 20px;
+    height: 20px;
+    background: slateblue;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.two {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.three {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.four {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(
+        var(--bounce-offset)
+      );
+    }
+  }
+
+  .one, .two, .three, .four {
+    animation:
+      bounce alternate infinite
+      cubic-bezier(.2, .65, .6, 1);
+  }
+  .one {
+      
+    --bounce-offset: -20px;
+    animation-duration: 500ms;
+  }
+  .two {
+    --bounce-offset: -30px;
+    animation-duration: 600ms;
+  }
+  .three {
+    --bounce-offset: -40px;
+    animation-duration: 700ms;
+  }
+  .four {
+    --bounce-offset: -50px;
+    animation-duration: 800ms;
+  }

@@ -3,7 +3,7 @@ import styles from "./paymentgateway.module.css";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import Checkbox from "@mui/material/Checkbox";
 import { Link } from 'react-router-dom';
-import { Button } from "@mui/material";
+
 function PaymentGateway() {
   return (
     <div className={styles.wrapperDiv}>
@@ -114,7 +114,7 @@ function PaymentGateway() {
                   <Checkbox color = "secondary" />
                   Save this option securely for fastest payment
                 </div>
-                <button type = "submit" className={styles.proceedbtn}>PROCEED</button>
+                <Link to = "/paymentprocessing"><button type = "submit" className={styles.proceedbtn}>PROCEED</button></Link>
               </form>
             </div>
           </div>
