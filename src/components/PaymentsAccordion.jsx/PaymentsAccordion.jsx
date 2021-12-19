@@ -8,6 +8,7 @@ import LeftItemParent from '../Cart/Item_Detail/Item_left_side/LeftItemParent';
 import { useSelector } from 'react-redux';
 import { Form } from '../DeliveryPage/Form/Form';
 import { PaymentsCard } from '../PaymentsPage/PaymentCard/PaymentsCard';
+import { BillingCard } from '../PaymentsPage/BillingCard/BillingCard';
 
 const styles = {
     backgroundColor: 'white',
@@ -19,7 +20,6 @@ const styles = {
 
 const PaymentsAccordion = ({ data, paymentDisplay, handleDisplay, addressDisplay, setAddressDisplay }) => {
     const { cart, address } = useSelector(state => state.cart);
-
     return (
         <div>
             <Accordion sx={styles}>
@@ -52,17 +52,18 @@ const PaymentsAccordion = ({ data, paymentDisplay, handleDisplay, addressDisplay
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                     sx={{ backgroundColor: '#F9F9F9' }}
-                    onClick={() => {setAddressDisplay(false)}}
+                    onClick={() => { setAddressDisplay(false) }}
                 >
-                    <Typography>SHIPPING & BILLING DETAILS</Typography>
-                    {address ? <p>{address.address}</p> : null}
+                    {address ? 
+                        <div>
+                            <BillingCard/>
+                        </div> 
+                    : <Typography>SHIPPING & BILLING DETAILS</Typography>}
 
                 </AccordionSummary>
-                {/* {!addressDisplay ? */}
-                    <AccordionDetails>
-                        <Form handleDisplay={handleDisplay} handleAddressDisplay={() => setAddressDisplay(!addressDisplay)} />
-                    </AccordionDetails>
-                    {/* : null} */}
+                <AccordionDetails>
+                    <Form handleDisplay={handleDisplay} handleAddressDisplay={() => setAddressDisplay(!addressDisplay)} />
+                </AccordionDetails>
             </Accordion>
             <Accordion disabled={paymentDisplay ? false : true} sx={styles}>
                 <AccordionSummary
