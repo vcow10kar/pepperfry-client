@@ -8,10 +8,11 @@ import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "../../../Redux/Login/actions";
 import { Button } from "@mui/material";
+import { updateAddress } from "../../../Redux/Cart/actions";
 
-export const Form = ({handleDisplay}) => {
+export const Form = ({ handleDisplay, handleAddressDisplay }) => {
     const [display, setDisplay] = useState(true);
-    const [error,setError] = useState(false);
+    const [error, setError] = useState(false);
 
     const { user } = useSelector(state => state.login);
 
@@ -67,17 +68,32 @@ export const Form = ({handleDisplay}) => {
     const handleSubmit = () => {
         console.log("submit");
         console.log(formData);
-        
-        if(formData.name === "" || formData.phoneNo === "" || formData.pincode === "" && formData.address === ""
-        || formData.city === "" || formData.state === ""){
-                console.log("error");
-                setError(true)
-                // $("#name").focus();
-        }else{
-            console.log("No Error");
+
+        if (formData.name === "" || formData.phoneNo === "" || formData.pincode === "" && formData.address === ""
+            || formData.city === "" || formData.state === "") {
+            console.log("error");
+            setError(true)
+            // $("#name").focus();
+        } else {
+            console.log('Success...');
+            setError(false);
+            const payload = {
+                name: formData.name,
+                phoneNo: formData.phoneNo,
+                pincode: formData.pincode,
+                address: formData.address,
+                city: formData.city,
+                state: formData.state,
+                country: "India"
+            }
+
+            dispatch(updateAddress(payload));
+            handleDisplay();
         }
 
-        handleDisplay();
+        handleAddressDisplay();
+
+       
     }
 
     useEffect(() => {
@@ -90,15 +106,15 @@ export const Form = ({handleDisplay}) => {
     const focusDiv1 = useRef();
     const focusDiv2 = useRef();
 
-useEffect(() => {
-  focusDiv.current.focus(); 
-  focusDiv1.current.focus();
-  focusDiv2.current.focus();
-}, [error]);
+    useEffect(() => {
+        focusDiv.current.focus();
+        focusDiv1.current.focus();
+        focusDiv2.current.focus();
+    }, [error]);
 
-// return (
-//   <div ref={focusDiv}></div>
-// );
+    // return (
+    //   <div ref={focusDiv}></div>
+    // );
 
     return <div className={styles.formCard}>
 
@@ -107,7 +123,13 @@ useEffect(() => {
             <div className={styles.s1box}>
                 <div className={styles.dispalyS1Box1}>
                     <div style={{ marginRight: '69px' }}>Email</div>
-                    <input ref={focusDiv} type="text" name="email" placeholder="Email" onChange={handleChange} defaultValue={user ? user.email : null} />
+                    <div>
+                        <input style={error ? { border: '1px solid red' } : null} ref={focusDiv} type="text" name="email" placeholder="Email" onChange={handleChange} defaultValue={user ? user.email : null} />
+                        {error ? <p className={styles.errorHandling} style={{ paddingLeft: "4px", textAlign: "left" }}>Enter a valid email</p> : null}
+
+
+                    </div>
+
                 </div>
 
                 {display ?
@@ -154,26 +176,26 @@ useEffect(() => {
 
             <div className={styles.s2boxes}>
                 <div>Name</div>
-                <input ref={focusDiv1} class="inText" type="text" defaultValue={user ? `${user.displayName.firstName} ${user.displayName.lastName}` : null} name="name" placeholder="Eg:Madhu Venkat" onChange={handleChange} />
+                <input style={error ? { border: '1px solid red' } : null} ref={focusDiv1} class="inText" type="text" defaultValue={user ? `${user.displayName.firstName} ${user.displayName.lastName}` : null} name="name" placeholder="Eg: Madhu Venkat" onChange={handleChange} />
 
             </div>
-            {error ? <p className={styles.errorHandling}>enter a valid Name</p> : null}
+            {error ? <p className={styles.errorHandling}>Enter a Valid Name</p> : null}
             <div className={styles.s2boxes}>
                 <div>Mobile Number</div>
-                <input ref={focusDiv2}  type="text" name="phoneNo" placeholder="Eg:9999888898" onChange={handleChange} required/>
+                <input style={error ? { border: '1px solid red' } : null} ref={focusDiv2} type="text" name="phoneNo" placeholder="Eg: 9999888898" onChange={handleChange} required />
             </div>
-            {error ? <p className={styles.errorHandling}>enter a valid Number</p> : null}
+            {error ? <p className={styles.errorHandling}>Enter a Valid Number</p> : null}
             <div className={styles.s2boxes}>
                 <div>Pincode</div>
-                <input type="text" name="pincode" placeholder="Eg:454343" onChange={handleChange} />
+                <input style={error ? { border: '1px solid red' } : null} type="text" name="pincode" placeholder="Eg: 454343" onChange={handleChange} />
             </div>
-            {error ?  <p className={styles.errorHandling}>enter a valid pincode</p> : null}
+            {error ? <p className={styles.errorHandling}>Enter a Valid Pincode</p> : null}
             <div className={styles.s2boxes}>
                 <div>Address</div>
-                <input type="text" name="address" placeholder="House no, building name, society, area, road, landmark" onChange={handleChange} />
+                <input style={error ? { border: '1px solid red' } : null} type="text" name="address" placeholder="House No., Building Name, Society, Area, Road, Landmark" onChange={handleChange} />
             </div>
-               {error ? <p className={styles.errorHandling}>enter a valid Address</p> : null }
-            
+            {error ? <p className={styles.errorHandling}>Enter a Valid Address</p> : null}
+
 
         </div>
 
@@ -182,12 +204,12 @@ useEffect(() => {
         <div className={styles.section3}>
             <div className={styles.s3boxes}>
                 <div>
-                    <input type="text" name="city" placeholder=" city" onChange={handleChange} />
-                    {error ?  <p className={styles.errorHandling} style={{paddingLeft:"0px",textAlign:"left"}}>enter a valid city</p>:null }
+                    <input style={error ? { border: '1px solid red' } : null} type="text" name="city" placeholder=" City" onChange={handleChange} />
+                    {error ? <p className={styles.errorHandling} style={{ paddingLeft: "4px", textAlign: "left" }}>Enter a Valid City</p> : null}
                 </div>
                 <div>
-                    <input type="text" name="state" placeholder=" state" onChange={handleChange} />
-                    {error ? <p className={styles.errorHandling} style={{paddingLeft:"0px",textAlign:"left"}}>enter a valid state</p>:null}
+                    <input style={error ? { border: '1px solid red' } : null} type="text" name="state" placeholder=" State" onChange={handleChange} />
+                    {error ? <p className={styles.errorHandling} style={{ paddingLeft: "4px", textAlign: "left" }}>Enter a Valid State</p> : null}
                 </div>
 
             </div>
@@ -203,7 +225,7 @@ useEffect(() => {
                 <div>I want to sign up</div>
             </div>
             <div>
-                <Button className={styles.button} onClick={handleSubmit} variant = "contained" disableElevation>Save and continue</Button>
+                <Button onClick={handleSubmit} variant="contained" disableElevation>Save and continue</Button>
             </div>
         </div>
     </div>

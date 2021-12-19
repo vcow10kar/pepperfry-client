@@ -5,6 +5,7 @@ import Home from '../components/Home/Home';
 import AllproductPage from '../allProductPage/AllproductPage';
 import { DeliveryCard } from '../components/DeliveryPage/Main';
 import { PaymentsPage } from '../components/PaymentsPage/Main';
+import PaymentGateway from '../components/PaymentsPage/PaymentGateway/PaymentGateway';
 
 const AppRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
                 <Route path = '/cart' component={Cart}/>
                 <Route path = '/delivery' component = {DeliveryCard}/>
                 <Route path = '/payment' component = {PaymentsPage}/>
+                <Route path = '/paymentgateway' component = {PaymentGateway}/>
             </Switch>
         </div>
     )

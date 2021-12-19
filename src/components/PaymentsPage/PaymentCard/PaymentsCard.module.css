@@ -180,6 +180,6 @@
 
 }
 
-button:hover{
+.payButtons:hover{
     color: rgba(241, 101, 33, 1);
 }

@@ -90,4 +90,4 @@ const deleteItem = (user, product) => dispatch => {
     }
 }
 
-export { addToCart, getCartItems, updateCartItem, deleteItem };
+export { addToCart, getCartItems, updateCartItem, deleteItem, updateAddress };
