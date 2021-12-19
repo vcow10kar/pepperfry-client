@@ -48,7 +48,7 @@ export const PaymentsCard = ({data}) => {
 
         <div className={styles.card2}>
             <div>
-                <button className={styles.payButtons} onClick={()=>{handleOnClick(0)}}>
+                <button className={styles.payButtons} style={{background:"black",color:"white"}} onClick={()=>{handleOnClick(0)}}>
                     <img src={debit} alt = "pay"/>
                     <div style={{marginLeft:"16px"}}>ATM/DEBIT CARD</div>
                 </button>
@@ -96,8 +96,6 @@ export const PaymentsCard = ({data}) => {
 
             
             <DebitCardPayments data = {data} />
-            
-
         </div>
     </div>
 }

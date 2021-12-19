@@ -7,83 +7,97 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function SearchNavbar() {
+  const [inputText, setInputText] = useState("");
   const [search, setSearch] = useState([]);
 
-  async function handleChange(event) {
-    const { value } = event.target;
-    // let { data } = await axios.get(
-    //   `https://demo.dataverse.org/api/search?q=${value}`
-    // );
+  const handleInputChange = (e) => {
+    e.preventDefault();
+    setInputText(e.target.value);
+    handleChange();
+  }
 
-    let { data } = await axios.get(`http://localhost:5000/category`);
+  async function handleChange() {
 
-    console.log(data);
-    setSearch(data);
+    if (inputText.length > 2) {
+      let { data } = await axios.get(`http://localhost:5000/category/search?search=${inputText}`);
+      setSearch(data);
+    }
+
+
   }
 
   let history = useHistory();
 
   const handleNavigation = (id) => {
+    setSearch([]);
+    setInputText("");
     history.push(`/allProducts/${id}`);
   };
 
   return (
     <>
       <div className={styles.mainDiv}>
-        <img
-          className={styles.companyLogo}
-          src="https://ii1.pepperfry.com/images/svg/pf_logo_nov_2017.svg"
-          alt="pepperfry logo"
-        />
-
-        <div className={styles.searchDiv}>
-          <input
-            className={styles.searchBox}
-            type="text"
-            placeholder="Search"
-            name="search"
-            onChange={handleChange}
+        <Link to='/'>
+          <img
+            className={styles.companyLogo}
+            src="https://ii1.pepperfry.com/images/svg/pf_logo_nov_2017.svg"
+            alt="pepperfry logo"
           />
-          <SearchOutlinedIcon className={styles.searchIcon} />
+        </Link>
+        <div className={styles.searchDivParent}>
+          <div className={styles.searchDiv}>
+            <input
+              className={styles.searchBox}
+              type="text"
+              placeholder="Search"
+              name="search"
+              onChange={handleInputChange}
+            />
+            <SearchOutlinedIcon className={styles.searchIcon} />
+          </div>
+          {search.length > 0 && inputText.length > 3 ? (
+            <div className={styles.autocomplete}>
+              {search?.map((el, i) => {
+                return (
+                  <div
+                    key={i}
+                    className={styles.autocompleteItems}
+                    onClick={() => handleNavigation(el._id)}
+                  >
+                    <p>{el.name}</p>
+                  </div>
+                );
+              })}
+            </div>
+          ) : null}
         </div>
+
 
         <div className={styles.icondiv}>
           <div className={styles.iconOne}>
             <LocalShippingOutlinedIcon className={styles.icon} />
-            Track
+            <p>Track</p>
           </div>
           <div className={styles.iconOne}>
             <FavoriteBorderOutlinedIcon className={styles.icon} />
-            Wishlist
+            <p>Wishlist</p>
           </div>
           <div className={styles.iconOne}>
-            <ShoppingCartOutlinedIcon className={styles.icon} />
-            Cart
+            <Link to="/cart">
+              <ShoppingCartOutlinedIcon className={styles.icon} />
+              <p>Cart</p>
+            </Link>
           </div>
           <div className={styles.iconOne}>
             <PermIdentityOutlinedIcon className={styles.icon} />
-            Profile
+            <p>Profile</p>
           </div>
         </div>
       </div>
-      {search?.length > 0 && (
-        <div className={styles.autocomplete}>
-          {search?.map((el, i) => {
-            return (
-              <div
-                key={i}
-                className={styles.autocompleteItems}
-                onClick={() => handleNavigation(el._id)}
-              >
-                <p>{el.name}</p>
-              </div>
-            );
-          })}
-        </div>
-      )}
+
     </>
   );
 }

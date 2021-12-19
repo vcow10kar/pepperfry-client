@@ -8,12 +8,10 @@
   flex-direction: column;
 }
 .search {
-  width: 149px;
-  height: 24px;
   font-family: "Hammersmith One", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.06em;
   color: #707070;
@@ -41,6 +39,8 @@
   line-height: 18px;
   letter-spacing: 0.06em;
   color: #000000;
+  margin-top: 30px;
+  gap: 35px;
 }
 .furniture:hover {
   color: #f16521;

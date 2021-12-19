@@ -3,7 +3,7 @@
   padding: 0px;
 }
 .mainFooterDiv {
-  max-width: 1088px;
+  max-width: 1085px;
 
   background: #f3f5f7;
   /* border: 1px solid black; */
@@ -66,13 +66,14 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 162px;
+  margin-left: 118px;
 }
 
 .subDiv2 {
   width: 1086px;
   /* border: 1px solid black; */
   height: 240px;
+
   display: flex;
   flex-direction: row;
   text-align: left;

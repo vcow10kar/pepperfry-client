@@ -19,6 +19,7 @@ display: flex;
   border: none;
   background: white;
   color: black;
+  font-size: 30px;
 }
 .count_box {
   width: 45px;
@@ -35,6 +36,7 @@ display: flex;
   background: white;
   border: none;
   color: black;
+  font-size: 30px;
 }
 .price {
   width: 93px;

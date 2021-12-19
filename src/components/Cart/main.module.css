@@ -6,7 +6,25 @@
 }
 
 .outer_most_div {
+    width: 100%;
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
 }
 
+
+.continueShopping {
+    padding-top: 20px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #F16521;
+}
+
+.continueShopping a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerDiv {
+    width: 100%;
+    margin: auto;
+}

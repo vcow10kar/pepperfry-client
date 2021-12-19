@@ -124,7 +124,7 @@
 
 .section2 {
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-left: 24px;
   margin-right: 89px;
 
@@ -145,7 +145,7 @@
 }
 .section3 {
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-left: 166px;
   margin-right: 111px;
   display: flex;
@@ -458,3 +458,10 @@ input[type="text"] {
 input:focus {
   outline: none !important;
 }
+.errorHandling{
+  /* display: none; */
+  color: red;
+  padding-left: 120px;
+}
+
+
