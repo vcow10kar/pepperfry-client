@@ -1,0 +1,262 @@
+.maindiv {
+  max-width: 960px;
+  margin: auto;
+  /* margin-top: 180px; */
+  box-shadow: 5px black;
+  -webkit-box-shadow: 0 2px rgba(0, 0, 0, 0.205);
+  display: flex;
+  flex-direction: row;
+}
+.leftDiv {
+  width: 480px;
+  height: 664px;
+  /* border: 1px solid black; */
+  border-left: 5px solid rgb(16, 142, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftDiv1 {
+  width: 480px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+.leftDiv11 {
+  width: 64px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  align-items: center;
+}
+
+.left11p {
+  font-family: "Hammersmith One" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 25px;
+}
+.leftDiv12img {
+  width: 100px;
+  height: 20px;
+  margin-right: 96px;
+}
+.leftDiv2 {
+  width: 395px;
+  height: 44px;
+  margin-top: 70px;
+}
+.leftDiv2p {
+  padding: 10px;
+  font-family: "Hammersmith One" sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.leftDiv3 {
+  width: 395px;
+  height: 40px;
+  margin-top: 18px;
+}
+.leftDiv3p {
+  padding: 10px;
+  font-family: "Hammersmith One" sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.leftDiv3p > span {
+  font-weight: 700;
+}
+
+.leftDiv4 {
+  width: 395px;
+  height: 42px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.leftDiv4p {
+  font-family: "Fira Sans" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #707070;
+}
+
+.leftDiv5 {
+  width: 400px;
+  height: 148px;
+  margin-top: 39px;
+}
+
+.leftDiv5 > p {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #707070;
+  padding-left: 39px;
+}
+
+.leftDiv5 hr {
+  margin-left: 42px;
+  width: 65px;
+  /* height: 0.5px; */
+  border: 1px dashed;
+  color: #707070;
+  margin-top: 15px;
+}
+
+.leftDiv6 {
+  max-width: 481px;
+  height: 142px;
+  background-color: white;
+}
+
+.leftDiv611 {
+  max-width: 388px;
+  height: 102px;
+  font-family: " Hammersmith One" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: rgb(74, 144, 226);
+  letter-spacing: 0.06em;
+  margin-left: 73px;
+  /* Primary/Night Black */
+  color: #000000;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+  text-align: inherit;
+}
+.rightDiv {
+  width: 480px;
+  height: 364px;
+
+  /* border: 1px solid black; */
+}
+.rightDiv1 {
+  width: 200px;
+  height: 18px;
+  margin-top: 48px;
+  line-height: 18px;
+}
+
+.rightDiv1p {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+
+  padding-left: 32px;
+  letter-spacing: 0.06em;
+  color: #707070;
+}
+.rightDiv2 {
+  max-width: 332px;
+  height: 520px;
+  margin-top: 24px;
+  padding-left: 78px;
+}
+.form1 {
+  width: 276px;
+  height: 380px;
+  /* border-left: 5px solid rgb(16, 142, 233); */
+}
+.formwrapper {
+  border-left: 5px solid rgb(16, 142, 233);
+}
+.form1 > label {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.formInputdiv {
+  width: 260px;
+  height: 44px;
+  border: 1px solid #707070;
+  margin-top: 16px;
+  padding-left: 15px;
+  background-color: #f3f5f7;
+  font-family: "Hammersmith One" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #d0d0d0;
+}
+
+.cvvandExpiryDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.formexpiry {
+  width: 103px;
+  height: 34px;
+  padding-left: 15px;
+  background: #f3f5f7;
+  outline: none;
+  border: 1px solid #f3f5f7;
+}
+.cvvandExpiryDiv > label {
+  margin-bottom: 15px;
+  font-family: " Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.checKboxdiv {
+  margin-top: 10px;
+  margin-left: -14px;
+  font-family: "Fira Sans" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #707070;
+}
+
+.proceedbtn {
+  width: 276px;
+  width: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+  margin: auto;
+  background: #4a90e2;
+  border-radius: 4px;
+  margin-top: 20px;
+}
