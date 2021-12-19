@@ -12,7 +12,10 @@ This project is build as a part of masai school(30 weeks of boot camp) curricula
 
 **Client:** React Js, Redux, Material UI
 
-**Server:** Node, Express, MongoDB
+**Server:** Node, Express, MongoDB 
+
+[Click Me to Navigate to server](https://github.com/vcow10kar/pepperfry-server)
+
 
 
 ## Installation
