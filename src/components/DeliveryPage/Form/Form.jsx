@@ -4,13 +4,15 @@ import google from "../../deliveryAddressPage/footerAssets/google.svg"
 import facebook from "../../deliveryAddressPage/footerAssets/f.svg";
 import Checkbox from '@mui/material/Checkbox';
 import axios from 'axios';
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "../../../Redux/Login/actions";
 import { Button } from "@mui/material";
 
 export const Form = ({handleDisplay}) => {
     const [display, setDisplay] = useState(true);
+    const [error,setError] = useState(false);
+
     const { user } = useSelector(state => state.login);
 
     console.log('Logged in User', user);
@@ -65,6 +67,16 @@ export const Form = ({handleDisplay}) => {
     const handleSubmit = () => {
         console.log("submit");
         console.log(formData);
+        
+        if(formData.name === "" || formData.phoneNo === "" || formData.pincode === "" && formData.address === ""
+        || formData.city === "" || formData.state === ""){
+                console.log("error");
+                setError(true)
+                // $("#name").focus();
+        }else{
+            console.log("No Error");
+        }
+
         handleDisplay();
     }
 
@@ -74,6 +86,19 @@ export const Form = ({handleDisplay}) => {
         }
     })
 
+    const focusDiv = useRef();
+    const focusDiv1 = useRef();
+    const focusDiv2 = useRef();
+
+useEffect(() => {
+  focusDiv.current.focus(); 
+  focusDiv1.current.focus();
+  focusDiv2.current.focus();
+}, [error]);
+
+// return (
+//   <div ref={focusDiv}></div>
+// );
 
     return <div className={styles.formCard}>
 
@@ -82,7 +107,7 @@ export const Form = ({handleDisplay}) => {
             <div className={styles.s1box}>
                 <div className={styles.dispalyS1Box1}>
                     <div style={{ marginRight: '69px' }}>Email</div>
-                    <input type="text" name="email" placeholder="Email" onChange={handleChange} defaultValue={user ? user.email : null} />
+                    <input ref={focusDiv} type="text" name="email" placeholder="Email" onChange={handleChange} defaultValue={user ? user.email : null} />
                 </div>
 
                 {display ?
@@ -129,25 +154,26 @@ export const Form = ({handleDisplay}) => {
 
             <div className={styles.s2boxes}>
                 <div>Name</div>
-                <input class="inText" type="text" defaultValue={user ? `${user.displayName.firstName} ${user.displayName.lastName}` : null} name="name" placeholder="Eg:Madhu Venkat" onChange={handleChange} />
+                <input ref={focusDiv1} class="inText" type="text" defaultValue={user ? `${user.displayName.firstName} ${user.displayName.lastName}` : null} name="name" placeholder="Eg:Madhu Venkat" onChange={handleChange} />
 
             </div>
-            <p>enter a valid Name</p>
+            {error ? <p className={styles.errorHandling}>enter a valid Name</p> : null}
             <div className={styles.s2boxes}>
                 <div>Mobile Number</div>
-                <input type="text" name="phoneNo" placeholder="Eg:9999888898" onChange={handleChange} />
+                <input ref={focusDiv2}  type="text" name="phoneNo" placeholder="Eg:9999888898" onChange={handleChange} required/>
             </div>
-            <p>enter a valid Number</p>
+            {error ? <p className={styles.errorHandling}>enter a valid Number</p> : null}
             <div className={styles.s2boxes}>
                 <div>Pincode</div>
                 <input type="text" name="pincode" placeholder="Eg:454343" onChange={handleChange} />
             </div>
-            <p>enter a valid pincode</p>
+            {error ?  <p className={styles.errorHandling}>enter a valid pincode</p> : null}
             <div className={styles.s2boxes}>
                 <div>Address</div>
                 <input type="text" name="address" placeholder="House no, building name, society, area, road, landmark" onChange={handleChange} />
             </div>
-            <p>enter a valid Address</p>
+               {error ? <p className={styles.errorHandling}>enter a valid Address</p> : null }
+            
 
         </div>
 
@@ -155,13 +181,13 @@ export const Form = ({handleDisplay}) => {
 
         <div className={styles.section3}>
             <div className={styles.s3boxes}>
-                <div >
+                <div>
                     <input type="text" name="city" placeholder=" city" onChange={handleChange} />
-                    <p>enter a valid city</p>
+                    {error ?  <p className={styles.errorHandling} style={{paddingLeft:"0px",textAlign:"left"}}>enter a valid city</p>:null }
                 </div>
                 <div>
                     <input type="text" name="state" placeholder=" state" onChange={handleChange} />
-                    <p>enter a valid state</p>
+                    {error ? <p className={styles.errorHandling} style={{paddingLeft:"0px",textAlign:"left"}}>enter a valid state</p>:null}
                 </div>
 
             </div>

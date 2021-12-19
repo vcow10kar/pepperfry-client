@@ -5,6 +5,8 @@ import rupay from "../../deliveryAddressPage/footerAssets/rupay.svg"
 import masteroRed from "../../deliveryAddressPage/footerAssets/redYellow.svg"
 import masteroBlue from "../../deliveryAddressPage/footerAssets/blueRed.svg"
 import { useState, useEffect } from "react"
+import { Button } from "@mui/material";
+import { padding } from "@mui/system"
 // import { DebitCardPayments } from "./DebitCard"
 
 
@@ -29,6 +31,7 @@ export const DebitCardPayments = ({data}) =>{
         getPriceDetails();
     }, data);
     
+    const [buttonState, setButtonState] = useState(true);
     const [box1C,setB1C] = useState(false);
     const [box2C,setB2C] = useState(false);
     const [box3C,setB3C] = useState(false);
@@ -39,6 +42,7 @@ export const DebitCardPayments = ({data}) =>{
         setB2C(false)
         setB3C(false)
         setB4C(false)
+        setButtonState(false)
 
     }
 
@@ -47,6 +51,8 @@ export const DebitCardPayments = ({data}) =>{
         setB2C(true)
         setB3C(false)
         setB4C(false)
+        setButtonState(false)
+
 
     }
     const handleOnChange3 = ()=>{
@@ -54,6 +60,8 @@ export const DebitCardPayments = ({data}) =>{
         setB2C(false)
         setB3C(true)
         setB4C(false)
+        setButtonState(false)
+
 
     }
     const handleOnChange4 = ()=>{
@@ -61,6 +69,8 @@ export const DebitCardPayments = ({data}) =>{
         setB2C(false)
         setB3C(false)
         setB4C(true)
+        setButtonState(false)
+
 
     }
 
@@ -83,7 +93,8 @@ export const DebitCardPayments = ({data}) =>{
                 </div>
 
                 <div>
-                    <button className={styles.button}>PROCEED TO PAY ₹{totalValue.toLocaleString('en-IN')} </button>
+                    {/* <button className={styles.button} disabled={buttonState?true:false} onClick={()=>{console.log('llll');}}>PROCEED TO PAY ₹{totalValue.toLocaleString('en-IN')} </button> */}
+                    <Button  style={{display:"flex",margin:"0px"}} disabled={buttonState?true:false} variant = "contained" disableElevation onClick={()=>{console.log('llll');}}>PROCEED TO PAY ₹{totalValue.toLocaleString('en-IN')}</Button>
                 </div>
 
                 <div className={styles.light}>Note : You will be asked to enter your card details  on
