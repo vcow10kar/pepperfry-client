@@ -14,7 +14,7 @@ This project is build as a part of masai school(30 weeks of boot camp) curricula
 
 **Server:** Node, Express, MongoDB 
 
-[Click Me to Navigate to the Server Repositoryr](https://github.com/vcow10kar/pepperfry-server)
+### [Click Me to Navigate to the Server Repository](https://github.com/vcow10kar/pepperfry-server)
 
 
 
