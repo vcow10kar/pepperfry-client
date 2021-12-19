@@ -17,20 +17,21 @@ const styles = {
     padding: '0px'
 }
 
-const PaymentsAccordion = ({data, paymentDisplay, handleDisplay}) => {
-    const {cart} = useSelector(state => state.cart);
+const PaymentsAccordion = ({ data, paymentDisplay, handleDisplay, addressDisplay, setAddressDisplay }) => {
+    const { cart, address } = useSelector(state => state.cart);
+
     return (
         <div>
-            <Accordion sx = {styles}>
+            <Accordion sx={styles}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx = {{backgroundColor: '#F9F9F9'}}
+                    sx={{ backgroundColor: '#F9F9F9' }}
                 >
                     <Typography>ORDER SUMMARY</Typography>
                 </AccordionSummary>
-                <AccordionDetails sx = {{padding: '0px'}}>
+                <AccordionDetails sx={{ padding: '0px' }}>
                     <div>
                         {cart.length > 0 ?
 
@@ -45,30 +46,35 @@ const PaymentsAccordion = ({data, paymentDisplay, handleDisplay}) => {
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <Accordion sx = {styles}>
+            <Accordion sx={styles}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
-                    sx = {{backgroundColor: '#F9F9F9'}}
+                    sx={{ backgroundColor: '#F9F9F9' }}
+                    onClick={() => {setAddressDisplay(false)}}
                 >
                     <Typography>SHIPPING & BILLING DETAILS</Typography>
+                    {address ? <p>{address.address}</p> : null}
+
                 </AccordionSummary>
-                <AccordionDetails>
-                   <Form handleDisplay = {handleDisplay}/>
-                </AccordionDetails>
+                {/* {!addressDisplay ? */}
+                    <AccordionDetails>
+                        <Form handleDisplay={handleDisplay} handleAddressDisplay={() => setAddressDisplay(!addressDisplay)} />
+                    </AccordionDetails>
+                    {/* : null} */}
             </Accordion>
-            <Accordion disabled = {paymentDisplay ? false : true} sx = {styles}>
+            <Accordion disabled={paymentDisplay ? false : true} sx={styles}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3a-content"     
+                    aria-controls="panel3a-content"
                     id="panel3a-header"
-                    sx = {{backgroundColor: '#F9F9F9'}}
+                    sx={{ backgroundColor: '#F9F9F9' }}
                 >
                     <Typography>PAYMENTS</Typography>
                 </AccordionSummary>
-                <AccordionDetails  sx = {{paddingLeft: '10px'}}>
-                   <PaymentsCard data = {data}/>
+                <AccordionDetails sx={{ paddingLeft: '10px' }}>
+                    <PaymentsCard data={data} />
                 </AccordionDetails>
             </Accordion>
         </div>

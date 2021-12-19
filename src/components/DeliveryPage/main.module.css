@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 23px;
+    margin-top: 120px;
+    position: relative;
     gap: 20px;
 }
