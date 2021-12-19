@@ -48,8 +48,8 @@ function PaymentProcessingPage() {
 
     const payload = {
       products: [...cart],
-      email: user.email,
-      user_id: user._id,
+      email: user ? user.email : "dummyemail@gmail.com",
+      user_id: user ? user._id : "null",
       totalPrice: totalVal,
       address: {
         name: address.name,
