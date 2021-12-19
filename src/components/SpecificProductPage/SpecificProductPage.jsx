@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from "../../Redux/Cart/actions";
 import SearchNavbar from "../Navbar/SearchNavbar";
 import Footer from "../footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 const product = {
     name: "Classic 3 Seater Sofa in Beige Colour",
@@ -106,44 +107,47 @@ const SpecificProductPage = () => {
 
     return (
         <div className={styles.specificProductPage}>
-            <SearchNavbar />
-            <div className={styles.productsInformation}>
-                <div>
-                    <ProductsImageGallery data={data.imagesArray} />
+            <Navbar/>
+            <div className = {styles.parentPage}>
+                <div className={styles.productsInformation}>
+                    <div>
+                        <ProductsImageGallery data={data.imagesArray} />
 
-                </div>
-
-                <div className={styles.productsInformationText}>
-                    <ProductHeader data={data} />
-
-                    <ChristmasPromo />
-                    <EMIWarranty />
-                    <ProductColorVariants data={data} />
-                    <BankOffers />
-                    <ProductQuantity handleChange={handleQuantityChange} />
-                    <div className={styles.buttonFlex}>
-                        <ButtonsDiv text={cartStatus ? 'Go to Cart' : 'Add to Cart'} handleClick={cartStatus ? goToCart : handleAddToCart} icon={cartStatus ? <ArrowForwardIcon sx={{ color: 'white' }} /> : null} />
-                        <ButtonsDiv text={'Buy Now'} handleClick={handleBuyNow} icon={null} />
                     </div>
-                    <Delivery />
-                    <ProductDetails data={data} />
+
+                    <div className={styles.productsInformationText}>
+                        <ProductHeader data={data} />
+
+                        <ChristmasPromo />
+                        <EMIWarranty />
+                        <ProductColorVariants data={data} />
+                        <BankOffers />
+                        <ProductQuantity handleChange={handleQuantityChange} />
+                        <div className={styles.buttonFlex}>
+                            <ButtonsDiv text={cartStatus ? 'Go to Cart' : 'Add to Cart'} handleClick={cartStatus ? goToCart : handleAddToCart} icon={cartStatus ? <ArrowForwardIcon sx={{ color: 'white' }} /> : null} />
+                            <ButtonsDiv text={'Buy Now'} handleClick={handleBuyNow} icon={null} />
+                        </div>
+                        <Delivery />
+                        <ProductDetails data={data} />
+                    </div>
+                </div>
+
+
+                <SimilarProductsDiv />
+
+                <ProductOverview />
+
+                <div style={{ backgroundColor: '#F3F5F7', paddingBottom: '20px' }}>
+                    <MoreProductsDiv />
+
+                    <ExploreOptions />
+                </div>
+
+                <div className={styles.footerDiv}>
+                    <Footer />
                 </div>
             </div>
 
-
-            <SimilarProductsDiv />
-
-            <ProductOverview />
-
-            <div style={{ backgroundColor: '#F3F5F7', paddingBottom: '20px' }}>
-                <MoreProductsDiv />
-
-                <ExploreOptions />
-            </div>
-
-            <div className = {styles.footerDiv}>
-                <Footer />
-            </div>
         </div>
     )
 }

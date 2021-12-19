@@ -1,6 +1,8 @@
 .productMainDiv {
   width: 100%;
   background: #f1f1f1;
+  position: relative;
+  top: 120px;
 }
 
 .tabbarDiv {
@@ -82,7 +84,7 @@
 
 .footerDiv {
   background: #f3f5f7;
-  margin-top: 46px;
+  margin-top: 200px;
 }
 
 a {
