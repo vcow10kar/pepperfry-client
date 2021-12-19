@@ -7,7 +7,7 @@ import { DeliveryCard } from './components/DeliveryPage/Main';
 function App() {
   return (
     <div className="App">
-      <SearchNavbar/>
+      {/* <SearchNavbar/> */}
       <AppRoutes/>
       
     </div>

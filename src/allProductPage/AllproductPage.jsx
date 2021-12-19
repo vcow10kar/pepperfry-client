@@ -12,6 +12,7 @@ import SearchNavbar from "../components/Navbar/SearchNavbar";
 import { useParams } from "react-router-dom";
 import { cleanup } from "@testing-library/react";
 import { Button } from "@mui/material";
+import Navbar from "../components/Navbar/Navbar";
 
 function AllproductPage() {
   const [allData, setAllData] = useState([]);
@@ -64,7 +65,7 @@ function AllproductPage() {
   return (
     <>
       <div style={{ backgroundColor: "white" }}>
-        <SearchNavbar />
+        <Navbar/>
       </div>
 
       <div className={styles.tabbarDiv}>

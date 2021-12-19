@@ -1,8 +1,14 @@
+.tabbarParent {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 0px #E7E7E7;
+}
+
 .mainDiv {
-  max-width: 1084px;
-  height: 37px;
+  max-width: 1070px;
+  height: 48px;
   /* border: 1px solid black; */
-  margin: auto;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -10,30 +16,39 @@
   background-color: #ffffff;
   /* margin-left: 17px; */
 }
-.category p {
+
+.category {
+  min-width: 40px;
+}
+.category > p {
   height: 18px;
-  font-family: "Fira Sans" sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.06em;
   color: #000000;
-  margin-bottom: 5px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.category p:hover {
+
+.category:hover p {
   color: black;
   font-weight: 600;
   transition: all 0.1s ease;
 }
 
 .category:hover {
-  border-bottom: 3px solid orangered;
-  transition: all 0.3s ease;
+  border-bottom: 2px solid orangered;
+  /* transition: all 0.3s ease; */
 }
 
 .subCategory {
-  max-width: 1086px;
+  max-width: 1085px;
   margin: auto;
   /* border: 1px solid black; */
   height: 400px;
