@@ -1,0 +1,70 @@
+.wrapperDiv {
+  max-width: 940px;
+  height: 752px;
+  margin-top: 137px;
+  background: #f3f5f7;
+  /* margin-top: 137px; */
+  margin: auto;
+}
+
+.processingDiv {
+  max-width: 368px;
+  height: 44px;
+  margin: auto;
+}
+.procesingP {
+  font-family: "Hammersmith One" sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-top: 90px;
+}
+.transectionId {
+  max-width: 368px;
+  height: 18px;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 127px;
+}
+.paymentP {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #707070;
+  padding-left: 22px;
+}
+.thankyouDiv {
+  max-width: 368px;
+  height: 18px;
+  margin: auto;
+}
+.thankyouPDiv {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #707070;
+}
+.donotClose {
+  max-width: 202px;
+  height: 18px;
+  margin: auto;
+  margin-top: 36px;
+}
+.donotCloseP {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
