@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./paymentgateway.module.css";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import Checkbox from "@mui/material/Checkbox";
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function PaymentGateway() {
+  const { cart } = useSelector(state => state.cart);
+
+  const [totalValue, setTotalValue] = useState(0);
+
+  const getPriceDetails = () => {
+    let totalPrice = 0;
+    let discountPrice = 0;
+    let totalVal = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+      const actualPrice = cart[i].product.price * cart[i].quantity;
+      totalPrice += actualPrice
+      discountPrice += (actualPrice - Math.floor(actualPrice * (cart[i].product.discount_percentage / 100)));
+    }
+    totalVal = totalPrice - discountPrice + 99;
+    setTotalValue(totalVal);
+  }
+
+  console.log(totalValue);
+
+  useEffect(() => {
+    getPriceDetails();
+  }, []);
   return (
     <div className={styles.wrapperDiv}>
       <div className={styles.maindiv}>
@@ -31,7 +55,7 @@ function PaymentGateway() {
             </div>
             <div className={styles.leftDiv3}>
               <p className={styles.leftDiv3p}>
-                Total Payable Amount <span>₹ 12,546</span>{" "}
+                Total Payable Amount <span>₹ {totalValue.toLocaleString('en-IN')}</span>{" "}
               </p>
             </div>
             <div className={styles.leftDiv4}>
@@ -41,7 +65,7 @@ function PaymentGateway() {
               <p>-Convenience of local currency </p>
               <p>-Best rates for this payment</p>
               <p>-Final amount charged</p>
-              <br/>
+              <br />
               <hr />
               <p style={{ marginTop: "15px" }}>-Transaction ID :307601519 </p>
             </div>
@@ -111,10 +135,10 @@ function PaymentGateway() {
                   className={styles.formInputdiv}
                 />
                 <div className={styles.checKboxdiv}>
-                  <Checkbox color = "secondary" />
+                  <Checkbox color="secondary" />
                   Save this option securely for fastest payment
                 </div>
-                <Link to = "/paymentprocessing"><button type = "submit" className={styles.proceedbtn}>PROCEED</button></Link>
+                <Link to="/paymentprocessing"><button type="submit" className={styles.proceedbtn}>PROCEED</button></Link>
               </form>
             </div>
           </div>

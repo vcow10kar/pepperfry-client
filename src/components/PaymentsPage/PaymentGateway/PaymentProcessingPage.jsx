@@ -5,6 +5,8 @@ import styles from "./paymentprocessing.module.css";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import axios from 'axios';
+import { useDispatch, useSelector } from "react-redux";
 
 const style = {
   position: 'absolute',
@@ -20,18 +22,56 @@ const style = {
 };
 
 function PaymentProcessingPage() {
+  const {cart, address} = useSelector(state => state.cart);
+  const {user} = useSelector(state => state.login);
   const [display, setDisplay] = useState(false);
+  
   const handleOpen = () => setDisplay(true);
   const handleClose = () => {
     setDisplay(false);
     history.push('/');
   }
-
   let history = useHistory();
 
   const submitOrder = () => {
     console.log('Submitting order...');
+    let totalPrice = 0;
+    let discountPrice = 0;
+    let totalVal = 0;
 
+    for (let i = 0; i < cart.length; i++) {
+      const actualPrice = cart[i].product.price * cart[i].quantity;
+      totalPrice += actualPrice
+      discountPrice += (actualPrice - Math.floor(actualPrice * (cart[i].product.discount_percentage / 100)));
+    }
+    totalVal = totalPrice - discountPrice + 99;
+
+    const payload = {
+      products: [...cart],
+      email: user.email,
+      user_id: user._id,
+      totalPrice: totalVal,
+      address: {
+        name: address.name,
+        phoneNo: address.phoneNo,
+        pincode: address.pincode,
+        address: address.address,
+        city: address.city,
+        state: address.state,
+        country: address.country,
+      }
+    }
+
+    axios.post('http://localhost:5000/order', payload)
+    .then(res => {
+      console.log('Order Submitted....');
+      console.log(res);
+    })
+    .catch(err => {
+      console.log(err);
+    })
+
+    localStorage.setItem('cart', JSON.stringify([]));
     
     setTimeout(() => {
       setDisplay(true);
@@ -41,7 +81,8 @@ function PaymentProcessingPage() {
 
   useEffect(() => {
     submitOrder();
-  })
+    
+  }, [])
   return (
     <div className= {styles.parentDiv}>
       <div className={styles.wrapperDiv}>
