@@ -45,7 +45,7 @@ function AllproductPage() {
     let { data } = await axios.get(
       `http://localhost:5000/products/category/${id}?page=${page}`
     );
-    setProductData(prev => [...prev,...data]);
+    setProductData(prev => [...prev, ...data]);
     setAllData(prev => [...prev, ...data]);
   }
 
@@ -65,16 +65,17 @@ function AllproductPage() {
   return (
     <>
       <div style={{ backgroundColor: "white" }}>
-        <Navbar/>
+        <Navbar />
       </div>
 
-      <div className={styles.tabbarDiv}>
+      {/* <div className={styles.tabbarDiv}>
         <Tabbar />
-      </div>
-      <div style={{ backgroundColor: "white" }}>
-        <SearchResult />
-      </div>
+      </div> */}
+
       <div className={styles.productMainDiv}>
+        <div style={{ backgroundColor: "white" }}>
+          <SearchResult />
+        </div>
         <div className={styles.sortingDiv}>
           <div className={styles.productCountDiv}>{productData.length} options</div>
           <div style={{ display: 'flex', marginTop: 'auto' }}>
@@ -101,7 +102,7 @@ function AllproductPage() {
           <div>
             <div className={styles.productCardDiv}>
               {productData.map((ele, i) => {
-                return <ProductPageCard productData={ele} key={ele._id} key = {`productkey${i}`} />;
+                return <ProductPageCard productData={ele} key={ele._id} key={`productkey${i}`} />;
               })}
             </div>
             <div
@@ -110,7 +111,7 @@ function AllproductPage() {
                 margin: '24px auto',
               }}
             >
-              <Button onClick = {handleShowMore} variant="contained" disableElevation className={styles.paginationButton}>SHOW MORE OPTIONS</Button>
+              <Button onClick={handleShowMore} variant="contained" disableElevation className={styles.paginationButton}>SHOW MORE OPTIONS</Button>
             </div>
           </div>
 
