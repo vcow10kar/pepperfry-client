@@ -26,7 +26,7 @@ function Footer() {
               <p>Login to your merchant dashboard</p>
               <p>
                 {" "}
-                <span>Importnat:</span>GST and you
+                <span>Important:</span>{" "}GST and you
               </p>
               <p>Corporate enquiries</p>
             </div>

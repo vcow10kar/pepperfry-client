@@ -1,12 +1,15 @@
 .formCard {
-  height: 770px;
+  /* height: 770px; */
   width: 716px;
 
   border: 0.4px solid #e7e7e7;
   box-sizing: border-box;
 
-  filter: drop-shadow(-1px -1px 0px #e7e7e7) drop-shadow(1px 1px 0px #e7e7e7);
+  /* filter: drop-shadow(-1px -1px 0px #e7e7e7) drop-shadow(1px 1px 0px #e7e7e7); */
+  padding-bottom: 30px;
 }
+
+
 
 .section1 {
   height: 120px;
@@ -31,6 +34,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.dispalyS1Box1 input:focus {
+  border: 1px solid #F16521;
 }
 
 .dispalyS1Box2 {
@@ -60,17 +67,15 @@
   margin-left: 69px;
   display: flex;
   align-items: center;
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-
   display: flex;
   align-items: center;
   text-align: right;
   letter-spacing: 0.06em;
-
   color: #707070;
 }
 
@@ -83,7 +88,7 @@
   justify-content: space-between;
   background-color: white;
   padding: 6px;
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -106,7 +111,7 @@
   justify-content: space-between;
   background: rgba(0, 113, 188, 1);
   padding: 6px;
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -123,17 +128,15 @@
 }
 
 .section2 {
-  height: 300px;
-  border: 1px solid black;
+  /* height: 300px; */
+  /* border: 1px solid black; */
   margin-left: 24px;
   margin-right: 89px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -143,11 +146,15 @@
   color: #707070;
   box-sizing: border-box;
 }
+
+.section2 input:focus {
+  border: 1px solid #F16521;
+}
 .section3 {
-  height: 300px;
-  border: 1px solid black;
-  margin-left: 166px;
-  margin-right: 111px;
+  /* height: 300px; */
+  /* border: 1px solid black; */
+  margin-left: 0px;
+  /* margin-right: 111px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -163,13 +170,11 @@
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-
   letter-spacing: 0.06em;
   color: #000000;
 }
@@ -224,7 +229,7 @@ input[name="email"] {
   display: flex;
   border: none;
   background: rgba(241, 101, 33, 1);
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -272,7 +277,7 @@ input[type="text"] {
   margin-left: 69px;
   display: flex;
   align-items: center;
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -295,7 +300,7 @@ input[type="text"] {
   justify-content: space-between;
   background-color: white;
   padding: 6px;
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -318,7 +323,7 @@ input[type="text"] {
   justify-content: space-between;
   background: rgba(0, 113, 188, 1);
   padding: 6px;
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -335,7 +340,7 @@ input[type="text"] {
 }
 
 .section2 {
-  height: 300px;
+  /* height: 300px; */
   margin-left: 24px;
   margin-right: 89px;
 
@@ -344,7 +349,7 @@ input[type="text"] {
   align-items: flex-start;
   padding: 0px;
 
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -355,8 +360,8 @@ input[type="text"] {
   box-sizing: border-box;
 }
 .section3 {
-  height: 300px;
-  margin-left: 166px;
+  /* height: 300px; */
+  margin-left: 146px;
   margin-right: 111px;
   display: flex;
   flex-direction: column;
@@ -374,7 +379,7 @@ input[type="text"] {
   display: flex;
   align-items: center;
 
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -400,7 +405,7 @@ input[type="text"] {
   justify-content: space-between;
 }
 
-input {
+.formCard input {
   height: inherit;
   margin-top: 0px;
   border: none;
@@ -408,22 +413,22 @@ input {
   width: 477px;
 }
 
-input[name="city"],
-input[name="state"] {
+.formCard input[name="city"],
+.formCard input[name="state"] {
   width: 200px;
   height: 36px;
 }
-input[name="India"] {
+.formCard input[name="India"] {
   width: inherit;
 }
 
-input[type="checkbox"] {
+.formCard input[type="checkbox"] {
   height: 28px;
   width: 28px;
   margin-right: 13px;
 }
 
-input[name="email"] {
+.formCard input[name="email"] {
   width: 238px;
   height: 36px;
 }
@@ -434,7 +439,7 @@ input[name="email"] {
   display: flex;
   border: none;
   background: rgba(241, 101, 33, 1);
-  font-family: Fira Sans;
+  font-family:'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -450,11 +455,20 @@ input[name="email"] {
   color: #ffffff;
 } */
 
-input[type="text"] {
+.formCard input[type="text"] {
   box-sizing: border-box;
   padding-left: 16px;
 }
 
-input:focus {
+.formCard input:focus {
   outline: none !important;
+}
+.errorHandling{
+  /* display: none; */
+  color: red;
+  padding-left: 124px;
+}
+
+.formCard input{
+  border: 1px solid #E7E7E7;
 }

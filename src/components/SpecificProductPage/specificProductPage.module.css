@@ -2,6 +2,11 @@
     width: 100%;
     margin: auto;
     justify-content: center;
+}
+
+.parentPage {
+    position: relative;
+    top: 120px;
     margin-top: 16px;
 }
 

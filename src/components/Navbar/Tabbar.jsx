@@ -6,7 +6,7 @@ function Tabbar() {
   const [nav, setNav] = useState(false);
 
   return (
-    <>
+    <div className={styles.tabbarParent}>
       <div className={styles.mainDiv}>
         <div className={styles.category}>
           <p
@@ -158,7 +158,7 @@ function Tabbar() {
           </div>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }
 

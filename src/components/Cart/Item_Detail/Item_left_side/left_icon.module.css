@@ -12,7 +12,7 @@
 }
 .icon:hover {
   cursor: pointer;
-  color: red;
+  color: #f16521;
 }
 .whishlist {
   width: 16px;
@@ -23,4 +23,41 @@
 .whishlist:hover {
   cursor: pointer;
   color: #f16521;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 0px;
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  left: 60%;
+  font-size: 12px;
+  margin-left: -25px;
+}
+
+/* .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+} */
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

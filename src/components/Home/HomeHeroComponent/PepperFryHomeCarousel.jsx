@@ -15,7 +15,7 @@ const Button = styled.button`
 const items = [
   {
     source:
-      "https://ii2.pepperfry.com/media/wysiwyg/banners/promo_09122021_es.jpg"
+      "https://ii2.pepperfry.com/media/wysiwyg/banners/HB04_Web_06122021_1x.jpg"
   },
   {
     source:

@@ -6,6 +6,8 @@ import { useSelector, useDispatch } from "react-redux";
 import LeftItemParent from "./Item_Detail/Item_left_side/LeftItemParent";
 import { RightParent } from "./Item_Detail/Item_Right_side/RightParent";
 import { useState } from "react";
+import { Footer } from "../deliveryAddressPage/footer";
+import { Link } from "react-router-dom";
 
 
 export const Main = () => {
@@ -27,8 +29,12 @@ export const Main = () => {
                                 return <LeftItemParent data={item} />
                             })
                             :
-
-                            <h2>Cart is empty!</h2>
+                            <div style={{ marginTop: '30px' }}>
+                                <h1>Cart is empty!</h1>
+                                <h2 className = {styles.continueShopping}>
+                                    <Link to='/'>Continue Shopping...</Link>
+                                </h2>
+                            </div>  
                         }
 
                     </div>
@@ -38,6 +44,11 @@ export const Main = () => {
                 {cart.length > 0 ?
 
                     <RightParent data={cart} /> : null}
+
+            </div>
+
+            <div className= {styles.footerDiv}>
+                <Footer />
             </div>
 
         </div>

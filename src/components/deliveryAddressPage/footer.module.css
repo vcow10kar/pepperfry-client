@@ -7,8 +7,10 @@
 }
 
 .main_div{
-    margin-left: 12.43%;
-    margin-right: 12.43%;
+    /* margin-left: 12.43%;
+    margin-right: 12.43%; */
+    margin: auto;
+    max-width: 1085px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

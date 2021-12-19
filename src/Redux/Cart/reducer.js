@@ -1,7 +1,7 @@
 import { GET_CART, ADD_TO_CART, DELETE_FROM_CART, CART_LOADING, UPDATE_CART, UPDATE_ADDRESS } from './actionTypes';
 
 let cartItems = localStorage.getItem('cart');
-let address = localStorage.getItem('address');
+let address = JSON.parse(localStorage.getItem('address'));
 
 if (cartItems === null) {
     localStorage.setItem('cart', JSON.stringify([]));

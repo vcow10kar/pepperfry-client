@@ -7,26 +7,26 @@ function BotherUs() {
       id: 1,
       image:
         "https://ii2.pepperfry.com/media/wysiwyg/banners/hp-consulting-sol-find-a-studio-img-18082020.jpg",
-      banner3: "FIND A STUDIO",
+      banner3: "Find a Studio",
       banne4: " Walk in to your nearest pepperfry studio",
     },
     {
       id: 2,
       image:
         "https://ii3.pepperfry.com/media/wysiwyg/banners/hp-consulting-sol-by-on-phone-img-18082020.jpg",
-      banner3: "BUY ON PHONE",
+      banner3: "Buy on Phone",
       banne4: "Talk To Our Experts for a Free Consultation",
     },
     {
       id: 3,
       image:
         "https://ii1.pepperfry.com/media/wysiwyg/banners/hp-consulting-sol-modular-solutions-img-18082020.jpg",
-      banner3: "MODULAR FURNITURE",
+      banner3: "Modular Furniture",
       banne4: "Talk To Our Experts for a Free Consultation",
     },
   ];
   return (
-    <div>
+    <div className="reveal">
       <div className={styles.wrapperBotherUs}>
         <div className={styles.containerDiv}>
           <div className={styles.banner1botherus}>

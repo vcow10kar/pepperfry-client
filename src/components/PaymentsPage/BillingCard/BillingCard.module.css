@@ -3,20 +3,20 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 18px 13px;
+    /* padding: 18px 13px; */
 
     /* position: absolute; */
-    height: 192px;
-    width: 716px;
+    /* height: 192px; */
+    /* width: 716px; */
     /* left: 178px; */
     /* right: 546px;
     top: 143px; */
 
     background: #F9F9F9;
 
-    border: 1px solid #F3F5F7;
+    /* border: 1px solid #F3F5F7;
     box-sizing: border-box;
-    box-shadow: inset 0px 2px 0px #FFFFFF;
+    box-shadow: inset 0px 2px 0px #FFFFFF; */
 }
 
 
@@ -31,7 +31,7 @@
 .insideCard{
     position: static;
     width: 321px;
-    height: 108px;
+    /* height: 108px; */
     left: 8px;
     top: 40px;
 

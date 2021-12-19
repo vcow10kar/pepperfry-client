@@ -68,6 +68,7 @@
     flex-direction: row;
     padding-left: 8px;
     justify-content: left;
+    align-items: center;
     /* position: static; */
     width: 239px;
     height: 40px;
@@ -88,7 +89,8 @@
     text-transform: uppercase;
 
     background: #D0D0D0;
-    color: rgba(241, 101, 33, 1);
+   
+    color: #707070;
     
 
 }
@@ -176,4 +178,8 @@
 
     color: #FFFFFF;
 
+}
+
+.payButtons:hover{
+    color: rgba(241, 101, 33, 1);
 }

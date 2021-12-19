@@ -13,6 +13,7 @@ import { NavbarCart } from "../Cart/Navbar/NavbarCart.jsx";
 
 export const DeliveryCard = () =>{
     const [paymentDisplay, setPaymentDisplay] = useState(false);
+    const [addressDisplay, setAddressDisplay] = useState(false);
     const {cart} = useSelector(state => state.cart);
     // return<div>
     //     <NavBar/>
@@ -33,7 +34,7 @@ return <div >
         <BillingCard />
         <Form/>
     </div> */}
-    <PaymentsAccordion sx = {{width: '700px'}} data = {cart} paymentDisplay = {paymentDisplay} handleDisplay = {() => setPaymentDisplay(!paymentDisplay)}/>
+    <PaymentsAccordion sx = {{width: '700px'}} data = {cart} paymentDisplay = {paymentDisplay} handleDisplay = {() => setPaymentDisplay(!paymentDisplay)} addressDisplay = {addressDisplay} setAddressDisplay = {setAddressDisplay}/>
     <div>
         <CartPrice data = {cart} />
         {paymentDisplay === true ? <CartCard/> : null}

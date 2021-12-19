@@ -1,8 +1,17 @@
-import "./App.css";
-import AppRoutes from "./Routes/AppRoutes";
+import './App.css';
+import AppRoutes from './Routes/AppRoutes';
+import SearchNavbar from './components/Navbar/SearchNavbar';
+import { PaymentsPage } from './components/PaymentsPage/Main';
+import { DeliveryCard } from './components/DeliveryPage/Main';
 
 function App() {
-  return <div className="App">{<AppRoutes />}</div>;
+  return (
+    <div className="App">
+      {/* <SearchNavbar/> */}
+      <AppRoutes/>
+      {/* <DeliveryCard/> */}
+    </div>
+  );
 }
 
 export default App;
