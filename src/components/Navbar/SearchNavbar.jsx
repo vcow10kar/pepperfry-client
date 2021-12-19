@@ -21,7 +21,7 @@ function SearchNavbar() {
 
   async function handleChange() {
 
-    if (inputText.length > 3) {
+    if (inputText.length > 2) {
       let { data } = await axios.get(`http://localhost:5000/category/search?search=${inputText}`);
       setSearch(data);
     }
@@ -32,6 +32,8 @@ function SearchNavbar() {
   let history = useHistory();
 
   const handleNavigation = (id) => {
+    setSearch([]);
+    setInputText("");
     history.push(`/allProducts/${id}`);
   };
 
