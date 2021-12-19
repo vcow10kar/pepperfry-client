@@ -1,70 +1,119 @@
- Pepperfry
+![App Screenshot](https://static.startuptalky.com/2020/07/Pepperfry-success-story_Startuptalky.jpg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pepperfry is an Indian online marketplace for furniture and home decor.
 
-## Available Scripts
+In this project we have tried to make the same site which we have got from our design team.
+with our effects and technolgy stack that we learned so far in the Masai School,we were able to clone the
+frontend and backend with high precision and quality.
+This project is build as a part of masai school(30 weeks of boot camp) curriculam project and completed in a duration of 5 days.
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Client:** React Js, Redux, Material UI
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Server:** Node, Express, MongoDB
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+To run this application on your local system, execute the following commands on your terminal/command line:
 
-### `npm run build`
+Server
+```bash
+  git clone server https://github.com/vcow10kar/pepperfry-server.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run Server with npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  cd pepperfry-server/
+  npm i
+  npm run server
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Client
+```bash
+  git clone client https://github.com/vcow10kar/pepperfry-client.git
+```
+Run Client with npm
+```bash
+  cd pepperfry-client/
+  npm i
+  npm start
+```
+    
+  
+## Features
 
-### `npm run eject`
+- User can Sign up through Google Auth
+- User can browse Pepperly clone and see the items.
+- User can find and filter products by their brands and category.
+- Users can search the products.
+- Users can view details of selected products.
+- users can add products to their cart.
+- Users can feed both temporary and Parmanent address and make the Payments through upi, card or Cash
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Steps to navigate the website:
+- On the Landing Page there is search bar we can search for categories
+- On the top seach-bar, seach for sofa and it will take you all types sofas Page
+- you can click on particular sofa it will take you to specific product Page
+- you can add product to cart -> Add to cart -> Go to cart
+- In cart you can see all products 
+- From cart section you can navigate to shipping and billing details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Screenshots
+A glimpse of our website
 
-## Learn More
+**Home Page:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639917284480/dvHSLRrrx.jpeg?auto=compress,format&format=webp)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639917393355/kJENUoGMp.jpeg?auto=compress,format&format=webp)
 
-### Code Splitting
+**Products Page:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639918493944/TwrQ6P0uI.jpeg?auto=compress,format&format=webp)
 
-### Analyzing the Bundle Size
+**Specific Product Page:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639918993232/qdkdUgTSX.jpeg?auto=compress,format&format=webp)
 
-### Making a Progressive Web App
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639919006846/NLcuo5C84.jpeg?auto=compress,format&format=webp)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+**Cart Page:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639919341098/Dng2SzbiQ.jpeg?auto=compress,format&format=webp)
 
-### Deployment
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639919480600/U6YZ4yZI4.jpeg?auto=compress,format&format=webp)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+**Payment Gateway Page:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639919673377/bAhxsKjox.jpeg?auto=compress,format&format=webp)
+
+**Footer:**
+
+![App Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1639920009207/0GCI-TTka.jpeg?auto=compress,format&format=webp)
+
+
+
+
+
+
+
+
+
+## Authors
+
+**UX/UI designers:**
+- [@paritosh81](https://github.com/paritosh81)
+- [@SJha29](https://github.com/SJha29)
+
+**Web Developers:**
+- [@Vaishnavi Kawthankar](https://github.com/vcow10kar)
+- [@Madhu Venkat](https://github.com/madhuvenkat6)
+- [@Rambhu Mukhia](https://github.com/mukhiarambhu)
+- [@Kabi Gadal](https://github.com/KabiGadal)
