@@ -24,7 +24,7 @@ const getCartItems = (id, user) => (dispatch) => {
             payload: []
         }
     } else {
-        axios.get(`http:localhost:5000/cartDetails/${id}`)
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/cartDetails/${id}`)
             .then(res => {
                 return {
                     type: GET_CART,
@@ -49,7 +49,7 @@ const addToCart = (user, product, quantity) => dispatch => {
         })
     } else {
         axios.post({
-            url: `http:localhost:5000/cartDetails`,
+            url: `${process.env.REACT_APP_BACKEND_URL}/cartDetails`,
             data: {
                 cart_id: user._id,
                 product_id: product.product_id,

@@ -62,7 +62,7 @@ function PaymentProcessingPage() {
       }
     }
 
-    axios.post('http://localhost:5000/order', payload)
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/order`, payload)
     .then(res => {
       console.log('Order Submitted....');
       console.log(res);

@@ -91,7 +91,7 @@ const SpecificProductPage = () => {
 
     const getData = () => {
         // const id = '61b872017122aec730c23de9';
-        axios.get(`http://localhost:5000/products/${id}`)
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/products/${id}`)
             .then(res => {
                 setData({ ...res.data });
             })

@@ -43,7 +43,7 @@ function AllproductPage() {
 
   async function getData() {
     let { data } = await axios.get(
-      `http://localhost:5000/products/category/${id}?page=${page}`
+      `${process.env.REACT_APP_BACKEND_URL}/products/category/${id}?page=${page}`
     );
     setProductData(prev => [...prev, ...data]);
     setAllData(prev => [...prev, ...data]);

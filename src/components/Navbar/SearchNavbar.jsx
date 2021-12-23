@@ -22,7 +22,7 @@ function SearchNavbar() {
   async function handleChange() {
 
     if (inputText.length > 2) {
-      let { data } = await axios.get(`http://localhost:5000/category/search?search=${inputText}`);
+      let { data } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/category/search?search=${inputText}`);
       setSearch(data);
     }
 

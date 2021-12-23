@@ -22,7 +22,7 @@ export const Form = ({ handleDisplay, handleAddressDisplay }) => {
 
     const fetchUser = () => {
         axios
-            .get("http://localhost:5000/auth/getuser", { withCredentials: true })
+            .get(`${process.env.REACT_APP_BACKEND_URL}/auth/getuser`, { withCredentials: true })
             .then(res => {
                 dispatch(userLogin());
                 localStorage.setItem('userDetails', JSON.stringify(res));
@@ -37,7 +37,7 @@ export const Form = ({ handleDisplay, handleAddressDisplay }) => {
     const handleGoogleOAuth = () => {
         localStorage.setItem('googleLogin', true);
 
-        const googleLoginURL = 'http://localhost:5000/auth';
+        const googleLoginURL = `${process.env.REACT_APP_BACKEND_URL}/auth`;
         const newWindow = window.open(
             googleLoginURL,
             '_self',
